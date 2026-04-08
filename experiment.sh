@@ -29,7 +29,7 @@ for n in "${threadAmounts[@]}"; do
     # Inner loop: repeat sim multiple times at each thread amount to determine average runtimes
     for ((i=1; i<=20; i++)); do
         # Report thread amount & iteration number to log file
-        echo "Threads: $n Iteration: $i" >> "$logfile"
+        echo "Threads: $OMP_NUM_THREADS Iteration: $i" >> "$logfile"
 
         # TODO: check CPU temp & hold until threshold temp reached
         # TODO: suspend all other user processes on the system
