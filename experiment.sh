@@ -2,7 +2,7 @@
 
 # TODO: change executable filename & idle CPU threshold temp. below
 program="sleep 0.01"
-threshold=30.0
+threshold=35
 
 # Determine max threads (CPU phys. cores) & create thread amounts iterable
 max=$(nproc --all)
@@ -18,6 +18,30 @@ echo "Experiment: running simulation with OpenMP multi-threading up to $max thre
 echo "Note: all timestamps are in seconds since Epoch, with nanosecond floating-point precision" >> "$logfile"
 echo "" >> "$logfile"
 
+# Find thermal zone which corresponds to the CPU
+tempFile=""
+for zone in /sys/class/thermal/thermal_zone*; do
+    if [ -f "$zone/type" ]; then
+        # Read device type & see if it matches expected value for CPU
+        type=$(cat "$zone/type")
+        if [ "$type" == "x86_pkg_temp" ]; then
+            tempFile="$zone/temp"
+            break
+        fi
+    fi
+done
+
+# Fallback if CPU thermal zone isn't found
+if [ -z "$tempFile" ]; then
+    if [ -f "/sys/class/thermal/thermal_zone0/temp" ]; then
+        echo "[$(date +"%D %T")] Warning: 'x86_pkg_temp' temperature file not found. Using zone0 as CPU reading..."
+        tempFile="/sys/class/thermal/thermal_zone0/temp"
+    else
+        echo "[$(date +"%D %T")] Error: unable to find any device temperature files. Aborting experiment..."
+        exit 1
+    fi
+fi
+
 # Inform terminal via stdout that experiment execution is under way
 echo "[$(date +"%D %T")] Experiment in progress..."
 
@@ -31,7 +55,17 @@ for n in "${threadAmounts[@]}"; do
         # Report thread amount & iteration number to log file
         echo "Threads: $OMP_NUM_THREADS Iteration: $i" >> "$logfile"
 
-        # TODO: check CPU temp & hold until threshold temp reached
+        # Check CPU temp. & wait until threshold temp. reached
+        while true; do
+            # Temp readings at file are in millidegrees. must convert to degrees.
+            currentTemp=$(($(cat "$tempFile") / 1000))
+            if [ "$currentTemp" -lt "$threshold" ]; then
+                break
+            else
+                sleep 1
+            fi
+        done
+
         # TODO: suspend all other user processes on the system
         
         # Execute the simulation command, while saving the start & end times
