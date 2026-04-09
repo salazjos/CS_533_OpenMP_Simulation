@@ -2,7 +2,8 @@
 
 # TODO: change executable filename & idle CPU threshold temp. below
 program="sleep 0.01"
-threshold=35
+threshold=40
+logTemps=true
 
 # Determine max threads (CPU phys. cores) & create thread amounts iterable
 max=$(nproc --all)
@@ -13,10 +14,10 @@ export OMP_PROC_BIND=true
 export OMP_PLACES=cores
 
 # Initialize log file w/ current timestamp to guarantee unique filename
-logfile="Experiment_$(date +"%Y%m%d-%H%M%S").log"
-echo "Experiment: running simulation with OpenMP multi-threading up to $max threads" > "$logfile"
-echo "Note: all timestamps are in seconds since Epoch, with nanosecond floating-point precision" >> "$logfile"
-echo "" >> "$logfile"
+logFile="Experiment_$(date +"%Y%m%d-%H%M%S").log"
+echo "Experiment: running simulation with OpenMP multi-threading up to $max threads" > "$logFile"
+echo "Note: all timestamps are in seconds since Epoch, with nanosecond floating-point precision" >> "$logFile"
+echo "" >> "$logFile"
 
 # Find thermal zone which corresponds to the CPU
 tempFile=""
@@ -53,7 +54,7 @@ for n in "${threadAmounts[@]}"; do
     # Inner loop: repeat sim multiple times at each thread amount to determine average runtimes
     for ((i=1; i<=20; i++)); do
         # Report thread amount & iteration number to log file
-        echo "Threads: $OMP_NUM_THREADS Iteration: $i" >> "$logfile"
+        echo "Threads: $OMP_NUM_THREADS Iteration: $i" >> "$logFile"
 
         # Check CPU temp. & wait until threshold temp. reached
         while true; do
@@ -74,17 +75,24 @@ for n in "${threadAmounts[@]}"; do
         end=$(date +"%s.%N")
 
         # Report recorded start & end times to log file
-        echo "Simulation Start: $start" >> "$logfile"
-        echo "Simulation End: $end" >> "$logfile"
-        echo "" >> "$logfile"
+        echo "Simulation Start: $start" >> "$logFile"
+        echo "Simulation End: $end" >> "$logFile"
+
+        # Report CPU temp at end of sim run, if temp. logging is enabled
+        if $logTemps; then
+            finalTemp=$(($(cat "$tempFile") / 1000))
+            echo "Final CPU Temp (°C): $finalTemp" >> "$logFile"
+        fi
+
+        echo "" >> "$logFile"
     done
 done
 
 # Add verification of full experiment run to log file (if this is missing, script was interrupted)
-echo "Experiment Completion: YES" >> "$logfile"
+echo "Experiment Completion: YES" >> "$logFile"
 
 # Inform terminal via stdout that experiment finished & where to find log file
 echo "[$(date +"%D %T")] ...Experiment complete."
-echo "[$(date +"%D %T")] Results saved: $logfile"
+echo "[$(date +"%D %T")] Results saved: $logFile"
 
 exit 0
