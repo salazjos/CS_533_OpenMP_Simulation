@@ -1,9 +1,17 @@
 #!/bin/bash
 
-# TODO: change executable filename & idle CPU threshold temp. below
-program="sleep 0.01"
+# TODO: change source code filename & idle CPU threshold temp. below
+srcFile="bridgeSim.cpp"
 threshold=40
 logTemps=true
+
+# Compile the simulation executable from source (abort if any errors)
+g++ -std=c++20 -fopenmp -o bridge_sim "$srcFile"
+
+if [ $? -ne 0 ] || [ ! -f "bridge_sim" ]; then
+    echo "[$(date +"%D %T")] Error: unable to compile simulation source file. Aborting experiment..."
+    exit 2
+fi
 
 # Determine max threads (CPU phys. cores) & create thread amounts iterable
 max=$(nproc --all)
@@ -69,14 +77,9 @@ for n in "${threadAmounts[@]}"; do
 
         # TODO: suspend all other user processes on the system
         
-        # Execute the simulation command, while saving the start & end times
-        start=$(date +"%s.%N")
-        eval $program
-        end=$(date +"%s.%N")
-
-        # Report recorded start & end times to log file
-        echo "Simulation Start: $start" >> "$logFile"
-        echo "Simulation End: $end" >> "$logFile"
+        # Execute the simulation command & redirect output to log file
+        # Simulation itself will report start & end times from omp_get_wtime
+        ./bridge_sim >> "$logFile"
 
         # Report CPU temp at end of sim run, if temp. logging is enabled
         if $logTemps; then
