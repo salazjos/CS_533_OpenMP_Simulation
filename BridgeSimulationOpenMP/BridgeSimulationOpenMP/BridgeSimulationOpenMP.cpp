@@ -11,14 +11,14 @@ constexpr int Detonation_Height_Inches = 120 * 12;
 constexpr int Detonation_X_Location = 800 * 12;
 constexpr int Detonation_Y_Location = 50 * 12;
 
-std::unique_ptr<double[]> bridge_tile_distance;
+std::unique_ptr<float[]> bridge_tile_distance;
 
 
-void allocateArray(std::unique_ptr<double[]>& ptr, int size) {
-    ptr = std::make_unique<double[]>(size);
+void allocateArray(std::unique_ptr<float[]>& ptr, int size) {
+    ptr = std::make_unique<float[]>(size);
 }
 
-void computeDistances(std::unique_ptr<double[]>& arr, int size)
+void computeDistances(std::unique_ptr<float[]>& arr, int size)
 {
     int Width = Bridge_Width_Feet * 12;
     #pragma omp parallel for
@@ -31,7 +31,7 @@ void computeDistances(std::unique_ptr<double[]>& arr, int size)
         double dy = y - Detonation_Y_Location;
         double dz = Detonation_Height_Inches;
 
-        arr[i] = std::sqrt(dx * dx + dy * dy + dz * dz);
+        arr[i] = static_cast<float>(std::sqrt(dx * dx + dy * dy + dz * dz));
     }
 }
 
