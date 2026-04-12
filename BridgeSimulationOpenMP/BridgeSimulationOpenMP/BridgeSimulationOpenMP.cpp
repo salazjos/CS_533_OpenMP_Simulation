@@ -43,9 +43,13 @@ int main(int argc, char* argv[])
         return 1;
     }*/
 
+    //TODO set the trial amount from the bash script.
     //int trail_amount = std::stoi(argv[1]);
 
-    // 🔹 Get OpenMP thread count (set by bash)
+    //TODO: for testing without the bash script, manually set the number of trials.
+    int trial_amount = 1;
+
+    // Get OpenMP thread count (set by bash)
     //int threads = omp_get_max_threads();
 
     //TODO: for testing without the bash script, manually set the number of threads. 
@@ -54,16 +58,16 @@ int main(int argc, char* argv[])
 
     allocateArray(bridge_tile_distance, Array_Size);
 
-
     double start_time = omp_get_wtime();
 
-    computeDistances(bridge_tile_distance, Array_Size);
-
+    for(int i = 0; i < trial_amount; i++)
+        computeDistances(bridge_tile_distance, Array_Size);
     double end_time = omp_get_wtime();
 
     double elapsed_time = end_time - start_time;
 
-
+    // TODO: the bash script should see this. 
+    // example: output=$(./bridgeSim)
     std::cout << elapsed_time << std::endl;
 
     //std::cout << "elapsed time: " << elapsed_time;
