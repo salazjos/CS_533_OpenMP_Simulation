@@ -3,6 +3,8 @@
 #include <omp.h>
 #include <string>
 #include <iostream>
+#include <memory>
+#include <cmath>
 
 constexpr int Bridge_Length_Feet = 900; 
 constexpr int Bridge_Width_Feet = 100;
