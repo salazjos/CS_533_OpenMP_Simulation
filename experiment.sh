@@ -1,16 +1,17 @@
 #!/bin/bash
 
-# TODO: change source code filename & idle CPU threshold temp. below
-srcFile="bridgeSim.cpp"
-threshold=40
+# --- CONSTANTS ---
+srcFile="BridgeSimulationOpenMP/BridgeSimulationOpenMP/BridgeSimulationOpenMP.cpp"
+dstFile="BridgeSimulationOpenMP/compiledSimulation"
+threshold=40    # TODO: adjust idle CPU threshold temp once hardware is decided
 logTemps=true
 
 # Compile the simulation executable from source (abort if any errors)
-g++ -std=c++20 -fopenmp -o bridge_sim "$srcFile"
+g++ -std=c++20 -fopenmp -o "$dstFile" "$srcFile"
 
-if [ $? -ne 0 ] || [ ! -f "bridge_sim" ]; then
+if [ $? -ne 0 ] || [ ! -f "$dstFile" ]; then
     echo "[$(date +"%D %T")] Error: unable to compile simulation source file. Aborting experiment..."
-    exit 2
+    exit 1
 fi
 
 # Determine max threads (CPU phys. cores) & create thread amounts iterable
@@ -20,12 +21,6 @@ threadAmounts=(1 $(seq 2 2 $max))
 # Set OpenMP env. variables to disable hyper-threading (only 1 thread per core)
 export OMP_PROC_BIND=true
 export OMP_PLACES=cores
-
-# Initialize log file w/ current timestamp to guarantee unique filename
-logFile="Experiment_$(date +"%Y%m%d-%H%M%S").log"
-echo "Experiment: running simulation with OpenMP multi-threading up to $max threads" > "$logFile"
-echo "Note: all timestamps are in seconds since Epoch, with nanosecond floating-point precision" >> "$logFile"
-echo "" >> "$logFile"
 
 # Find thermal zone which corresponds to the CPU
 tempFile=""
@@ -47,9 +42,15 @@ if [ -z "$tempFile" ]; then
         tempFile="/sys/class/thermal/thermal_zone0/temp"
     else
         echo "[$(date +"%D %T")] Error: unable to find any device temperature files. Aborting experiment..."
-        exit 1
+        exit 2
     fi
 fi
+
+# Initialize log file w/ current timestamp to guarantee unique filename
+logFile="Experiment_$(date +"%Y%m%d-%H%M%S").log"
+echo "Experiment: running simulation with OpenMP multi-threading up to $max threads" > "$logFile"
+echo "Note: all timestamps are in seconds since Epoch, with nanosecond floating-point precision" >> "$logFile"
+echo "" >> "$logFile"
 
 # Inform terminal via stdout that experiment execution is under way
 echo "[$(date +"%D %T")] Experiment in progress..."
@@ -77,9 +78,11 @@ for n in "${threadAmounts[@]}"; do
 
         # TODO: suspend all other user processes on the system
         
-        # Execute the simulation command & redirect output to log file
-        # Simulation itself will report start & end times from omp_get_wtime
-        ./bridge_sim >> "$logFile"
+        # Execute the simulation command & determine the elapsed time
+        runtime=$(eval "$dstFile")
+
+        # Report the recorded elapsed time to the log file
+        echo "Elapsed Simulation Time (s): $runtime" >> "$logFile"
 
         # Report CPU temp at end of sim run, if temp. logging is enabled
         if $logTemps; then
