@@ -1,22 +1,47 @@
 #!/bin/bash
 
 # --- CONSTANTS ---
+
 srcFile="BridgeSimulationOpenMP/BridgeSimulationOpenMP/BridgeSimulationOpenMP.cpp"
 dstFile="BridgeSimulationOpenMP/compiledSimulation"
 threshold=40    # TODO: adjust idle CPU threshold temp once hardware is decided
 logTemps=true
+expReps=20      # TODO: adjust exp. repetitions, if result variance too high
+
+# --- HELPER FUNCTIONS ---
+
+# Generates a CLI-based progress bar, visualizing experiment progress
+# Usage: cli_prog_bar <current_position> <max_position>
+cli_prog_bar() {
+    local currPos=$1
+    local maxPos=$2
+
+    # Determine how much bar should be filled based on progress made & terminal width
+    local width=$(($(tput cols) / 4))
+    let "progress = currPos * 100 / maxPos"
+    let "filled = progress * width / 100"
+    let "empty = width - filled"
+
+    # Build the progress bar string
+    printf "\rProgress: ["
+    printf "%${filled}s" | tr ' ' '#'
+    printf "%${empty}s" | tr ' ' '-'
+    printf "] $progress%%"
+}
+
+# --- PRE-EXPERIMENT SETUP TASKS ---
 
 # Compile the simulation executable from source (abort if any errors)
 g++ -std=c++20 -fopenmp -o "$dstFile" "$srcFile"
 
 if [ $? -ne 0 ] || [ ! -f "$dstFile" ]; then
-    echo "[$(date +"%D %T")] Error: unable to compile simulation source file. Aborting experiment..."
+    echo "Error: unable to compile simulation source file. Aborting experiment..."
     exit 1
 fi
 
 # Determine max threads (CPU phys. cores) & create thread amounts iterable
-max=$(nproc --all)
-threadAmounts=(1 $(seq 2 2 $max))
+maxThreads=$(nproc --all)
+threadAmounts=(1 $(seq 2 2 $maxThreads))
 
 # Set OpenMP env. variables to disable hyper-threading (only 1 thread per core)
 export OMP_PROC_BIND=true
@@ -38,10 +63,10 @@ done
 # Fallback if CPU thermal zone isn't found
 if [ -z "$tempFile" ]; then
     if [ -f "/sys/class/thermal/thermal_zone0/temp" ]; then
-        echo "[$(date +"%D %T")] Warning: 'x86_pkg_temp' temperature file not found. Using zone0 as CPU reading..."
+        echo "Warning: 'x86_pkg_temp' temperature file not found. Using zone0 as CPU reading..."
         tempFile="/sys/class/thermal/thermal_zone0/temp"
     else
-        echo "[$(date +"%D %T")] Error: unable to find any device temperature files. Aborting experiment..."
+        echo "Error: unable to find any device temperature files. Aborting experiment..."
         exit 2
     fi
 fi
@@ -49,19 +74,30 @@ fi
 # Initialize log file w/ current timestamp to guarantee unique filename
 logFile="Experiment_$(date +"%Y%m%d-%H%M%S").log"
 echo "Experiment: running simulation with OpenMP multi-threading up to $max threads" > "$logFile"
-echo "Note: all timestamps are in seconds since Epoch, with nanosecond floating-point precision" >> "$logFile"
 echo "" >> "$logFile"
 
 # Inform terminal via stdout that experiment execution is under way
-echo "[$(date +"%D %T")] Experiment in progress..."
+echo "Simulation program compiled. Beginning experiment..."
+startTime=$(date +%s)
 
-# Main experiment loop: test simulation runtimes at all thread amounts
+# Hide cursor since script requires no input (trap to have cursor reappear if stopped)
+tput civis
+trap "tput cnorm; echo; exit 3" INT TERM
+
+# --- MAIN EXPERIMENT LOOP
+
+c=0
+
+# Test simulation runtimes at all thread amounts in the iterable object
 for n in "${threadAmounts[@]}"; do
     # Set thread amount via OpenMP env. variable
     export OMP_NUM_THREADS=$n
 
     # Inner loop: repeat sim multiple times at each thread amount to determine average runtimes
-    for ((i=1; i<=20; i++)); do
+    for ((i=1; i<=$expReps; i++)); do
+        # Update progress bar on CLI
+        cli_prog_bar $c $((${#threadAmounts[@]} * $expReps))
+
         # Report thread amount & iteration number to log file
         echo "Threads: $OMP_NUM_THREADS Iteration: $i" >> "$logFile"
 
@@ -90,6 +126,8 @@ for n in "${threadAmounts[@]}"; do
             echo "Final CPU Temp (°C): $finalTemp" >> "$logFile"
         fi
 
+        # Increment run counter used for progress bar updates
+        c=$((c + 1))
         echo "" >> "$logFile"
     done
 done
@@ -98,7 +136,9 @@ done
 echo "Experiment Completion: YES" >> "$logFile"
 
 # Inform terminal via stdout that experiment finished & where to find log file
-echo "[$(date +"%D %T")] ...Experiment complete."
-echo "[$(date +"%D %T")] Results saved: $logFile"
-
+cli_prog_bar 100 100
+echo ""
+echo "...Experiment complete."
+echo "Results saved: $logFile"
+tput cnorm
 exit 0
