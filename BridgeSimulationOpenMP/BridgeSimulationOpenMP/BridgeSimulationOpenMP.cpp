@@ -9,11 +9,12 @@
 constexpr int Bridge_Length_Feet = 900; 
 constexpr int Bridge_Width_Feet = 100;
 constexpr int Array_Size = (Bridge_Length_Feet * 12) * (Bridge_Width_Feet * 12);
-constexpr int Detonation_Height_Inches = 120 * 12;
+constexpr int Detonation_Height_Inches = 30 * 12;
 constexpr int Detonation_X_Location = 800 * 12;
 constexpr int Detonation_Y_Location = 50 * 12;
 
-std::unique_ptr<float[]> bridge_tile_distance;
+std::unique_ptr<float[]> bridge_tile_distance_array;
+std::unique_ptr<float[]> blast_to_tile_theta_array;
 
 
 void allocateArray(std::unique_ptr<float[]>& ptr, int size) {
@@ -37,6 +38,16 @@ void computeDistances(std::unique_ptr<float[]>& arr, int size)
     }
 }
 
+void computeAngleFromDetenationToTile(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& angleArr, int size) {
+
+    const float dz = Detonation_Height_Inches;
+
+    #pragma omp parallel for
+    for (int i = 0; i < size; ++i){
+        angleArr[i] = atan2f(dz, distanceArr[i]);
+    }
+}
+
 int main(int argc, char* argv[])
 {
     // 🔹 Get number of trials from bash
@@ -55,15 +66,21 @@ int main(int argc, char* argv[])
     //int threads = omp_get_max_threads();
 
     //TODO: for testing without the bash script, manually set the number of threads. 
-    int threads = 2;  
+    int threads = 1;  
     omp_set_num_threads(threads);
 
-    allocateArray(bridge_tile_distance, Array_Size);
+    allocateArray(bridge_tile_distance_array, Array_Size);
+
+    allocateArray(blast_to_tile_theta_array, Array_Size);
 
     double start_time = omp_get_wtime();
 
-    for(int i = 0; i < trial_amount; i++)
-        computeDistances(bridge_tile_distance, Array_Size);
+    //TODO: Surround all this with for-loop based on trial_amount.
+    computeDistances(bridge_tile_distance_array, Array_Size);
+
+    computeAngleFromDetenationToTile(bridge_tile_distance_array, blast_to_tile_theta_array, Array_Size);
+   
+        
     double end_time = omp_get_wtime();
 
     double elapsed_time = end_time - start_time;
