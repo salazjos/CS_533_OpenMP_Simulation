@@ -29,6 +29,44 @@ cli_prog_bar() {
     printf "] $progress%%"
 }
 
+# Suspends all other processes currently running on the system
+# If running as root, all processes suspended across the userbase
+# If not running as root, only processes owned by this user suspended
+suspendAll() {
+    pidsList=()
+
+    if [[ $EUID -eq 0 ]]; then
+        # Root case: get all PIDs & exclude system processes (any PID where corresponding UID > 1000)
+        pidsList=$(ps -eao pid,uid --no-headers | grep -vE "($$|$PPID)" | awk '$2 >= 1000 {print $1}')
+    else
+        # Non-root case: get only PIDs of this user, exclude this script and shell
+        pidsList=$(ps -u $USER -o pid= | grep -vE "($$|$PPID)")
+    fi
+
+    # Iterate thru PIDs and send SIGSTOP to each
+    for pid in $pidsList; do
+        kill -STOP "$pid" 2> /dev/null
+    done
+}
+
+# Resumes all processes which were previously stopped by a suspendAll call
+resumeAll() {
+    pidsList=()
+
+    if [[ $EUID -eq 0 ]]; then
+        # Root case: get all PIDs & exclude system processes (any PID where corresponding UID > 1000)
+        pidsList=$(ps -eao pid,uid --no-headers | grep -vE "($$|$PPID)" | awk '$2 >= 1000 {print $1}')
+    else
+        # Non-root case: get only PIDs of this user, exclude this script and shell
+        pidsList=$(ps -u $USER -o pid= | grep -vE "($$|$PPID)")
+    fi
+
+    # Iterate thru PIDs and send SIGCONT to each
+    for pid in $pidsList; do
+        kill -CONT "$pid" 2> /dev/null
+    done
+}
+
 # --- PRE-EXPERIMENT SETUP TASKS ---
 
 # Compile the simulation executable from source (abort if any errors)
@@ -73,7 +111,7 @@ fi
 
 # Initialize log file w/ current timestamp to guarantee unique filename
 logFile="Experiment_$(date +"%Y%m%d-%H%M%S").log"
-echo "Experiment: running simulation with OpenMP multi-threading up to $max threads" > "$logFile"
+echo "Experiment: running simulation with OpenMP multi-threading up to $maxThreads threads" > "$logFile"
 echo "" >> "$logFile"
 
 # Inform terminal via stdout that experiment execution is under way
@@ -82,7 +120,9 @@ startTime=$(date +%s)
 
 # Hide cursor since script requires no input (trap to have cursor reappear if stopped)
 tput civis
-trap "tput cnorm; echo; exit 3" INT TERM
+
+# Trap on script interruption will 1) return cursor to shell and 2) resume any stopped processes
+trap "tput cnorm; resumeAll; echo; exit 3" INT TERM
 
 # --- MAIN EXPERIMENT LOOP
 
@@ -101,18 +141,26 @@ for n in "${threadAmounts[@]}"; do
         # Report thread amount & iteration number to log file
         echo "Threads: $OMP_NUM_THREADS Iteration: $i" >> "$logFile"
 
-        # Check CPU temp. & wait until threshold temp. reached
+        # Simulation execution hold: before performing the simulation, script will:
+        # 1) Check CPU temp. & wait until the reading is below threshold temp.
+        # 2) Check the # of running processes & wait until there less than 3 running
+        # 3) Suspend other processes before sim. execution but only after temp is low. This 
+        # generously allows other processes to run while script is waiting for lower temps anyway.
         while true; do
             # Temp readings at file are in millidegrees. must convert to degrees.
             currentTemp=$(($(cat "$tempFile") / 1000))
+            currentProcs=$(ps -eo state | grep -c "^R")
+
             if [ "$currentTemp" -lt "$threshold" ]; then
-                break
+                if [ "$currentProcs" -lt 3 ]; then
+                    break
+                else
+                    suspendAll
+                fi
             else
                 sleep 1
             fi
         done
-
-        # TODO: suspend all other user processes on the system
         
         # Execute the simulation command & determine the elapsed time
         runtime=$(eval "$dstFile")
@@ -126,7 +174,8 @@ for n in "${threadAmounts[@]}"; do
             echo "Final CPU Temp (°C): $finalTemp" >> "$logFile"
         fi
 
-        # Increment run counter used for progress bar updates
+        # Resume other processes & increment run counter used for progress bar updates
+        resumeAll
         c=$((c + 1))
         echo "" >> "$logFile"
     done
