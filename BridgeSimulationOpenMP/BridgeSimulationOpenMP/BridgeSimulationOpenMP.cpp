@@ -13,15 +13,16 @@ constexpr int Detonation_Height_Inches = 30 * 12;
 constexpr int Detonation_X_Location = 800 * 12;
 constexpr int Detonation_Y_Location = 50 * 12;
 
-std::unique_ptr<float[]> bridge_tile_distance_array;
+std::unique_ptr<float[]> bridge_tile_distance_from_detonation_array;
 std::unique_ptr<float[]> blast_to_tile_theta_array;
+std::unique_ptr<float[]> blast_tile_ground_distance_to_detonation_array;
 
 
 void allocateArray(std::unique_ptr<float[]>& ptr, int size) {
     ptr = std::make_unique<float[]>(size);
 }
 
-void computeDistances(std::unique_ptr<float[]>& arr, int size)
+void computeDistanceBlastDetonationToTiles(std::unique_ptr<float[]>& arr, int size)
 {
     int Width = Bridge_Width_Feet * 12;
     #pragma omp parallel for
@@ -35,6 +36,22 @@ void computeDistances(std::unique_ptr<float[]>& arr, int size)
         double dz = Detonation_Height_Inches;
 
         arr[i] = static_cast<float>(std::sqrt(dx * dx + dy * dy + dz * dz));
+    }
+}
+
+void computeGroundDistanceDetonationToTiles(std::unique_ptr<float[]>& arr, int size) {
+    int Width = Bridge_Width_Feet * 12;
+
+    #pragma omp parallel for
+    for (int i = 0; i < size; ++i)
+    {
+        int x = i % Width;
+        int y = i / Width;
+
+        float dx = x - Detonation_X_Location;
+        float dy = y - Detonation_Y_Location;
+
+        arr[i] = sqrtf(dx * dx + dy * dy);
     }
 }
 
@@ -66,19 +83,29 @@ int main(int argc, char* argv[])
     //int threads = omp_get_max_threads();
 
     //TODO: for testing without the bash script, manually set the number of threads. 
-    int threads = 1;  
+    int threads = 1;
     omp_set_num_threads(threads);
-
-    allocateArray(bridge_tile_distance_array, Array_Size);
-
-    allocateArray(blast_to_tile_theta_array, Array_Size);
 
     double start_time = omp_get_wtime();
 
-    //TODO: Surround all this with for-loop based on trial_amount.
-    computeDistances(bridge_tile_distance_array, Array_Size);
+    allocateArray(bridge_tile_distance_from_detonation_array, Array_Size);
 
-    computeAngleFromDetenationToTile(bridge_tile_distance_array, blast_to_tile_theta_array, Array_Size);
+    allocateArray(blast_to_tile_theta_array, Array_Size);
+
+    allocateArray(blast_tile_ground_distance_to_detonation_array, Array_Size);
+
+    
+
+    //TODO: Surround all this with for-loop based on trial_amount.
+
+    //This should be D1 from the diagram
+    computeDistanceBlastDetonationToTiles(bridge_tile_distance_from_detonation_array, Array_Size);
+
+    //This should be Z1 from the diagram
+    computeGroundDistanceDetonationToTiles(blast_tile_ground_distance_to_detonation_array, Array_Size);
+
+    //This should be A1 from the diagram
+    computeAngleFromDetenationToTile(bridge_tile_distance_from_detonation_array, blast_to_tile_theta_array, Array_Size);
    
         
     double end_time = omp_get_wtime();
