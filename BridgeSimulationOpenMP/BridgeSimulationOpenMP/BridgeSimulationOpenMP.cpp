@@ -16,7 +16,7 @@ constexpr int Detonation_Y_Location = 50 * 12;
 std::unique_ptr<float[]> bridge_tile_distance_from_detonation_array;
 std::unique_ptr<float[]> blast_to_tile_theta_array;
 std::unique_ptr<float[]> blast_tile_ground_distance_to_detonation_array;
-
+std::unique_ptr<float[]> blast_tile_basic_peak_pressure;
 
 void allocateArray(std::unique_ptr<float[]>& ptr, int size) {
     ptr = std::make_unique<float[]>(size);
@@ -65,6 +65,20 @@ void computeAngleFromDetenationToTile(const std::unique_ptr<float[]>& distanceAr
     }
 }
 
+void computeBasicPeakPressureForTiles(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr, int size) {
+
+    const float W = 1000.0f;
+
+    #pragma omp parallel for
+    for (int i = 0; i < size; ++i) {
+        float Z = distanceArr[i] / std::cbrtf(W);
+        float kPa = (1172 / std::powf(Z, 3.0f)) - (114 / std::powf(Z, 2.0f)) + 108 / Z;
+        float PSI = kPa / 6.89475729;
+        arr[i] = PSI;
+    }
+    
+}
+
 int main(int argc, char* argv[])
 {
     // 🔹 Get number of trials from bash
@@ -94,7 +108,7 @@ int main(int argc, char* argv[])
 
     allocateArray(blast_tile_ground_distance_to_detonation_array, Array_Size);
 
-    
+    allocateArray(blast_tile_basic_peak_pressure, Array_Size);
 
     //TODO: Surround all this with for-loop based on trial_amount.
 
@@ -107,7 +121,9 @@ int main(int argc, char* argv[])
     //This should be A1 from the diagram
     computeAngleFromDetenationToTile(bridge_tile_distance_from_detonation_array, blast_to_tile_theta_array, Array_Size);
    
-        
+    //This should implement the third equation
+    computeBasicPeakPressureForTiles(bridge_tile_distance_from_detonation_array, blast_tile_basic_peak_pressure, Array_Size);
+
     double end_time = omp_get_wtime();
 
     double elapsed_time = end_time - start_time;
