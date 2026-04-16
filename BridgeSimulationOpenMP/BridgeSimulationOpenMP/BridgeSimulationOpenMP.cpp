@@ -67,12 +67,15 @@ void computeAngleFromDetenationToTile(const std::unique_ptr<float[]>& distanceAr
 
 void computeBasicPeakPressureForTiles(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr, int size) {
 
-    const float W = 1000.0f;
+    const float Kg_Conversion_Rate = 2.205;
+    const float W_Pounds = 1000.0f;
+    const float W_Kg = W_Pounds / Kg_Conversion_Rate;
 
     #pragma omp parallel for
     for (int i = 0; i < size; ++i) {
-        float Z = distanceArr[i] / std::cbrtf(W);
-        float kPa = (1172 / std::powf(Z, 3.0f)) - (114 / std::powf(Z, 2.0f)) + 108 / Z;
+        float distance_in_meters = distanceArr[i] / 0.0254;
+        float Z = distance_in_meters / std::cbrtf(W_Kg);
+        float kPa = (1172 / std::pow(Z, 3.0f)) - (114 / std::pow(Z, 2.0f)) + 108 / Z;
         float PSI = kPa / 6.89475729;
         arr[i] = PSI;
     }
