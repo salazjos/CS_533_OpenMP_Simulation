@@ -1,3 +1,5 @@
 *.log
 .vscode/
 BridgeSimulationOpenMP/compiledSimulation
+BridgeSimulationOpenMP/mockSimulation.py
+BridgeSimulationOpenMP/mockData.npz
