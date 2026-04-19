@@ -5,6 +5,7 @@
 #include <iostream>
 #include <memory>
 #include <cmath>
+#include <numbers>
 
 constexpr int Bridge_Length_Feet = 900; 
 constexpr int Bridge_Width_Feet = 100;
@@ -17,6 +18,8 @@ std::unique_ptr<float[]> bridge_tile_distance_from_detonation_array;
 std::unique_ptr<float[]> blast_to_tile_theta_array;
 std::unique_ptr<float[]> blast_tile_ground_distance_to_detonation_array;
 std::unique_ptr<float[]> blast_tile_basic_peak_pressure;
+std::unique_ptr<float[]> impulse_value_per_tile;
+std::unique_ptr<float[]> peak_pressure_per_tile;
 
 void allocateArray(std::unique_ptr<float[]>& ptr, int size) {
     ptr = std::make_unique<float[]>(size);
@@ -61,25 +64,97 @@ void computeAngleFromDetenationToTile(const std::unique_ptr<float[]>& distanceAr
 
     #pragma omp parallel for
     for (int i = 0; i < size; ++i){
-        angleArr[i] = atan2f(dz, distanceArr[i]);
+        float ratio = dz / distanceArr[i];
+        ratio = fminf(1.0f, fmaxf(-1.0f, ratio));
+        float theta = acosf(ratio);
+        float degrees = theta * 180.0f / std::numbers::pi;
+        angleArr[i] = degrees;
     }
 }
 
 void computeBasicPeakPressureForTiles(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr, int size) {
 
     const float Kg_Conversion_Rate = 2.205;
-    const float W_Pounds = 1000.0f;
-    const float W_Kg = W_Pounds / Kg_Conversion_Rate;
+    const float Charge_Weight_Pounds = 1000.0f;
+    const float W_Kg = Charge_Weight_Pounds / Kg_Conversion_Rate;
 
     #pragma omp parallel for
     for (int i = 0; i < size; ++i) {
         float distance_in_meters = distanceArr[i] / 0.0254;
         float Z = distance_in_meters / std::cbrtf(W_Kg);
-        float kPa = (1172 / std::pow(Z, 3.0f)) - (114 / std::pow(Z, 2.0f)) + 108 / Z;
+        float kPa = (1772 / std::pow(Z, 3.0f)) - (114 / std::pow(Z, 2.0f)) + 108 / Z;
         float PSI = kPa / 6.89475729;
         arr[i] = PSI;
     }
+}
+
+void calculateImpulseValue(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr, int size) {
     
+    auto computedValue = [](const float &distance)->float {
+        float x = log10f(distance);  // compute once
+        float x2 = x * x;
+        float x3 = x2 * x;
+        float x4 = x2 * x2;
+
+        if (distance < 0.132f)
+        {
+            //return std::numeric_limits<float>::quiet_NaN();
+            return 0.0f;
+        }
+        else if (distance < 1.69f)
+        {
+            return powf(10.0f,
+                2.9274f
+                - 1.6466f * x
+                - 0.90652f * x2
+                - 0.35118f * x3
+                - 0.094865f * x4
+            );
+        }
+        else if (distance < 25.21f)
+        {
+            return powf(10.0f,
+                2.8735f
+                - 1.2134f * x
+                - 2.2395f * x2
+                + 1.8364f * x3
+                - 0.42023f * x4
+            );
+        }
+        else if (distance <= 100.0f)
+        {
+            return powf(10.0f,
+                1.1642f
+                + 0.13928f * x
+                - 0.7688f * x2
+                + 1.2882f * x3
+            );
+        }
+        else
+        {
+            //return std::numeric_limits<float>::quiet_NaN();
+            return 0.0f;
+        }
+    };
+
+    #pragma omp parallel for
+    for (int i = 0; i < size; ++i) {
+        float computed_value = computedValue(distanceArr[i]);
+        float PSI = computed_value / 6.89475729;
+        arr[i] = PSI;
+    }
+}
+
+void calculatePeakPressuePerTile(const std::unique_ptr<float[]>& distanceArr, const std::unique_ptr<float[]>& basicPressureArr,
+    const std::unique_ptr<float[]>& impulsePressureArr, std::unique_ptr<float[]>& arr, int size) {
+
+    #pragma omp parallel for
+    for (int i = 0; i < size; ++i) {
+        float s = Detonation_Height_Inches / distanceArr[i];
+        float temp = impulsePressureArr[i] * (1 + s) - 2 * pow(s, 2) + basicPressureArr[i] * pow(s, 2); //TODO rename these
+        float PSI = temp / 6.89475729;
+        arr[i] = PSI;
+    }
 }
 
 int main(int argc, char* argv[])
@@ -103,7 +178,7 @@ int main(int argc, char* argv[])
     int threads = 1;
     omp_set_num_threads(threads);
 
-    double start_time = omp_get_wtime();
+    
 
     allocateArray(bridge_tile_distance_from_detonation_array, Array_Size);
 
@@ -113,7 +188,13 @@ int main(int argc, char* argv[])
 
     allocateArray(blast_tile_basic_peak_pressure, Array_Size);
 
+    allocateArray(impulse_value_per_tile, Array_Size);
+
+    allocateArray(peak_pressure_per_tile, Array_Size);
+
     //TODO: Surround all this with for-loop based on trial_amount.
+
+    double start_time = omp_get_wtime();
 
     //This should be D1 from the diagram
     computeDistanceBlastDetonationToTiles(bridge_tile_distance_from_detonation_array, Array_Size);
@@ -126,6 +207,10 @@ int main(int argc, char* argv[])
    
     //This should implement the third equation
     computeBasicPeakPressureForTiles(bridge_tile_distance_from_detonation_array, blast_tile_basic_peak_pressure, Array_Size);
+
+    calculateImpulseValue(bridge_tile_distance_from_detonation_array, impulse_value_per_tile, Array_Size);
+
+    calculatePeakPressuePerTile(bridge_tile_distance_from_detonation_array, blast_tile_basic_peak_pressure, impulse_value_per_tile, peak_pressure_per_tile, Array_Size);
 
     double end_time = omp_get_wtime();
 
