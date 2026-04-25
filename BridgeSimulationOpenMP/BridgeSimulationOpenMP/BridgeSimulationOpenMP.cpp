@@ -30,7 +30,7 @@ void allocateArray(std::unique_ptr<float[]>& ptr, int size) {
 void computeDistanceBlastDetonationToTiles(std::unique_ptr<float[]>& arr, int size)
 {
     int Width = Bridge_Width_Feet * 12;
-    #pragma omp parallel for
+    #pragma omp parallel for default(none)
     for (int i = 0; i < size; ++i)
     {
         int x = i % Width;
@@ -47,7 +47,7 @@ void computeDistanceBlastDetonationToTiles(std::unique_ptr<float[]>& arr, int si
 void computeGroundDistanceDetonationToTiles(std::unique_ptr<float[]>& arr, int size) {
     int Width = Bridge_Width_Feet * 12;
 
-    #pragma omp parallel for
+    #pragma omp parallel for default(none)
     for (int i = 0; i < size; ++i)
     {
         int x = i % Width;
@@ -64,7 +64,7 @@ void computeAngleFromDetenationToTile(const std::unique_ptr<float[]>& distanceAr
 
     const float dz = Detonation_Height_Inches;
 
-    #pragma omp parallel for
+    #pragma omp parallel for default(none)
     for (int i = 0; i < size; ++i){
         float ratio = dz / distanceArr[i];
         ratio = fminf(1.0f, fmaxf(-1.0f, ratio));
@@ -80,7 +80,7 @@ void computeBasicPeakPressureForTiles(const std::unique_ptr<float[]>& distanceAr
     const float Charge_Weight_Pounds = 1000.0f;
     const float W_Kg = Charge_Weight_Pounds / Kg_Conversion_Rate;
 
-    #pragma omp parallel for
+    #pragma omp parallel for default(none)
     for (int i = 0; i < size; ++i) {
         float distance_in_meters = distanceArr[i] / 0.0254;
         float Z = distance_in_meters / std::cbrtf(W_Kg);
@@ -139,7 +139,7 @@ void calculateImpulseValue(const std::unique_ptr<float[]>& distanceArr, std::uni
         }
     };
 
-    #pragma omp parallel for
+    #pragma omp parallel for default(none)
     for (int i = 0; i < size; ++i) {
         float computed_value = computedValue(distanceArr[i]);
         float PSI = computed_value / 6.89475729;
@@ -150,7 +150,7 @@ void calculateImpulseValue(const std::unique_ptr<float[]>& distanceArr, std::uni
 void calculatePeakPressuePerTile(const std::unique_ptr<float[]>& distanceArr, const std::unique_ptr<float[]>& basicPressureArr,
     const std::unique_ptr<float[]>& impulsePressureArr, std::unique_ptr<float[]>& arr, int size) {
 
-    #pragma omp parallel for
+    #pragma omp parallel for default(none)
     for (int i = 0; i < size; ++i) {
         float s = Detonation_Height_Inches / distanceArr[i];
         float temp = impulsePressureArr[i] * (1 + s) - 2 * pow(s, 2) + basicPressureArr[i] * pow(s, 2); //TODO rename these
@@ -200,7 +200,7 @@ void calculateTimeOfArrivalPerTile(const std::unique_ptr<float[]>& distanceArr, 
     };
 
 
-    #pragma omp parallel for
+    #pragma omp parallel for default(none)
     for (int i = 0; i < size; ++i) {
         float x = (distanceArr[i] * 0.3048f) / std::cbrtf(Charge_Weight_Pounds);
         float value = result(x);
@@ -211,7 +211,7 @@ void calculateTimeOfArrivalPerTile(const std::unique_ptr<float[]>& distanceArr, 
 void calculateLoadDurationPerTile(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr, int size) {
     const float Charge_Weight_Pounds = 1000.0f;
     
-    #pragma omp parallel for
+    #pragma omp parallel for default(none)
     for (int i = 0; i < size; ++i) {
         float x = (distanceArr[i] * 0.3048f) / std::cbrtf(Charge_Weight_Pounds);
         float numerator = 980.0f * (1.0f + powf(x / 0.54f, 10.0f));
@@ -243,7 +243,8 @@ int main(int argc, char* argv[])
     //int threads = omp_get_max_threads();
 
     //TODO: for testing without the bash script, manually set the number of threads. 
-    int threads = 6;
+    int threads = 2
+        ;
     omp_set_num_threads(threads);
 
     
@@ -287,7 +288,9 @@ int main(int argc, char* argv[])
     // in milliseconds
     calculateTimeOfArrivalPerTile(bridge_tile_distance_from_detonation_array, time_of_arrival_per_tile, Array_Size);
 
+    // in milliseconds
     calculateLoadDurationPerTile(bridge_tile_distance_from_detonation_array, time_of_arrival_per_tile, Array_Size);
+
 
     double end_time = omp_get_wtime();
 
