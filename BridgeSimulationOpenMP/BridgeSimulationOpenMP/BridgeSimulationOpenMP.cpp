@@ -243,8 +243,7 @@ int main(int argc, char* argv[])
     //int threads = omp_get_max_threads();
 
     //TODO: for testing without the bash script, manually set the number of threads. 
-    int threads = 2
-        ;
+    int threads = 1;
     omp_set_num_threads(threads);
 
     
