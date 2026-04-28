@@ -7,23 +7,35 @@ dstFile="BridgeSimulationOpenMP/compiledSimulation"
 threshold=40    # TODO: adjust idle CPU threshold temp once hardware is decided
 logTemps=true
 expReps=20      # TODO: adjust exp. repetitions, if result variance too high
+visFile="visualization.py"
+venvDir=".venv"
+
+# --- COMMAND LINE ARGUMENTS ---
+
+# Use './experiment.sh false' to cancel visualization after experiment is done
+launchVisTool=${1}
+
+if [ -z "$launchVisTool" ]; then
+    launchVisTool=true
+fi
 
 # --- HELPER FUNCTIONS ---
 
 # Generates a CLI-based progress bar, visualizing experiment progress
-# Usage: cli_prog_bar <current_position> <max_position>
+# Usage: cli_prog_bar <current_position> <max_position> <descriptor_string>
 cli_prog_bar() {
     local currPos=$1
     local maxPos=$2
+    local descStr=$3
 
     # Determine how much bar should be filled based on progress made & terminal width
-    local width=$(($(tput cols) / 4))
+    local width=$((2 * $(tput cols) / 5))
     let "progress = currPos * 100 / maxPos"
     let "filled = progress * width / 100"
     let "empty = width - filled"
 
     # Build the progress bar string
-    printf "\rProgress: ["
+    printf "\r$descStr Progress: ["
     printf "%${filled}s" | tr ' ' '#'
     printf "%${empty}s" | tr ' ' '-'
     printf "] $progress%%"
@@ -124,7 +136,7 @@ tput civis
 # Trap on script interruption will 1) return cursor to shell and 2) resume any stopped processes
 trap "tput cnorm; resumeAll; echo; exit 3" INT TERM
 
-# --- MAIN EXPERIMENT LOOP
+# --- MAIN EXPERIMENT LOOP ---
 
 c=0
 
@@ -136,7 +148,7 @@ for n in "${threadAmounts[@]}"; do
     # Inner loop: repeat sim multiple times at each thread amount to determine average runtimes
     for ((i=1; i<=$expReps; i++)); do
         # Update progress bar on CLI
-        cli_prog_bar $c $((${#threadAmounts[@]} * $expReps))
+        cli_prog_bar $c $((${#threadAmounts[@]} * $expReps)) "Experiment"
 
         # Report thread amount & iteration number to log file
         echo "Threads: $OMP_NUM_THREADS Iteration: $i" >> "$logFile"
@@ -156,6 +168,7 @@ for n in "${threadAmounts[@]}"; do
                     break
                 else
                     suspendAll
+                    sleep 1
                 fi
             else
                 sleep 1
@@ -185,9 +198,69 @@ done
 echo "Experiment Completion: YES" >> "$logFile"
 
 # Inform terminal via stdout that experiment finished & where to find log file
-cli_prog_bar 100 100
+cli_prog_bar 100 100 "Experiment"
 echo ""
 echo "...Experiment complete."
 echo "Results saved: $logFile"
+
+# --- POST-EXPERIMENT EXTRA TASKS ---
+
+# 1. Launch the Python visualization tool, which will visualize the blast wave
+#    using pressure data stored into a contiguous binary file by the simulation.
+#    NOTE: Python3 and it's environment manager, venv, must be installed by user.
+#    If operating from a fresh Python installation with no packages installed,
+#    any packages needed for the visualization will be automatically installed.
+
+# Skip next steps if visualization after simulation feature diabled
+if [ "$launchVisTool" == "false" ]; then
+    tput cnorm
+    exit 0
+fi
+
+echo "Starting the saved results visualization tool..."
+
+# Check that python installed
+if ! command -v python3 &> /dev/null; then
+    echo "Error: Python3 is missing, and must be installed to run the visualization tool."
+    tput cnorm
+    exit 4
+fi
+
+# Try to launch the visualization tool now that Python hard dependency confirmed
+python3 "$visFile" &> /dev/null
+
+# Check if visualizaton tool failed to start due to ModuelNotFound error
+# This means the necessary Python packages (soft dependencies) are missing
+if [ $? -eq 1 ]; then
+    echo "Warning: necessary Python packages are missing. Installing now..."
+
+    # Check that Python virtual environment module installed
+    if ! python3 -m venv --help &> /dev/null; then
+        echo "Error: Python venv module is missing, and must be installed to manage Python packages."
+        tput cnorm
+        exit 5
+    fi
+
+    # Create & activate virtual Python environment in the git-ignored folder name
+    cli_prog_bar 0 4 "Installation"
+    python3 -m venv "$venvDir" --prompt omp
+    source "$venvDir/bin/activate"
+    cli_prog_bar 1 4 "Installation"
+
+    # Use built-in Python package manager to install the necessary packages to virtual env.
+    python -m pip install PySimpleGUI==4.60.5.1 --quiet
+    cli_prog_bar 2 4 "Installation"
+    python -m pip install numpy --quiet
+    cli_prog_bar 3 4 "Installation"
+    python -m pip install seaborn --quiet
+    cli_prog_bar 4 4 "Installation"
+    echo ""
+
+    # Restart visualization tool w/ installed packages, then deactivate virtual env. after
+    echo "...Installation of Python packages complete. Retrying visualization now."
+    python3 "$visFile" &> /dev/null
+    deactivate
+fi
+
 tput cnorm
 exit 0

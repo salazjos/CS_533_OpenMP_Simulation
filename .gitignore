@@ -3,3 +3,6 @@
 BridgeSimulationOpenMP/compiledSimulation
 BridgeSimulationOpenMP/mockSimulation.py
 BridgeSimulationOpenMP/mockData.npz
+BridgeSimulationOpenMP/mockData.npy
+BridgeSimulationOpenMP/mockData.bin
+.venv/
