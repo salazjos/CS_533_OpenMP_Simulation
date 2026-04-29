@@ -11,7 +11,7 @@ int - detonation height (feet)
 int - detonation x location (feet)
 int - detonation y location (feet)
 int - thread amount
-int - trial amount
+int - does produce binary float file (0 - false, 1 - true)
 */
 
 int main(int argc, char* argv[])
@@ -29,8 +29,8 @@ int main(int argc, char* argv[])
     int det_x_ft = std::atoi(argv[4]);
     int det_y_ft = std::atoi(argv[5]);
     int thread_amount = std::atoi(argv[6]);
-    int trial_amount = std::atoi(argv[7]);
-
+    bool produceBinaryFile = std::atoi(argv[7]) == 1;
+    
     BridgeSim sim(
         bridge_length_ft,
         bridge_width_ft,
@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
         det_x_ft,
         det_y_ft,
         thread_amount,
-        trial_amount
+        produceBinaryFile
     );
     
     sim.beginSimulation();
