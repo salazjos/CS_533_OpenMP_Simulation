@@ -13,6 +13,17 @@ expReps=20      # TODO: adjust exp. repetitions, if result variance too high
 visFile="visualization.py"
 venvDir=".venv"
 
+# --- SIMULATION PARAMETERS ---
+
+simLength=900
+simWidth=100
+xMin=100
+xMax=800
+yMin=25
+yMax=75
+hMin=30
+hMax=50
+
 # --- COMMAND LINE ARGUMENTS ---
 
 # Use './experiment.sh true' to enable visualization after experiment is done
@@ -177,9 +188,22 @@ for n in "${threadAmounts[@]}"; do
                 sleep 1
             fi
         done
+
+        # Determine random detonation location (dh, dx, dy) for this sim. run
+        dh=$(( RANDOM % (hMax - hMin + 1) + hMin ))
+        dx=$(( RANDOM % (xMax - xMin) + xMin ))
+        dy=$(( RANDOM % (yMax - yMin) + yMin ))
+
+        # Save sim. pressure data for first run (c == 0), otherwise skip
+        saveData=0
+
+        if [ "$c" -eq 0 ]; then
+            saveData=1
+        fi
         
         # Execute the simulation command & determine the elapsed time
-        runtime=$(eval "$dstFile")
+        # Sim. CL args: <length_ft> <width_ft> <det_height_ft> <det_x_ft> <det_y_ft> <threads> <save_data>
+        runtime=$(eval "$dstFile $simLength $simWidth $dh $dx $dy $n $saveData")
 
         # Report the recorded elapsed time to the log file
         echo "Elapsed Simulation Time (s): $runtime" >> "$logFile"
