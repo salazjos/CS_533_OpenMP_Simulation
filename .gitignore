@@ -5,4 +5,5 @@ BridgeSimulationOpenMP/mockSimulation.py
 BridgeSimulationOpenMP/mockData.npz
 BridgeSimulationOpenMP/mockData.npy
 BridgeSimulationOpenMP/mockData.bin
+BridgeSimulationOpenMP/pressureData.bin
 .venv/

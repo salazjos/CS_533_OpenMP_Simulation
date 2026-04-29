@@ -7,8 +7,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-# TODO: switch file destination to actual data path once real sim. complete
-DATA_FNAME = "BridgeSimulationOpenMP/mockData.bin"
+# Path to file containing binary pressure data created by sim. program
+DATA_FNAME = "BridgeSimulationOpenMP/pressureData.bin"
 
 # Constant bridge dimensions from CPP simulation program
 X_IN = 900 * 12
