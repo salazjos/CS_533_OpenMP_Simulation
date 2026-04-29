@@ -2,8 +2,11 @@
 
 # --- CONSTANTS ---
 
-srcFile="BridgeSimulationOpenMP/BridgeSimulationOpenMP/BridgeSimulationOpenMP.cpp"
-dstFile="BridgeSimulationOpenMP/compiledSimulation"
+srcDir="BridgeSimulationOpenMP/BridgeSimulationOpenMP"
+srcFileMain="$srcDir/BridgeSimulationOpenMP.cpp"
+srcFileUtil="$srcDir/BridgeSim.cpp"
+dstDir="BridgeSimulationOpenMP"
+dstFile="$dstDir/compiledSimulation"
 threshold=40    # TODO: adjust idle CPU threshold temp once hardware is decided
 logTemps=true
 expReps=20      # TODO: adjust exp. repetitions, if result variance too high
@@ -12,11 +15,11 @@ venvDir=".venv"
 
 # --- COMMAND LINE ARGUMENTS ---
 
-# Use './experiment.sh false' to cancel visualization after experiment is done
+# Use './experiment.sh true' to enable visualization after experiment is done
 launchVisTool=${1}
 
 if [ -z "$launchVisTool" ]; then
-    launchVisTool=true
+    launchVisTool=false
 fi
 
 # --- HELPER FUNCTIONS ---
@@ -82,7 +85,7 @@ resumeAll() {
 # --- PRE-EXPERIMENT SETUP TASKS ---
 
 # Compile the simulation executable from source (abort if any errors)
-g++ -std=c++20 -fopenmp -o "$dstFile" "$srcFile"
+g++ -std=c++20 -fopenmp "$srcFileMain" "$srcFileUtil" -o "$dstFile"
 
 if [ $? -ne 0 ] || [ ! -f "$dstFile" ]; then
     echo "Error: unable to compile simulation source file. Aborting experiment..."
