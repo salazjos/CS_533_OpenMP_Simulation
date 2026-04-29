@@ -24,18 +24,32 @@ BridgeSim::BridgeSim(int bridge_length, int bridge_width,
 
 void BridgeSim::beginSimulation() {
 
+    std::ofstream outFile("pressureData.bin", std::ios::out | std::ios::binary);
+    if (outFile.is_open()) {
+        //First line in the file is the array size.
+        outFile.write(reinterpret_cast<const char*>(&total_Tiles), sizeof(int));
+    }
+
     double start_time = omp_get_wtime();
 
     preCompute();
 
+    //do-while loop
+
+
+
+    
+    
+    writePressurePerTileToBinaryFile(&outFile, active_pressue_per_tile);
+
+    if (outFile.is_open())
+        outFile.close();
+
     double end_time = omp_get_wtime();
-
     double elapsed_time = end_time - start_time;
-
     // TODO: the bash script should see this. 
     // example: output=$(./bridgeSim)
     std::cout << elapsed_time << std::endl;
-
 }
 
 void BridgeSim::preCompute() {
@@ -338,6 +352,13 @@ void BridgeSim::calculateTimeOfArrivalPerTile(const std::unique_ptr<float[]>& di
         float x = (distanceArr[i] * 0.3048f) / std::cbrtf(Charge_Weight_Pounds);
         float value = result(x);
         outArray[i] = value;
+    }
+}
+
+
+void BridgeSim::writePressurePerTileToBinaryFile(std::ofstream *filePtr, const std::unique_ptr<float[]>& arr){
+    if (filePtr && filePtr->is_open()) {
+        filePtr->write(reinterpret_cast<const char*>(arr.get()), total_Tiles * sizeof(float));
     }
 }
 

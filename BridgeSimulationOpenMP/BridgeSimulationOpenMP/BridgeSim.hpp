@@ -3,6 +3,8 @@
 #pragma once
 
 #include <memory>
+#include <fstream>
+#include <span>
 
 class BridgeSim
 {
@@ -57,6 +59,8 @@ private:
 		const std::unique_ptr<float[]> &time_of_departure_per_tile,
 		std::unique_ptr<float[]> &active_pressue_per_tile);
 
+	void writePressurePerTileToBinaryFile(std::ofstream *file, const std::unique_ptr<float[]>& arr);
+
 	std::unique_ptr<float[]> bridge_tile_distance_from_detonation_array;
 	std::unique_ptr<float[]> blast_to_tile_theta_array;
 	std::unique_ptr<float[]> blast_tile_ground_distance_to_detonation_array;
@@ -78,5 +82,6 @@ private:
 	int thread_Amount = 0;
 
 	bool doesProduceBinaryFloatFile = false;
+
 };
 
