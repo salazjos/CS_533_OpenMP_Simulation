@@ -80,7 +80,7 @@ private:
 	int total_Tiles = 0;
 
 	int thread_Amount = 0;
-
+	float firstTimeOfArrival = 0.0f;
 	bool doesProduceBinaryFloatFile = false;
 
 };

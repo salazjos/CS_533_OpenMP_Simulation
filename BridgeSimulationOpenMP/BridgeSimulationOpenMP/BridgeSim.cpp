@@ -6,6 +6,8 @@
 #include <cmath>
 #include <numbers>
 #include <iostream>
+#include <algorithm>
+#include <ranges>
 
 BridgeSim::BridgeSim(int bridge_length, int bridge_width,
     int detonation_height, int detonation_x, int detonation_y, int thread_Amount, bool produceBinaryFloatFile)
@@ -87,6 +89,10 @@ void BridgeSim::preCompute() {
     calculateLoadDurationPerTile(
         bridge_tile_distance_from_detonation_array, 
         time_of_arrival_per_tile);
+
+    // Determine the first time of arrival
+    std::span<float> view(time_of_arrival_per_tile.get(), total_Tiles);
+    firstTimeOfArrival = *std::ranges::min_element(view);
 }
 
 void BridgeSim::allocateArray(std::unique_ptr<float[]>& ptr) {
@@ -124,11 +130,11 @@ void BridgeSim::setup() {
 }
 
 void BridgeSim::computeDistanceBlastDetonationToTiles(std::unique_ptr<float[]>& outArray) {
-    int Width = bridge_Width_Inches;
-    const int total = total_Tiles;
+    const int Width = bridge_Width_Inches;
+    const int Total = total_Tiles;
 
-    #pragma omp parallel for default(none) shared(total, Width, outArray)
-    for (int i = 0; i < total; ++i){
+    #pragma omp parallel for default(none) shared(Total, Width, outArray)
+    for (int i = 0; i < Total; ++i){
         int x = i % Width;
         int y = i / Width;
 
@@ -141,11 +147,11 @@ void BridgeSim::computeDistanceBlastDetonationToTiles(std::unique_ptr<float[]>& 
 }
 
 void BridgeSim::computeGroundDistanceDetonationToTiles(std::unique_ptr<float[]>& outArray) {
-    int Width = bridge_Width_Inches;
-    const int total = total_Tiles;
+    const int Width = bridge_Width_Inches;
+    const int Array_Size = total_Tiles;
 
-    #pragma omp parallel for default(none) shared(total, Width, outArray)
-    for (int i = 0; i < total; ++i){
+    #pragma omp parallel for default(none) shared(Array_Size, Width, outArray)
+    for (int i = 0; i < Array_Size; ++i){
         int x = i % Width;
         int y = i / Width;
 
