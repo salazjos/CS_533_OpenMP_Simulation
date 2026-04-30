@@ -83,5 +83,6 @@ private:
 
 	bool doesProduceBinaryFloatFile = false;
 
+	std::string outFname = "pressureData.bin";
 };
 

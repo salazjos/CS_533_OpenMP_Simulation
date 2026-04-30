@@ -24,7 +24,10 @@ BridgeSim::BridgeSim(int bridge_length, int bridge_width,
 
 void BridgeSim::beginSimulation() {
 
-    std::ofstream outFile("pressureData.bin", std::ios::out | std::ios::binary);
+    std::ofstream outFile;
+    
+    if (doesProduceBinaryFloatFile)
+        outFile.open(outFname, std::ios::out | std::ios::binary);
 
     double start_time = omp_get_wtime();
 
@@ -38,7 +41,8 @@ void BridgeSim::beginSimulation() {
     calculatePressurePerTileForGivenTimeValue(current_time, peak_pressure_per_tile, time_of_arrival_per_tile, 
         load_duration_per_tile, time_of_departure_per_tile, active_pressure_per_tile);
         
-    writePressurePerTileToBinaryFile(&outFile, active_pressure_per_tile);
+    if (doesProduceBinaryFloatFile)
+        writePressurePerTileToBinaryFile(&outFile, active_pressure_per_tile);
 
     if (outFile.is_open())
         outFile.close();
@@ -98,6 +102,10 @@ void BridgeSim::allocateArray(std::unique_ptr<float[]>& ptr) {
 }
 
 void BridgeSim::setup() {
+    // Include OMP folder in output file path if launched by script
+    std::string expectedValue = "Script";
+    if (expectedValue.compare(std::getenv("EXP")) == 0)
+        outFname = "BridgeSimulationOpenMP/" + outFname;
     
     omp_set_num_threads(thread_Amount);
     try {
