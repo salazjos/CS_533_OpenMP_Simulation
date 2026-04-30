@@ -103,8 +103,9 @@ void BridgeSim::allocateArray(std::unique_ptr<float[]>& ptr) {
 
 void BridgeSim::setup() {
     // Include OMP folder in output file path if launched by script
-    std::string expectedValue = "Script";
-    if (expectedValue.compare(std::getenv("EXP")) == 0)
+    const char* expFlag = std::getenv("EXP");
+    std::string expValue = expFlag == nullptr ? "" : std::string(expFlag);
+    if (expValue.compare("Script") == 0)
         outFname = "BridgeSimulationOpenMP/" + outFname;
     
     omp_set_num_threads(thread_Amount);
