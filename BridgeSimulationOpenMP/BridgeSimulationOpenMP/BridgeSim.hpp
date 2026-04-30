@@ -50,14 +50,14 @@ private:
 
 	bool isSimulationInProgress(const std::unique_ptr<float[]>& arr);
 
-	//TODO Deigo
-	// I think this is what you need. fill in the last array. I'll write that array to the binary file for every time step.
+	// Need to pass current time as float to the function as well- passed in by main loop
 	void calculatePressurePerTileForGivenTimeValue(
-		const std::unique_ptr<float[]> &peak_pressure_per_tile,
-		const std::unique_ptr<float[]> &time_of_arrival_per_tile,
-		const std::unique_ptr<float[]> &load_duration_per_tile,
-		const std::unique_ptr<float[]> &time_of_departure_per_tile,
-		std::unique_ptr<float[]> &active_pressue_per_tile);
+		const float currentTime, 
+    	const std::unique_ptr<float[]>& peakPressureArr,
+    	const std::unique_ptr<float[]>& arrivalTimeArr, 
+    	const std::unique_ptr<float[]>& loadDurationArr,
+		const std::unique_ptr<float[]>& departureTimeArr, 
+    	std::unique_ptr<float[]>& outArr);
 
 	void writePressurePerTileToBinaryFile(std::ofstream *file, const std::unique_ptr<float[]>& arr);
 
@@ -70,7 +70,7 @@ private:
 	std::unique_ptr<float[]> time_of_arrival_per_tile;
 	std::unique_ptr<float[]> load_duration_per_tile;
 	std::unique_ptr<float[]> time_of_departure_per_tile;
-	std::unique_ptr<float[]> active_pressue_per_tile;
+	std::unique_ptr<float[]> active_pressure_per_tile;
 
 	int bridge_Length_Inches = 0; //= 900;
 	int bridge_Width_Inches = 0; //= 100;
