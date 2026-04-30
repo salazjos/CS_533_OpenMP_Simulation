@@ -135,6 +135,9 @@ if [ -z "$tempFile" ]; then
     fi
 fi
 
+# Set custom "EXP" env. variable: allows simulation to differentiate b/w script or user execution
+export EXP="Script"
+
 # Initialize log file w/ current timestamp to guarantee unique filename
 logFile="Experiment_$(date +"%Y%m%d-%H%M%S").log"
 echo "Experiment: running simulation with OpenMP multi-threading up to $maxThreads threads" > "$logFile"
@@ -147,8 +150,8 @@ startTime=$(date +%s)
 # Hide cursor since script requires no input (trap to have cursor reappear if stopped)
 tput civis
 
-# Trap on script interruption will 1) return cursor to shell and 2) resume any stopped processes
-trap "tput cnorm; resumeAll; echo; exit 3" INT TERM
+# Trap on script interrupt will 1) return cursor to shell 2) resume any stopped processes 3) remove EXP env. flag
+trap "tput cnorm; resumeAll; export EXP=""; echo; exit 3" INT TERM
 
 # --- MAIN EXPERIMENT LOOP ---
 
@@ -232,7 +235,10 @@ echo "Results saved: $logFile"
 
 # --- POST-EXPERIMENT EXTRA TASKS ---
 
-# 1. Launch the Python visualization tool, which will visualize the blast wave
+# 1. remove EXP env. variable now that experiment is complete
+export EXP=""
+
+# 2. Launch the Python visualization tool, which will visualize the blast wave
 #    using pressure data stored into a contiguous binary file by the simulation.
 #    NOTE: Python3 and it's environment manager, venv, must be installed by user.
 #    If operating from a fresh Python installation with no packages installed,
