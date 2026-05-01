@@ -99,7 +99,7 @@ void BridgeSim::preCompute() {
     // in milliseconds
     calculateLoadDurationPerTile(
         slanted_distance_from_detonation_array,
-        time_of_arrival_per_tile);
+        load_duration_per_tile);
 
     // sum of arrivel & duration times
     calculateTimeOfDeparturePerTile(
@@ -107,14 +107,9 @@ void BridgeSim::preCompute() {
         load_duration_per_tile, 
         time_of_departure_per_tile);
 
-    // Determine the first time of arrival value
-    
-    //firstTimeOfArrival = *std::ranges::min_element(view);
-    //std::cout << "first time of arrival: " << firstTimeOfArrival << "\n";
-
     std::span<float> view(time_of_departure_per_tile.get(), total_Tiles);
-    lastTimeOfArrival = *std::ranges::max_element(view);
-    std::cout << "last time of arrival: " << lastTimeOfArrival << "\n";
+    lastTimeOfDeparture = *std::ranges::max_element(view);
+    std::cout << "last time of departure: " << lastTimeOfDeparture << "\n";
 }
 
 void BridgeSim::allocateArray(std::unique_ptr<float[]>& ptr) {
@@ -202,14 +197,6 @@ void BridgeSim::computeGroundDistanceDetonationToTiles(std::unique_ptr<float[]>&
 
         outArray[i] = sqrtf(dx * dx + dy * dy);
     }
-
-    std::span<float> view(outArray.get(), total_Tiles);
-    float min = *std::ranges::min_element(view);
-    std::cout << "min: " << min << "\n";
-    /*int max = 100;
-    for (int i = 0; i < max; ++i) {
-        std::cout << "Z1: " << outArray[i] / 12 << "\n";
-    }*/
 }
 
 void BridgeSim::computeAngleFromDetenationToTile(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& outArray) {
@@ -272,7 +259,7 @@ bool BridgeSim::continueSimulation(const std::unique_ptr<float[]>& arr, const fl
             ++numTiles;
     }
 
-    return currentTime <= lastTimeOfArrival && numTiles > 0;
+    return currentTime <= lastTimeOfDeparture && numTiles > 0;
 }
 
 void BridgeSim::calculateTimeOfDeparturePerTile(const std::unique_ptr<float[]>& time_of_arrival,
