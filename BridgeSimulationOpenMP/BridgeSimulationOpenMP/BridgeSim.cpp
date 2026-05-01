@@ -40,20 +40,16 @@ void BridgeSim::beginSimulation() {
         outFile.open(outFname, std::ios::out | std::ios::binary);
 
     //begin simulation----------------------------------------------------------
-    //float current_time = 0.0f;
-    
-    //double start_time = omp_get_wtime();
+    float current_time = 0.0f;
+    double start_time = omp_get_wtime();
     preCompute();
 
-    
-
-
-    /*while (continueSimulation(active_pressure_per_tile, current_time)) {
+    while (continueSimulation(active_pressure_per_tile, current_time)) {
         
         calculatePressurePerTileForGivenTimeValue(current_time, peak_pressure_per_tile, time_of_arrival_per_tile,
             load_duration_per_tile, time_of_departure_per_tile, active_pressure_per_tile);
 
-        current_time += Milli_Second_Value;
+        current_time += Half_Milli_Second_Value;
 
         if (doesProduceBinaryFloatFile)
             writePressurePerTileToBinaryFile(&outFile, active_pressure_per_tile);
@@ -64,7 +60,7 @@ void BridgeSim::beginSimulation() {
 
 
     if (outFile.is_open())
-        outFile.close();*/
+        outFile.close();
 }
 
 void BridgeSim::preCompute() {
@@ -93,10 +89,8 @@ void BridgeSim::preCompute() {
         impulse_pressure_value_per_tile,
         slanted_distance_from_detonation_array,
         blast_tile_basic_peak_pressure,
-        peak_pressure_per_tile
-    );
+        peak_pressure_per_tile);
        
-
     // in milliseconds
     calculateTimeOfArrivalPerTile(
         slanted_distance_from_detonation_array,
@@ -114,11 +108,12 @@ void BridgeSim::preCompute() {
         time_of_departure_per_tile);
 
     // Determine the first time of arrival value
-    std::span<float> view(time_of_arrival_per_tile.get(), total_Tiles);
-    firstTimeOfArrival = *std::ranges::min_element(view);
-    std::cout << "first time of arrival: " << firstTimeOfArrival << "\n";
+    
+    //firstTimeOfArrival = *std::ranges::min_element(view);
+    //std::cout << "first time of arrival: " << firstTimeOfArrival << "\n";
 
-    float lastTimeOfArrival = *std::ranges::max_element(view);
+    std::span<float> view(time_of_departure_per_tile.get(), total_Tiles);
+    lastTimeOfArrival = *std::ranges::max_element(view);
     std::cout << "last time of arrival: " << lastTimeOfArrival << "\n";
 }
 
@@ -277,7 +272,7 @@ bool BridgeSim::continueSimulation(const std::unique_ptr<float[]>& arr, const fl
             ++numTiles;
     }
 
-    return currentTime > firstTimeOfArrival && numTiles > 0;
+    return currentTime <= lastTimeOfArrival && numTiles > 0;
 }
 
 void BridgeSim::calculateTimeOfDeparturePerTile(const std::unique_ptr<float[]>& time_of_arrival,

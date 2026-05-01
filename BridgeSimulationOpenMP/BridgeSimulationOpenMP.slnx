@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="BridgeSimulationOpenMP/BridgeSimulationOpenMP.vcxproj" Id="a1b4f0d2-6126-48a0-a578-a1343a974111" />
+</Solution>
