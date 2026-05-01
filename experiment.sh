@@ -206,7 +206,20 @@ for n in "${threadAmounts[@]}"; do
         
         # Execute the simulation command & determine the elapsed time
         # Sim. CL args: <length_ft> <width_ft> <det_height_ft> <det_x_ft> <det_y_ft> <threads> <save_data>
-        runtime=$(eval "$dstFile $simLength $simWidth $dh $dx $dy $n $saveData")
+        errFile="Errors_$(date +"%Y%m%d-%H%M%S").log"
+        runtime=$(eval "$dstFile $simLength $simWidth $dh $dx $dy $n $saveData" 2> "$errFile")
+
+        # Check for any simulation errors & abort if one occurred
+        if [ $? -ne 0 ]; then
+            echo ""
+            echo "Error: simulation exited with status 1. Output saved to: $errFile"
+            tput cnorm
+            resumeAll
+            export EXP=""
+            exit 6
+        else
+            rm "$errFile"
+        fi
 
         # Report the recorded elapsed time to the log file
         echo "Elapsed Simulation Time (s): $runtime" >> "$logFile"
