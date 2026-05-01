@@ -83,12 +83,12 @@ private:
 	int total_Tiles = 0;
 
 	int thread_Amount = 0;
-	float lastTimeOfDeparture = 0.0f;
-	const float Charge_Weight_Pounds = 1000.0f;
-
 	bool doesProduceBinaryFloatFile = false;
 
-	const float Half_Milli_Second_Value = 0.5f;
+	float firstTimeOfArrival = 0.0f;
+	float lastTimeOfDeparture = 0.0f;
+	const float Charge_Weight_Pounds = 1000.0f;
+	const float timestepInterval = 1.0f;
 
 	std::string outFname = "pressureData.bin";
 };

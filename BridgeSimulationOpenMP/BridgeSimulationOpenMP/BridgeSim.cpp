@@ -49,11 +49,13 @@ void BridgeSim::beginSimulation() {
         calculatePressurePerTileForGivenTimeValue(current_time, peak_pressure_per_tile, time_of_arrival_per_tile,
             load_duration_per_tile, time_of_departure_per_tile, active_pressure_per_tile);
 
-        current_time += Half_Milli_Second_Value;
+        current_time += timestepInterval;
 
         if (doesProduceBinaryFloatFile)
             writePressurePerTileToBinaryFile(&outFile, active_pressure_per_tile);
     }
+
+    std::cout << "time simulation stopped: " << current_time << "\n";
 
     double end_time = omp_get_wtime();
     printElapsedTime(start_time, end_time);
@@ -107,8 +109,12 @@ void BridgeSim::preCompute() {
         load_duration_per_tile, 
         time_of_departure_per_tile);
 
-    std::span<float> view(time_of_departure_per_tile.get(), total_Tiles);
-    lastTimeOfDeparture = *std::ranges::max_element(view);
+    std::span<float> arriveView(time_of_arrival_per_tile.get(), total_Tiles);
+    firstTimeOfArrival = *std::ranges::min_element(arriveView);
+    std::cout << "first time of arrival: " << firstTimeOfArrival << "\n";
+
+    std::span<float> departView(time_of_departure_per_tile.get(), total_Tiles);
+    lastTimeOfDeparture = *std::ranges::max_element(departView);
     std::cout << "last time of departure: " << lastTimeOfDeparture << "\n";
 }
 
@@ -179,7 +185,9 @@ void BridgeSim::computeDistanceBlastDetonationToTiles(std::unique_ptr<float[]>& 
         double dy = y - detonation_Y_Location;
         double dz = detonation_Height_Inches;
 
-        outArray[i] = static_cast<float>(std::sqrt(dx * dx + dy * dy + dz * dz));
+        double dist_ft = std::sqrt(dx * dx + dy * dy + dz * dz) / 12.0;
+
+        outArray[i] = static_cast<float>(dist_ft);
     }   
 }
 
@@ -195,7 +203,7 @@ void BridgeSim::computeGroundDistanceDetonationToTiles(std::unique_ptr<float[]>&
         float dx = x - detonation_X_Location;
         float dy = y - detonation_Y_Location;
 
-        outArray[i] = sqrtf(dx * dx + dy * dy);
+        outArray[i] = sqrtf(dx * dx + dy * dy) / 12.0f;
     }
 }
 
@@ -253,13 +261,19 @@ bool BridgeSim::continueSimulation(const std::unique_ptr<float[]>& arr, const fl
     const int total = total_Tiles;
     int numTiles = 0;
 
+    if (currentTime <= firstTimeOfArrival + timestepInterval)
+        return true;
+
+    if (currentTime > lastTimeOfDeparture)
+        return false;
+
     #pragma omp parallel for schedule(dynamic) shared(total, arr) reduction(+:numTiles)
     for (int i = 0; i < total; ++i) {
         if (arr[i] > 0.0f)
             ++numTiles;
     }
 
-    return currentTime <= lastTimeOfDeparture && numTiles > 0;
+    return numTiles > 0;
 }
 
 void BridgeSim::calculateTimeOfDeparturePerTile(const std::unique_ptr<float[]>& time_of_arrival,
