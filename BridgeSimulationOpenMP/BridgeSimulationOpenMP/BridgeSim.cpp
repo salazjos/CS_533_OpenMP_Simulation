@@ -1,4 +1,5 @@
 //UNM CS 533
+#define _CRT_SECURE_NO_WARNINGS
 
 #include "BridgeSim.hpp"
 
@@ -6,6 +7,8 @@
 #include <cmath>
 #include <numbers>
 #include <iostream>
+#include <ranges>
+#include <algorithm>
 
 BridgeSim::BridgeSim(int bridge_length, int bridge_width,
     int detonation_height, int detonation_x, int detonation_y, int thread_Amount, bool produceBinaryFloatFile)
@@ -24,61 +27,71 @@ BridgeSim::BridgeSim(int bridge_length, int bridge_width,
 
 void BridgeSim::beginSimulation() {
 
+    auto printElapsedTime = [](double start_time, double end_time){
+        double elapsed_time = end_time - start_time;
+        // TODO: the bash script should see this. 
+        // example: output=$(./bridgeSim)
+        std::cout << elapsed_time << std::endl;
+    };
+
     std::ofstream outFile;
     
     if (doesProduceBinaryFloatFile)
         outFile.open(outFname, std::ios::out | std::ios::binary);
 
-    double start_time = omp_get_wtime();
-
+    //begin simulation----------------------------------------------------------
+    //float current_time = 0.0f;
+    
+    //double start_time = omp_get_wtime();
     preCompute();
 
-    //do-while loop
+    
 
 
-    // TODO: move active pressure update & file write into do-while loop
-    float current_time = 0.0f;
-    calculatePressurePerTileForGivenTimeValue(current_time, peak_pressure_per_tile, time_of_arrival_per_tile, 
-        load_duration_per_tile, time_of_departure_per_tile, active_pressure_per_tile);
+    /*while (continueSimulation(active_pressure_per_tile, current_time)) {
         
-    if (doesProduceBinaryFloatFile)
-        writePressurePerTileToBinaryFile(&outFile, active_pressure_per_tile);
+        calculatePressurePerTileForGivenTimeValue(current_time, peak_pressure_per_tile, time_of_arrival_per_tile,
+            load_duration_per_tile, time_of_departure_per_tile, active_pressure_per_tile);
 
-    if (outFile.is_open())
-        outFile.close();
+        current_time += Milli_Second_Value;
+
+        if (doesProduceBinaryFloatFile)
+            writePressurePerTileToBinaryFile(&outFile, active_pressure_per_tile);
+    }
 
     double end_time = omp_get_wtime();
-    double elapsed_time = end_time - start_time;
-    // TODO: the bash script should see this. 
-    // example: output=$(./bridgeSim)
-    std::cout << elapsed_time << std::endl;
+    printElapsedTime(start_time, end_time);
+
+
+    if (outFile.is_open())
+        outFile.close();*/
 }
 
 void BridgeSim::preCompute() {
     //This should be D1 from the diagram
     computeDistanceBlastDetonationToTiles(bridge_tile_distance_from_detonation_array);
 
-    //This should be Z1 from the diagram
-    computeGroundDistanceDetonationToTiles(blast_tile_ground_distance_to_detonation_array);
-
     //This should be A1 from the diagram
     computeAngleFromDetenationToTile(
-        bridge_tile_distance_from_detonation_array, 
+        bridge_tile_distance_from_detonation_array,
         blast_to_tile_theta_array);
+
+    //This should be Z1 from the diagram
+    //computeGroundDistanceDetonationToTiles(blast_tile_ground_distance_to_detonation_array);
+
+    calculateImpulsePressureValue(
+        bridge_tile_distance_from_detonation_array,
+        impulse_pressure_value_per_tile);
 
     //This should implement the third equation
     computeBasicPeakPressureForTiles(
         bridge_tile_distance_from_detonation_array, 
         blast_tile_basic_peak_pressure);
 
-    calculateImpulseValue(
-        bridge_tile_distance_from_detonation_array, 
-        impulse_value_per_tile);
-
     calculatePeakPressuePerTile(
         bridge_tile_distance_from_detonation_array, 
         blast_tile_basic_peak_pressure, 
-        impulse_value_per_tile, peak_pressure_per_tile);
+        impulse_pressure_value_per_tile, peak_pressure_per_tile);
 
     // in milliseconds
     calculateTimeOfArrivalPerTile(
@@ -95,6 +108,14 @@ void BridgeSim::preCompute() {
         time_of_arrival_per_tile, 
         load_duration_per_tile, 
         time_of_departure_per_tile);
+
+    // Determine the first time of arrival value
+    std::span<float> view(time_of_arrival_per_tile.get(), total_Tiles);
+    firstTimeOfArrival = *std::ranges::min_element(view);
+    std::cout << "first time of arrival: " << firstTimeOfArrival << "\n";
+
+    float lastTimeOfArrival = *std::ranges::max_element(view);
+    std::cout << "last time of arrival: " << lastTimeOfArrival << "\n";
 }
 
 void BridgeSim::allocateArray(std::unique_ptr<float[]>& ptr) {
@@ -108,13 +129,16 @@ void BridgeSim::setup() {
     if (expValue.compare("Script") == 0)
         outFname = "BridgeSimulationOpenMP/" + outFname;
     
+    // Set the number of threads
     omp_set_num_threads(thread_Amount);
+    
+    // Allocate memeory for all arrays.
     try {
         allocateArray(bridge_tile_distance_from_detonation_array);
         allocateArray(blast_to_tile_theta_array);
         allocateArray(blast_tile_ground_distance_to_detonation_array);
         allocateArray(blast_tile_basic_peak_pressure);
-        allocateArray(impulse_value_per_tile);
+        allocateArray(impulse_pressure_value_per_tile);
         allocateArray(peak_pressure_per_tile);
         allocateArray(time_of_arrival_per_tile);
         allocateArray(load_duration_per_tile);
@@ -136,21 +160,32 @@ void BridgeSim::setup() {
     }
 }
 
+void BridgeSim::computeScaledDistance(const std::unique_ptr<float[]>& slantDistanceArr, std::unique_ptr<float[]>& outArray) {
+    float charge_weight = Charge_Weight_Pounds;
+    const int total = total_Tiles;
+    
+    #pragma omp parallel for default(none) shared(total, charge_weight, slantDistanceArr, outArray)
+    for (int i = 0; i < total; ++i) {
+        float Z = slantDistanceArr[i] / std::cbrtf(Charge_Weight_Pounds);
+        outArray[i] = Z;
+    }
+}
+
 void BridgeSim::computeDistanceBlastDetonationToTiles(std::unique_ptr<float[]>& outArray) {
-    int Width = bridge_Width_Inches;
+    int Length = bridge_Length_Inches;
     const int total = total_Tiles;
 
-    #pragma omp parallel for default(none) shared(total, Width, outArray)
+    #pragma omp parallel for default(none) shared(total, Length, outArray)
     for (int i = 0; i < total; ++i){
-        int x = i % Width;
-        int y = i / Width;
+        int x = i % Length;
+        int y = i / Length;
 
         double dx = x - detonation_X_Location;
         double dy = y - detonation_Y_Location;
         double dz = detonation_Height_Inches;
 
         outArray[i] = static_cast<float>(std::sqrt(dx * dx + dy * dy + dz * dz));
-    }
+    }   
 }
 
 void BridgeSim::computeGroundDistanceDetonationToTiles(std::unique_ptr<float[]>& outArray) {
@@ -167,6 +202,14 @@ void BridgeSim::computeGroundDistanceDetonationToTiles(std::unique_ptr<float[]>&
 
         outArray[i] = sqrtf(dx * dx + dy * dy);
     }
+
+    std::span<float> view(outArray.get(), total_Tiles);
+    float min = *std::ranges::min_element(view);
+    std::cout << "min: " << min << "\n";
+    /*int max = 100;
+    for (int i = 0; i < max; ++i) {
+        std::cout << "Z1: " << outArray[i] / 12 << "\n";
+    }*/
 }
 
 void BridgeSim::computeAngleFromDetenationToTile(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& outArray) {
@@ -179,7 +222,7 @@ void BridgeSim::computeAngleFromDetenationToTile(const std::unique_ptr<float[]>&
         float ratio = dz / distanceArr[i];
         ratio = fminf(1.0f, fmaxf(-1.0f, ratio));
         float theta = acosf(ratio);
-        float degrees = theta * 180.0f / std::numbers::pi;
+        float degrees = theta * (180.0f / std::numbers::pi_v<float>);
         outArray[i] = degrees;
     }
 }
@@ -193,8 +236,9 @@ void BridgeSim::computeBasicPeakPressureForTiles(const std::unique_ptr<float[]>&
 
     #pragma omp parallel for default(none) shared(total, distanceArr, outArray, Kg_Conversion_Rate, Charge_Weight_Pounds, W_Kg)
     for (int i = 0; i < total; ++i) {
-        float distance_in_meters = distanceArr[i] / 0.0254;
-        float Z = distance_in_meters / std::cbrtf(W_Kg);
+        //float distance_in_meters = distanceArr[i] / 0.0254;
+        float Z = distanceArr[i] / std::cbrtf(Charge_Weight_Pounds);
+        //float Z = distance_in_meters / std::cbrtf(W_Kg);
         float kPa = (1772 / std::pow(Z, 3.0f)) - (114 / std::pow(Z, 2.0f)) + 108 / Z;
         float PSI = kPa / 6.89475729;
         outArray[i] = PSI;
@@ -233,9 +277,9 @@ void BridgeSim::calculateLoadDurationPerTile(const std::unique_ptr<float[]>& dis
     }
 }
 
-bool BridgeSim::isSimulationInProgress(const std::unique_ptr<float[]>& arr) {
-    int numTiles = 0;
+bool BridgeSim::continueSimulation(const std::unique_ptr<float[]>& arr, const float currentTime) {
     const int total = total_Tiles;
+    int numTiles = 0;
 
     #pragma omp parallel for schedule(dynamic) shared(total, arr) reduction(+:numTiles)
     for (int i = 0; i < total; ++i) {
@@ -243,7 +287,7 @@ bool BridgeSim::isSimulationInProgress(const std::unique_ptr<float[]>& arr) {
             ++numTiles;
     }
 
-    return numTiles > 0;
+    return currentTime > firstTimeOfArrival && numTiles > 0;
 }
 
 void BridgeSim::calculateTimeOfDeparturePerTile(const std::unique_ptr<float[]>& time_of_arrival,
@@ -259,7 +303,42 @@ void BridgeSim::calculateTimeOfDeparturePerTile(const std::unique_ptr<float[]>& 
     }
 }
 
-void BridgeSim::calculateImpulseValue(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& outArray) {
+void BridgeSim::writePressurePerTileToBinaryFile(std::ofstream* filePtr, const std::unique_ptr<float[]>& arr) {
+    if (filePtr && filePtr->is_open()) {
+        filePtr->write(reinterpret_cast<const char*>(arr.get()), total_Tiles * sizeof(float));
+    }
+}
+
+// Implemented P(t) function
+void BridgeSim::calculatePressurePerTileForGivenTimeValue(const float currentTime,
+    const std::unique_ptr<float[]>& peakPressureArr,
+    const std::unique_ptr<float[]>& arrivalTimeArr,
+    const std::unique_ptr<float[]>& loadDurationArr,
+    const std::unique_ptr<float[]>& departureTimeArr,
+    std::unique_ptr<float[]>& outArr) {
+
+    const int arrSize = total_Tiles;
+
+    static int testing = 0;
+
+
+    #pragma omp parallel for schedule(dynamic) shared(arrSize, currentTime, peakPressureArr, arrivalTimeArr, loadDurationArr, departureTimeArr, outArr)
+    for (int i = 0; i < arrSize; i++) {
+        if (currentTime < arrivalTimeArr[i] || currentTime > departureTimeArr[i]) {
+            outArr[i] = 0.0f;
+        }
+        else {
+            float timeElapsedRatio = (currentTime - arrivalTimeArr[i]) / loadDurationArr[i];
+            float currentPSI = peakPressureArr[i] * (1.0f - timeElapsedRatio);
+            outArr[i] = currentPSI;
+        }
+    }
+
+    testing++;
+    std::cout << testing << "\n";
+}
+
+void BridgeSim::calculateImpulsePressureValue(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& outArray) {
 
     const int total = total_Tiles;
 
@@ -368,32 +447,4 @@ void BridgeSim::calculateTimeOfArrivalPerTile(const std::unique_ptr<float[]>& di
     }
 }
 
-
-void BridgeSim::writePressurePerTileToBinaryFile(std::ofstream *filePtr, const std::unique_ptr<float[]>& arr){
-    if (filePtr && filePtr->is_open()) {
-        filePtr->write(reinterpret_cast<const char*>(arr.get()), total_Tiles * sizeof(float));
-    }
-}
-
-// Implemented P(t) function
-void BridgeSim::calculatePressurePerTileForGivenTimeValue(const float currentTime, 
-    const std::unique_ptr<float[]>& peakPressureArr,
-    const std::unique_ptr<float[]>& arrivalTimeArr, 
-    const std::unique_ptr<float[]>& loadDurationArr,
-	const std::unique_ptr<float[]>& departureTimeArr, 
-    std::unique_ptr<float[]>& outArr) {
-
-    const int arrSize = total_Tiles;
-
-    #pragma omp parallel for schedule(dynamic)
-    for (int i = 0; i < arrSize; i++) {
-        if (currentTime < arrivalTimeArr[i] || currentTime > departureTimeArr[i]) {
-            outArr[i] = 0.0f;
-        } else {
-            float timeElapsedRatio = (currentTime - arrivalTimeArr[i]) / loadDurationArr[i];
-            float currentPSI = peakPressureArr[i] * (1.0f - timeElapsedRatio);
-            outArr[i] = currentPSI;
-        }
-    }
-}
 

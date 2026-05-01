@@ -23,6 +23,8 @@ private:
 
 	void allocateArray(std::unique_ptr<float[]>& ptr);
 
+	void computeScaledDistance(const std::unique_ptr<float[]>& slantDistanceArr, std::unique_ptr<float[]>& arr);
+
 	void computeDistanceBlastDetonationToTiles(std::unique_ptr<float[]>& arr);
 
 	void computeGroundDistanceDetonationToTiles(std::unique_ptr<float[]>& arr);
@@ -31,7 +33,7 @@ private:
 
 	void computeBasicPeakPressureForTiles(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr);
 
-	void calculateImpulseValue(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr);
+	void calculateImpulsePressureValue(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr);
 
 	void calculatePeakPressuePerTile(
 		const std::unique_ptr<float[]>& distanceArr, 
@@ -48,7 +50,7 @@ private:
 		const std::unique_ptr<float[]>& load_duration,
 		std::unique_ptr<float[]>& arr);
 
-	bool isSimulationInProgress(const std::unique_ptr<float[]>& arr);
+	bool continueSimulation(const std::unique_ptr<float[]>& arr, const float currentTime);
 
 	// Need to pass current time as float to the function as well- passed in by main loop
 	void calculatePressurePerTileForGivenTimeValue(
@@ -65,12 +67,13 @@ private:
 	std::unique_ptr<float[]> blast_to_tile_theta_array;
 	std::unique_ptr<float[]> blast_tile_ground_distance_to_detonation_array;
 	std::unique_ptr<float[]> blast_tile_basic_peak_pressure;
-	std::unique_ptr<float[]> impulse_value_per_tile;
+	std::unique_ptr<float[]> impulse_pressure_value_per_tile;
 	std::unique_ptr<float[]> peak_pressure_per_tile;
 	std::unique_ptr<float[]> time_of_arrival_per_tile;
 	std::unique_ptr<float[]> load_duration_per_tile;
 	std::unique_ptr<float[]> time_of_departure_per_tile;
 	std::unique_ptr<float[]> active_pressure_per_tile;
+	std::unique_ptr<float[]> scaled_distance;
 
 	int bridge_Length_Inches = 0; //= 900;
 	int bridge_Width_Inches = 0; //= 100;
@@ -81,7 +84,11 @@ private:
 
 	int thread_Amount = 0;
 	float firstTimeOfArrival = 0.0f;
+	const float Charge_Weight_Pounds = 1000.0f;
+
 	bool doesProduceBinaryFloatFile = false;
+
+	const float Milli_Second_Value = 0.0001f;
 
 	std::string outFname = "pressureData.bin";
 };
