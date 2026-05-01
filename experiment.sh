@@ -44,7 +44,9 @@ cli_prog_bar() {
 
     # Determine how much bar should be filled based on progress made & terminal width
     local width=$((2 * $(tput cols) / 5))
-    let "progress = currPos * 100 / maxPos"
+    let "px = currPos * 1000 / maxPos"
+    let "pr = px % 10"
+    let "progress = px / 10"
     let "filled = progress * width / 100"
     let "empty = width - filled"
 
@@ -52,7 +54,7 @@ cli_prog_bar() {
     printf "\r$descStr Progress: ["
     printf "%${filled}s" | tr ' ' '#'
     printf "%${empty}s" | tr ' ' '-'
-    printf "] $progress%%"
+    printf "] $progress.$pr%%"
 }
 
 # Suspends all other processes currently running on the system
