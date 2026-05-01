@@ -36,10 +36,10 @@ private:
 	void calculateImpulsePressureValue(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr);
 
 	void calculatePeakPressuePerTile(
-		const std::unique_ptr<float[]>& distanceArr, 
-		const std::unique_ptr<float[]>& basicPressureArr,
-		const std::unique_ptr<float[]>& impulsePressureArr, 
-		std::unique_ptr<float[]>& arr);
+		const std::unique_ptr<float[]>& impulsePressureArray,
+		const std::unique_ptr<float[]>& slantedDistanceArray,
+		const std::unique_ptr<float[]>& basicPressureArray,
+		std::unique_ptr<float[]>& outArray);
 
 	void calculateTimeOfArrivalPerTile(const std::unique_ptr<float[]>& distanceArr, std::unique_ptr<float[]>& arr);
 
@@ -63,7 +63,7 @@ private:
 
 	void writePressurePerTileToBinaryFile(std::ofstream *file, const std::unique_ptr<float[]>& arr);
 
-	std::unique_ptr<float[]> bridge_tile_distance_from_detonation_array;
+	std::unique_ptr<float[]> slanted_distance_from_detonation_array;
 	std::unique_ptr<float[]> blast_to_tile_theta_array;
 	std::unique_ptr<float[]> blast_tile_ground_distance_to_detonation_array;
 	std::unique_ptr<float[]> blast_tile_basic_peak_pressure;
