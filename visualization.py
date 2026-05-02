@@ -13,6 +13,7 @@ DATA_FNAME = "BridgeSimulationOpenMP/pressureData.bin"
 # Constant bridge dimensions from CPP simulation program
 X_IN = 900 * 12
 Y_IN = 100 * 12
+FRAME_INTERVAL = 1.0
 
 # --- Data Generation ---
 # Mock data currently produced by a mock CPP program (mockSim.cpp)
@@ -54,8 +55,11 @@ def convert_data_tile_size(data_sq_in):
     downscaledArr = np.average(poolingArr, axis=(2, 4))
 
     # Ensure converted data is scaled to same pressure value ranges as original data
-    maxRescaled = np.max(downscaledArr)
-    data_sq_ft = MAX_PSI * downscaledArr / maxRescaled
+    try:
+        maxRescaled = np.max(downscaledArr)
+        data_sq_ft = MAX_PSI * downscaledArr / maxRescaled
+    except ValueError:
+        data_sq_ft = 144.0 * downscaledArr
     
     # Return the converted array & its new spatial dimensions
     return data_sq_ft, x_ft, y_ft
@@ -63,8 +67,11 @@ def convert_data_tile_size(data_sq_in):
 # Use convert data function to get data in sq. ft. specific for animations
 DATA, X, Y = convert_data_tile_size(DATA)
 
-# Determine center point of the detonation (location of max value at t=1ms)
-C_x, C_y = np.unravel_index(np.argmax(DATA[1]), DATA[1].shape)
+# Redundancy if 1st rescale option failed: re-determine max PSI value
+MAX_PSI = np.max(DATA)
+
+# Determine center point of the detonation (location of max value at t=0ms)
+_, C_x, C_y = np.unravel_index(np.argmax(DATA), DATA.shape)
 
 # --- GUI Functions ---
 def draw_figure(canvas, figure):
@@ -76,7 +83,7 @@ def draw_figure(canvas, figure):
 def update_heatmap(t, ax, canvas_agg):
     ax.cla()  # Clear current axes (will also clear the heatmap too)
     # Custom Palette: White @ 0.0 PSI, light-dark red otherwise up to Max PSI
-    cmap = sns.blend_palette(["#ffcccc", "darkred"], n_colors=10, as_cmap=True)
+    cmap = sns.blend_palette(["#ffcccc", "darkred"], n_colors=100, as_cmap=True)
     cmap.set_under("white")
     
     # Create the pressure wave animation as a Seaborn heatmap
@@ -84,13 +91,14 @@ def update_heatmap(t, ax, canvas_agg):
                 vmax=MAX_PSI, square=True, rasterized=True)
     
     # Update current timestep in heatmap title & set custom x & y ticks/labels, then render
-    ax.set_title(f"Pressure Wave Animation - Time Step: {t}ms\n")
+    t_ms = int(t * FRAME_INTERVAL) if FRAME_INTERVAL >= 1 else np.round(t * FRAME_INTERVAL, 1)
+    ax.set_title(f"Pressure Wave Animation - Time Since Detonation: {t_ms}ms\n")
     ax.set_xticks(np.linspace(0, X, 19, dtype=np.int32))
     ax.set_xticklabels(np.linspace(0, X, 19, dtype=np.int32), rotation=0)
     ax.set_yticks(np.linspace(0, Y, 6, dtype=np.int32))
     ax.set_yticklabels(np.linspace(0, Y, 6, dtype=np.int32))
-    ax.set_xlabel("Bridge Length (ft)")
-    ax.set_ylabel("Bridge Width (ft)")
+    ax.set_xlabel("\nBridge Length (ft)")
+    ax.set_ylabel("Bridge Width (ft)\n")
     ax.invert_yaxis()
     canvas_agg.draw()
 
@@ -115,23 +123,23 @@ def update_peakPSIreadout(window, timestep):
 
 # --- GUI Layout ---
 layout = [
-    [gui.Text("Structural Pressure Wave Simulation - Visualization Tool", font=("Helvetica", 27))],
+    [gui.Text("Explosion Pressure Wave Simulation - Visualization Tool", font=("Helvetica", 28))],
     [gui.HorizontalSeparator()],
     [
-        gui.Text("Time Step (ms):", font=("Helvetica", 12)), 
+        gui.Text("Current Timestep:", font=("Helvetica", 12)), 
         gui.Input(key='-TIME_INPUT-', size=(5, 1), enable_events=True, 
                  default_text="0", font=("Helvetica", 12)),
         gui.Text(f"/ {TIMESTEPS - 1}", font=("Helvetica", 12)),
         gui.VerticalSeparator(),
         gui.Button("Play", font=("Helvetica", 12)), 
         gui.Button("Pause", font=("Helvetica", 12)),
-        gui.Button("Step 1ms", font=("Helvetica", 12)),
+        gui.Button("Step Fwd", font=("Helvetica", 12)),
         gui.VerticalSeparator(),
         gui.Text("Playback Speed (Steps/s):", font=("Helvetica", 12)),
         gui.Slider(range=(0.1, 20.0), default_value=1.0, resolution=0.1, 
                   orientation='h', key='-SPEED-', font=("Helvetica", 12))
     ],
-    [gui.Canvas(key='-CANVAS-', size=(1000, 200))],
+    [gui.Canvas(key='-CANVAS-', size=(1000, 300))],
     [
         gui.Text("Peak Pressure Observed (PSI): 0.0\t", font=("Helvetica", 12), key="-MAX-"),
         gui.VerticalSeparator(),
@@ -141,10 +149,10 @@ layout = [
 
 # --- Main Function ---
 def run_visualization():
-    window = gui.Window("Structural Simulation", layout, finalize=True)
+    window = gui.Window("Pressure Wave Simulation", layout, finalize=True)
 
     # --- Initialize Matplotlib Figure ---
-    fig, ax = plt.subplots(figsize=(10, 2))
+    fig, ax = plt.subplots(figsize=(10, 3))
     canvas_elem = window['-CANVAS-'].TKCanvas
     canvas_agg = draw_figure(canvas_elem, fig)
     update_heatmap(0, ax, canvas_agg)
@@ -172,7 +180,7 @@ def run_visualization():
         if event == "Pause":
             is_playing = False
 
-        if event == "Step 1ms":
+        if event == "Step Fwd":
             if not is_playing and current_time < TIMESTEPS - 1:
                 current_time += 1
                 window['-TIME_INPUT-'].update(current_time)
