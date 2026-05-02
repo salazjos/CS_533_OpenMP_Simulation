@@ -26,8 +26,15 @@ hMax=50
 
 # --- COMMAND LINE ARGUMENTS ---
 
-# Use './experiment.sh true' to enable visualization after experiment is done
-launchVisTool=${1}
+# Determine if simulation should save its pressure data
+saveData=${1}
+
+if [ -z "$saveData" ]; then
+    saveData=false
+fi
+
+# Determine if script should launch visualization after experiment is done
+launchVisTool=${2}
 
 if [ -z "$launchVisTool" ]; then
     launchVisTool=false
@@ -200,16 +207,18 @@ for n in "${threadAmounts[@]}"; do
         dy=$(( RANDOM % (yMax - yMin) + yMin ))
 
         # Save sim. pressure data for first run (c == 0), otherwise skip
-        saveData=0
+        s=0
 
-        if [ "$c" -eq 0 ]; then
-            saveData=1
+        if $saveData; then
+            if [ "$c" -eq 0 ]; then
+                s=1
+            fi
         fi
         
         # Execute the simulation command & determine the elapsed time
         # Sim. CL args: <length_ft> <width_ft> <det_height_ft> <det_x_ft> <det_y_ft> <threads> <save_data>
         errFile="Errors_$(date +"%Y%m%d-%H%M%S").log"
-        runtime=$(eval "$dstFile $simLength $simWidth $dh $dx $dy $n $saveData" 2> "$errFile")
+        runtime=$(eval "$dstFile $simLength $simWidth $dh $dx $dy $n $s" 2> "$errFile")
 
         # Check for any simulation errors & abort if one occurred
         if [ $? -ne 0 ]; then

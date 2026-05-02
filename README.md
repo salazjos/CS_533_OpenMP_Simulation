@@ -3,7 +3,8 @@
 ## Usage
 
 - **Launch Experiment:** `chmod +x experiment.sh && ./experiment.sh`
-   - Use `./experiment.sh true` to launch the visualization tool once experiment is complete.
+   - Use `./experiment.sh true` to save the pressure data (requires ~50GB disk space)
+   - Use `./experiment.sh true true` to launch the visualization tool once experiment is complete.
 - **Compile Simulation:** `g++ -std=c++20 -fopenmp BridgeSimulationOpenMP.cpp BridgeSim.cpp -o simulation`
    - Note: the experiment script will recompile the simulation automatically before running each experiment.
 - **Execute Simulation:** `./simulation <bridge_length> <bridge_widtn> <detonation_height> <detonation_x> <detonation_y>`
