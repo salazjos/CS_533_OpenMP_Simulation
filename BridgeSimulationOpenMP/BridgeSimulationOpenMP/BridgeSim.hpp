@@ -50,7 +50,7 @@ private:
 		const std::unique_ptr<float[]>& load_duration,
 		std::unique_ptr<float[]>& arr);
 
-	bool continueSimulation(const std::unique_ptr<float[]>& arr, const float currentTime);
+	//bool continueSimulation(const std::unique_ptr<float[]>& arr, const float currentTime);
 
 	// Need to pass current time as float to the function as well- passed in by main loop
 	void calculatePressurePerTileForGivenTimeValue(
