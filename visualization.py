@@ -191,7 +191,7 @@ layout = [
         gui.Button("Step Fwd", font=("Helvetica", 12)),
         gui.VerticalSeparator(),
         gui.Text("Playback Speed (Steps/s):", font=("Helvetica", 12)),
-        gui.Slider(range=(0.1, 20.0), default_value=1.0, resolution=0.1, 
+        gui.Slider(range=(0.1, 5.0), default_value=1.0, resolution=0.1, 
                   orientation='h', key='-SPEED-', font=("Helvetica", 12))
     ],
     [gui.Canvas(key='-CANVAS-', size=(1000, 300))],
