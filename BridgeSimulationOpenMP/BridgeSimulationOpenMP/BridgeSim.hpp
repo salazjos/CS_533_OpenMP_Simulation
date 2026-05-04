@@ -72,15 +72,15 @@ private:
 		const std::unique_ptr<float[]>& departureTimeArray, 
     	std::unique_ptr<float[]>& activePressureArray);
 
-	std::unique_ptr<float[]> slanted_distance_from_detonation_array;
-	std::unique_ptr<float[]> blast_angle_array;
-	std::unique_ptr<float[]> basic_peak_pressure_array;
-	std::unique_ptr<float[]> impulse_pressure_array;
+	std::unique_ptr<float[]> slanted_distance_from_detonation_array; 
+	std::unique_ptr<float[]> blast_angle_array; 
+	std::unique_ptr<float[]> basic_peak_pressure_array; 
+	std::unique_ptr<float[]> impulse_pressure_array; 
 	std::unique_ptr<float[]> peak_pressure_array;
 	std::unique_ptr<float[]> arrival_time_array;
 	std::unique_ptr<float[]> load_duration_array;
 	std::unique_ptr<float[]> departure_time_array;
-	std::unique_ptr<float[]> scaled_distance_array;
+	std::unique_ptr<float[]> scaled_distance_array; 
 	std::unique_ptr<float[]> active_pressure_array;
 
 	int bridge_Length_Inches = 0; 

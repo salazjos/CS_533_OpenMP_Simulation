@@ -57,9 +57,9 @@ void BridgeSim::beginSimulation() {
         auto* out = active_pressure_array.get();
 
         while (true) {
-            float t = 0.0f;
 
-            #pragma omp single
+            float t = 0.0f;
+            #pragma omp single copyprivate(t)
             {
                 if (current_time > lastTimeOfDeparture) {
                     done = true;
@@ -172,6 +172,13 @@ void BridgeSim::preCompute() {
     std::span<float> departView(departure_time_array.get(), total_Tiles);
     lastTimeOfDeparture = *std::ranges::max_element(departView);
     std::cout << "last time of departure: " << lastTimeOfDeparture << "\n";
+
+    // Clear out these arrays as their data is no longer needed.
+    slanted_distance_from_detonation_array.reset();
+    blast_angle_array.reset();
+    basic_peak_pressure_array.reset();
+    impulse_pressure_array.reset();
+    scaled_distance_array.reset();
 }
 
 void BridgeSim::allocateArray(std::unique_ptr<float[]>& ptr) {
