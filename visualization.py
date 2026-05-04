@@ -1,6 +1,6 @@
 # Bridge Detonation Visualization via PySimpleGUI & Seaborn
 
-import os
+import os, psutil
 import PySimpleGUI as gui
 import numpy as np
 import seaborn as sns
@@ -13,10 +13,9 @@ DATA_FNAME = "BridgeSimulationOpenMP/pressureData.bin"
 # Constant bridge dimensions from CPP simulation program
 X_IN = 900 * 12
 Y_IN = 100 * 12
-FRAME_INTERVAL = 1.0
+FRAME_INTERVAL = 0.5
 
 # --- Data Generation ---
-# Mock data currently produced by a mock CPP program (mockSim.cpp)
 # The data is read in from a binary data file, of known size & dimensions
 # NOTE: file is always in row-major order- that is, shape = (time, width, length)
 def load_sim_data():
@@ -28,28 +27,60 @@ def load_sim_data():
     DATA_FSIZE = os.path.getsize(DATA_FNAME)
     totalTimesteps = DATA_FSIZE // (X_IN * Y_IN * 4)
 
-    # Load the data file into Numpy array, reshape into 3D, then return array & timesteps amount
-    simData = np.fromfile(DATA_FNAME, dtype=np.float32)
-    simData = np.reshape(simData, (totalTimesteps, Y_IN, X_IN))
-    return simData, totalTimesteps
+    # Load the full data file into Numpy array, reshape into 3D, convert entire array & return
+    # NOTE: if too large for RAM size, file has to be loaded in frame by frame
+    if DATA_FSIZE < psutil.virtual_memory().available:
+        simData = np.fromfile(DATA_FNAME, dtype=np.float32)
+        simData = np.reshape(simData, (totalTimesteps, Y_IN, X_IN))
+        simData = convert_data_tile_size(simData, totalTimesteps)
+        return simData, totalTimesteps
+    else:
+        print("Warning: large file size detected. Visualization may take longer than usual to start...")
+        return load_data_in_frames(totalTimesteps), totalTimesteps
 
-# Use load data function once to get the pressure data & timesteps amount
-DATA, TIMESTEPS = load_sim_data()
+# Fallback if file size > RAM: map the filespace w/ Numpy memmap & load in frame by frame
+# Each frame must be downscaled fron sq in to sq ft immediately to avoid overflow
+def load_data_in_frames(numFrames):
+    # Initialize final array (known size: (T, Y / 12, X / 12))
+    totalData = np.zeros((numFrames, Y_IN // 12, X_IN // 12), dtype=np.float32)
 
-# Determine max pressure before unit conversion to preserve pressure value range
-MAX_PSI = np.max(DATA)
+    # Create memory-disk mapping using built-in Numpy method (shape: (T, X*Y))
+    dataMap = np.memmap(DATA_FNAME, dtype=np.float32, mode="r", shape=(numFrames, X_IN * Y_IN))
+
+    # Loop thru total timesteps & load frame for that timestep into memory
+    maxPSI = 0
+    for t in range(numFrames):
+        frame = dataMap[t, :]
+        frame = np.reshape(frame, (X_IN, Y_IN))
+
+        # Use frame-specific conversion for sq in -> sq ft
+        frame, maxContender = convert_frame_tile_size(frame)
+        maxPSI = max(maxPSI, maxContender)
+
+        # Add the frame into the final array @ current timestep
+        totalData[t] = frame
+
+    # Ensure converted data is scaled to same pressure value ranges as original data
+    try:
+        maxRescaled = np.max(totalData)
+        finalData = maxPSI * totalData / maxRescaled
+    except ValueError:
+        finalData = 144.0 * totalData
+
+    return finalData
 
 # --- Data Transformation ---
 # NOTE: visualization tool cannot draw inch tiles without lagging the animation.
 # Solution: loaded data from simulation will be converted from sq-inch to sq-foot tiles.
-def convert_data_tile_size(data_sq_in):
-    # Determine new data dimensions & initialize new Numpy array
+def convert_data_tile_size(data_sq_in, numFrames):
+    # Determine new data dimensions & max PSI before rescaling
     x_ft = X_IN // 12
     y_ft = Y_IN // 12
+    maxPSI = np.max(data_sq_in)
 
     # Reshape to separate each 12x12 block
     # New shape: (T, x_ft, 12, y_ft, 12)
-    poolingArr = data_sq_in.reshape(TIMESTEPS, y_ft, 12, x_ft, 12)
+    poolingArr = data_sq_in.reshape(numFrames, y_ft, 12, x_ft, 12)
     
     # Get avg pressure value over the 12x12 blocks (axes 2 and 4 of the pooling array)
     downscaledArr = np.average(poolingArr, axis=(2, 4))
@@ -57,20 +88,37 @@ def convert_data_tile_size(data_sq_in):
     # Ensure converted data is scaled to same pressure value ranges as original data
     try:
         maxRescaled = np.max(downscaledArr)
-        data_sq_ft = MAX_PSI * downscaledArr / maxRescaled
+        data_sq_ft = maxPSI * downscaledArr / maxRescaled
     except ValueError:
         data_sq_ft = 144.0 * downscaledArr
     
-    # Return the converted array & its new spatial dimensions
-    return data_sq_ft, x_ft, y_ft
+    # Return the converted array
+    return data_sq_ft
 
-# Use convert data function to get data in sq. ft. specific for animations
-DATA, X, Y = convert_data_tile_size(DATA)
+# Fallback if file size > RAM: convert each individual frame to sq ft before saving to data buffer
+def convert_frame_tile_size(frame_sq_in):
+    # Determine new frame dimensions & max PSI before rescaling
+    x_ft = X_IN // 12
+    y_ft = Y_IN // 12
+    maxPSI = np.max(frame_sq_in)
 
-# Redundancy if 1st rescale option failed: re-determine max PSI value
+    # Reshape to separate each 12x12 block
+    # New shape: (x_ft, 12, y_ft, 12)
+    poolingFrame = frame_sq_in.reshape(y_ft, 12, x_ft, 12)
+
+    # Get avg pressure value over the 12x12 blocks (axes 1 and 3 of the pooling frame)
+    frame_sq_ft = np.average(poolingFrame, axis=(1, 3))
+
+    # Return the converted frame & max PSI observed (for rescaling later)
+    return frame_sq_ft, maxPSI
+
+# Use load data function once to get the pressure data & timesteps amount
+DATA, TIMESTEPS = load_sim_data()
+X = X_IN // 12
+Y = Y_IN // 12
+
+# Determine maximum pressure & center point of the detonation
 MAX_PSI = np.max(DATA)
-
-# Determine center point of the detonation (location of max value at t=0ms)
 _, C_x, C_y = np.unravel_index(np.argmax(DATA), DATA.shape)
 
 # --- GUI Functions ---
@@ -221,7 +269,7 @@ if __name__ == "__main__":
 #   cd ~/
 #   python -m venv base
 #   source base/bin/activate
-#   python -m pip install PySimpleGUI==4.60.5.1 numpy seaborn
+#   python -m pip install PySimpleGUI==4.60.5.1 numpy seaborn psutil
 #
 # Now, you should have installed Python & created a virtual environment with
 # the necessary modules to run this file (with 'python visualization.py').

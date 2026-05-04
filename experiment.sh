@@ -299,18 +299,20 @@ if [ $? -eq 1 ]; then
     fi
 
     # Create & activate virtual Python environment in the git-ignored folder name
-    cli_prog_bar 0 4 "Installation"
+    cli_prog_bar 0 5 "Installation"
     python3 -m venv "$venvDir" --prompt omp
     source "$venvDir/bin/activate"
-    cli_prog_bar 1 4 "Installation"
+    cli_prog_bar 1 5 "Installation"
 
     # Use built-in Python package manager to install the necessary packages to virtual env.
     python -m pip install PySimpleGUI==4.60.5.1 --quiet
-    cli_prog_bar 2 4 "Installation"
+    cli_prog_bar 2 5 "Installation"
     python -m pip install numpy --quiet
-    cli_prog_bar 3 4 "Installation"
+    cli_prog_bar 3 5 "Installation"
     python -m pip install seaborn --quiet
-    cli_prog_bar 4 4 "Installation"
+    cli_prog_bar 4 5 "Installation"
+    python -m pip install psutil --quiet
+    cli_prog_bar 5 5 "Installation"
     echo ""
 
     # Restart visualization tool w/ installed packages, then deactivate virtual env. after
