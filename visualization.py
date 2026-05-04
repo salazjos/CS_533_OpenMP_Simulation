@@ -80,7 +80,8 @@ def convert_data_tile_size(data_sq_in, numFrames):
     # Determine new data dimensions & max PSI before rescaling
     x_ft = X_IN // 12
     y_ft = Y_IN // 12
-    maxPSI = np.max(data_sq_in)
+    Q1_index = numFrames // 4
+    maxPSI = np.max(data_sq_in[:Q1_index, :, :])
 
     # Reshape to separate each 12x12 block
     # New shape: (T, x_ft, 12, y_ft, 12)
@@ -91,7 +92,6 @@ def convert_data_tile_size(data_sq_in, numFrames):
 
     # Ensure converted data is scaled to same pressure value ranges as original data
     try:
-        Q1_index = numFrames // 4
         maxRescaled = np.max(downscaledArr[:Q1_index, :, :])
         data_sq_ft = maxPSI * downscaledArr / maxRescaled
     except ValueError:
@@ -142,7 +142,7 @@ def update_heatmap(t, ax, canvas_agg):
     cmap.set_under("white")
     
     # Create the pressure wave animation as a Seaborn heatmap
-    sns.heatmap(DATA[t], ax=ax, cmap=cmap, cbar=False, vmin=0.1, 
+    sns.heatmap(DATA[t], ax=ax, cmap=cmap, cbar=False, vmin=0.01, 
                 vmax=MAX_PSI, square=True, rasterized=True)
     
     # Update current timestep in heatmap title & set custom x & y ticks/labels, then render
