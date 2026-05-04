@@ -17,8 +17,8 @@ venvDir=".venv"
 
 simLength=900
 simWidth=100
-xMin=100
-xMax=800
+xMin=300
+xMax=600
 yMin=25
 yMax=75
 hMin=30
@@ -146,6 +146,9 @@ fi
 
 # Set custom "EXP" env. variable: allows simulation to differentiate b/w script or user execution
 export EXP="Script"
+
+# Manually set the random seed for subsequent RNG in the experiment
+RANDOM=1234
 
 # Initialize log file w/ current timestamp to guarantee unique filename
 logFile="Experiment_$(date +"%Y%m%d-%H%M%S").log"
