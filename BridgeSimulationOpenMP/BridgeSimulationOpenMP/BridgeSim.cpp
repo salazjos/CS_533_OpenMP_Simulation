@@ -37,8 +37,6 @@ void BridgeSim::beginSimulation() {
         
     if (doesProduceBinaryFile) {
         outFile.open(outFname, std::ios::out | std::ios::binary);
-        int32_t tileCount = total_Tiles;
-        outFile.write(reinterpret_cast<const char*>(&tileCount), sizeof(tileCount));
     }
         
     int fileWriteAmount = 0;
