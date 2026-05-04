@@ -162,7 +162,7 @@ def update_peakPSIreadout(window, timestep):
         if x == C_x and y == C_y:
             peakLoc = str(f"Center ({y}ft by {x}ft)")
         else:
-            r = np.sqrt(((x - C_x) ** 2) + ((y - C_y) ** 2))
+            r = np.sqrt(((C_x - x) ** 2) + ((C_y - y) ** 2))
             peakLoc = str(f"Edge (radius= {r:.1f}ft)")
 
     # Update peak pressure & location readouts in GUI
