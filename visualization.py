@@ -49,20 +49,24 @@ def load_data_in_frames(numFrames):
 
     # Loop thru total timesteps & load frame for that timestep into memory
     maxPSI = 0
+    Q1_index = numFrames // 4
     for t in range(numFrames):
         frame = dataMap[t, :]
-        frame = np.reshape(frame, (X_IN, Y_IN))
+        frame = np.reshape(frame, (Y_IN, X_IN))
 
         # Use frame-specific conversion for sq in -> sq ft
         frame, maxContender = convert_frame_tile_size(frame)
-        maxPSI = max(maxPSI, maxContender)
+
+        # Update max PSI if new frame saw higher max (assume max occurs w/in 1st quartile of frames)
+        if t < Q1_index:
+            maxPSI = max(maxPSI, maxContender)
 
         # Add the frame into the final array @ current timestep
         totalData[t] = frame
 
     # Ensure converted data is scaled to same pressure value ranges as original data
     try:
-        maxRescaled = np.max(totalData)
+        maxRescaled = np.max(totalData[:Q1_index, :, :])
         finalData = maxPSI * totalData / maxRescaled
     except ValueError:
         finalData = 144.0 * totalData
@@ -87,7 +91,8 @@ def convert_data_tile_size(data_sq_in, numFrames):
 
     # Ensure converted data is scaled to same pressure value ranges as original data
     try:
-        maxRescaled = np.max(downscaledArr)
+        Q1_index = numFrames // 4
+        maxRescaled = np.max(downscaledArr[:Q1_index, :, :])
         data_sq_ft = maxPSI * downscaledArr / maxRescaled
     except ValueError:
         data_sq_ft = 144.0 * downscaledArr
@@ -118,8 +123,10 @@ X = X_IN // 12
 Y = Y_IN // 12
 
 # Determine maximum pressure & center point of the detonation
-MAX_PSI = np.max(DATA)
-_, C_x, C_y = np.unravel_index(np.argmax(DATA), DATA.shape)
+# NOTE: Assume max PSI & center arrival occur w/in first quartile of the data
+Q1_index = TIMESTEPS // 4
+MAX_PSI = np.max(DATA[:Q1_index, :, :])
+_, C_y, C_x = np.unravel_index(np.argmax(DATA[:Q1_index, :, :]), DATA.shape)
 
 # --- GUI Functions ---
 def draw_figure(canvas, figure):
@@ -158,9 +165,9 @@ def update_peakPSIreadout(window, timestep):
     # Determine if peak pressure is at center or edge (or N/A if zero pressure)
     peakLoc = "N/A"
     if peakPSI > 0.0:
-        x, y = np.unravel_index(np.argmax(frame), frame.shape)
+        y, x = np.unravel_index(np.argmax(frame), frame.shape)
         if x == C_x and y == C_y:
-            peakLoc = str(f"Center ({y}ft by {x}ft)")
+            peakLoc = str(f"Center ({x}ft by {y}ft)")
         else:
             r = np.sqrt(((C_x - x) ** 2) + ((C_y - y) ** 2))
             peakLoc = str(f"Edge (radius= {r:.1f}ft)")
