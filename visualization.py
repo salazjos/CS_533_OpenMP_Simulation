@@ -13,7 +13,7 @@ DATA_FNAME = "BridgeSimulationOpenMP/pressureData.bin"
 # Constant bridge dimensions from CPP simulation program
 X_IN = 900 * 12
 Y_IN = 100 * 12
-FRAME_INTERVAL = 0.5
+FRAME_INTERVAL = 1.0
 
 # --- Data Generation ---
 # The data is read in from a binary data file, of known size & dimensions
@@ -191,7 +191,7 @@ layout = [
         gui.Button("Step Fwd", font=("Helvetica", 12)),
         gui.VerticalSeparator(),
         gui.Text("Playback Speed (Steps/s):", font=("Helvetica", 12)),
-        gui.Slider(range=(0.1, 5.0), default_value=1.0, resolution=0.1, 
+        gui.Slider(range=(0.1, 10.0), default_value=1.0, resolution=0.1, 
                   orientation='h', key='-SPEED-', font=("Helvetica", 12))
     ],
     [gui.Canvas(key='-CANVAS-', size=(1000, 300))],
