@@ -44,11 +44,11 @@ private:
 		const std::unique_ptr<float[]>& scaledDistanceArray, 
 		std::unique_ptr<float[]>& implusePressureArray);
 
-	void calculatePeakPressuePerTile(
+	void calculatePeakPressurePerTile(
 		const std::unique_ptr<float[]>& impulsePressureArray,
-		const std::unique_ptr<float[]>& slantedDistanceArray,
+		const std::unique_ptr<float[]>& blastAngleArray,
 		const std::unique_ptr<float[]>& basicPressureArray,
-		std::unique_ptr<float[]>& implusePressureArray);
+		std::unique_ptr<float[]>& peakPressureArray);
 
 	void calculateTimeOfArrivalPerTile(
 		const std::unique_ptr<float[]>& slantDistanceArray, 
@@ -97,7 +97,7 @@ private:
 	float lastTimeOfDeparture = 0.0f;
 	
 	const float Charge_Weight_Pounds = 1000.0f;
-	const float Half_Millisecond_Timestep = 0.5f;
+	const float Millisecond_Timestep = 1.0f;
 	std::string outFname = "pressureData.bin";
 };
 
