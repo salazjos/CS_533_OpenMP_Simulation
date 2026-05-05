@@ -9,7 +9,7 @@ dstDir="BridgeSimulationOpenMP"
 dstFile="$dstDir/compiledSimulation"
 threshold=35    # Optimal threshold for Agera UNMCS machine
 logTemps=true
-expReps=20      # TODO: adjust exp. repetitions, if result variance too high
+expReps=50      # Optimal repetitions value to balance LLN variability vs time remaining
 visFile="visualization.py"
 venvDir=".venv"
 
