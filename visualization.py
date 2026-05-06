@@ -137,9 +137,15 @@ def draw_figure(canvas, figure):
 
 def update_heatmap(t, ax, canvas_agg):
     ax.cla()  # Clear current axes (will also clear the heatmap too)
-    # Custom Palette: White @ 0.0 PSI, light-dark red otherwise up to Max PSI
-    cmap = sns.blend_palette(["#ffcccc", "darkred"], n_colors=100, as_cmap=True)
-    cmap.set_under("white")
+    # Custom Palette-   Light Grey: bridge background/no damage
+    #                   White: minimal damage
+    #                   Yellow: light damage
+    #                   Orange: moderate damage
+    #                   Red: heavy damage
+    #                   Dark Red: extreme damage
+    cmap = sns.blend_palette(["#ffffff", "#fdb915", "#ffa500", "#f8481c", "#ff0000", "#840000"], 
+                             n_colors=1000, as_cmap=True)
+    cmap.set_under("#f0f0f0")
     
     # Create the pressure wave animation as a Seaborn heatmap
     sns.heatmap(DATA[t], ax=ax, cmap=cmap, cbar=False, vmin=0.01, 
