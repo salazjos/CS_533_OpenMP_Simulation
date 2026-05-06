@@ -1,0 +1,8203 @@
+Experiment: running simulation with OpenMP multi-threading up to 80 threads
+
+Threads: 1 Iteration: 1
+Elapsed Simulation Time (s): 26.9605
+Final CPU Temp (°C): 35
+
+Threads: 1 Iteration: 2
+Elapsed Simulation Time (s): 25.7676
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 3
+Elapsed Simulation Time (s): 27.7649
+Final CPU Temp (°C): 38
+
+Threads: 1 Iteration: 4
+Elapsed Simulation Time (s): 27.4808
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 5
+Elapsed Simulation Time (s): 24.9935
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 6
+Elapsed Simulation Time (s): 25.9353
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 7
+Elapsed Simulation Time (s): 26.964
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 8
+Elapsed Simulation Time (s): 23.5601
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 9
+Elapsed Simulation Time (s): 26.0896
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 10
+Elapsed Simulation Time (s): 26.1824
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 11
+Elapsed Simulation Time (s): 27.0859
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 12
+Elapsed Simulation Time (s): 25.5008
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 13
+Elapsed Simulation Time (s): 24.4052
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 14
+Elapsed Simulation Time (s): 23.4662
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 15
+Elapsed Simulation Time (s): 26.7892
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 16
+Elapsed Simulation Time (s): 24.0934
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 17
+Elapsed Simulation Time (s): 26.916
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 18
+Elapsed Simulation Time (s): 24.6951
+Final CPU Temp (°C): 38
+
+Threads: 1 Iteration: 19
+Elapsed Simulation Time (s): 25.0935
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 20
+Elapsed Simulation Time (s): 25.102
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 21
+Elapsed Simulation Time (s): 26.8141
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 22
+Elapsed Simulation Time (s): 25.7081
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 23
+Elapsed Simulation Time (s): 27.3159
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 24
+Elapsed Simulation Time (s): 26.6388
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 25
+Elapsed Simulation Time (s): 26.8078
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 26
+Elapsed Simulation Time (s): 25.1055
+Final CPU Temp (°C): 38
+
+Threads: 1 Iteration: 27
+Elapsed Simulation Time (s): 24.9505
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 28
+Elapsed Simulation Time (s): 25.4513
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 29
+Elapsed Simulation Time (s): 26.1243
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 30
+Elapsed Simulation Time (s): 27.009
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 31
+Elapsed Simulation Time (s): 23.3962
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 32
+Elapsed Simulation Time (s): 23.4539
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 33
+Elapsed Simulation Time (s): 25.6603
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 34
+Elapsed Simulation Time (s): 26.5996
+Final CPU Temp (°C): 38
+
+Threads: 1 Iteration: 35
+Elapsed Simulation Time (s): 23.8608
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 36
+Elapsed Simulation Time (s): 24.3836
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 37
+Elapsed Simulation Time (s): 25.4987
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 38
+Elapsed Simulation Time (s): 24.8062
+Final CPU Temp (°C): 35
+
+Threads: 1 Iteration: 39
+Elapsed Simulation Time (s): 23.5816
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 40
+Elapsed Simulation Time (s): 24.4118
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 41
+Elapsed Simulation Time (s): 25.3968
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 42
+Elapsed Simulation Time (s): 27.3727
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 43
+Elapsed Simulation Time (s): 25.5998
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 44
+Elapsed Simulation Time (s): 25.3422
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 45
+Elapsed Simulation Time (s): 25.4757
+Final CPU Temp (°C): 35
+
+Threads: 1 Iteration: 46
+Elapsed Simulation Time (s): 26.3277
+Final CPU Temp (°C): 37
+
+Threads: 1 Iteration: 47
+Elapsed Simulation Time (s): 27.1866
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 48
+Elapsed Simulation Time (s): 25.9784
+Final CPU Temp (°C): 35
+
+Threads: 1 Iteration: 49
+Elapsed Simulation Time (s): 27.1297
+Final CPU Temp (°C): 36
+
+Threads: 1 Iteration: 50
+Elapsed Simulation Time (s): 23.4056
+Final CPU Temp (°C): 35
+
+Threads: 2 Iteration: 1
+Elapsed Simulation Time (s): 14.3779
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 2
+Elapsed Simulation Time (s): 13.471
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 3
+Elapsed Simulation Time (s): 14.784
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 4
+Elapsed Simulation Time (s): 13.8274
+Final CPU Temp (°C): 39
+
+Threads: 2 Iteration: 5
+Elapsed Simulation Time (s): 14.8897
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 6
+Elapsed Simulation Time (s): 14.3405
+Final CPU Temp (°C): 38
+
+Threads: 2 Iteration: 7
+Elapsed Simulation Time (s): 13.371
+Final CPU Temp (°C): 38
+
+Threads: 2 Iteration: 8
+Elapsed Simulation Time (s): 14.6501
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 9
+Elapsed Simulation Time (s): 14.234
+Final CPU Temp (°C): 35
+
+Threads: 2 Iteration: 10
+Elapsed Simulation Time (s): 13.5778
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 11
+Elapsed Simulation Time (s): 13.5057
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 12
+Elapsed Simulation Time (s): 14.1247
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 13
+Elapsed Simulation Time (s): 14.4111
+Final CPU Temp (°C): 38
+
+Threads: 2 Iteration: 14
+Elapsed Simulation Time (s): 13.3793
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 15
+Elapsed Simulation Time (s): 14.9352
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 16
+Elapsed Simulation Time (s): 12.7503
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 17
+Elapsed Simulation Time (s): 15.0191
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 18
+Elapsed Simulation Time (s): 14.3644
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 19
+Elapsed Simulation Time (s): 13.2597
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 20
+Elapsed Simulation Time (s): 14.9165
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 21
+Elapsed Simulation Time (s): 13.3341
+Final CPU Temp (°C): 38
+
+Threads: 2 Iteration: 22
+Elapsed Simulation Time (s): 12.856
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 23
+Elapsed Simulation Time (s): 14.3885
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 24
+Elapsed Simulation Time (s): 12.8925
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 25
+Elapsed Simulation Time (s): 13.4304
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 26
+Elapsed Simulation Time (s): 14.132
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 27
+Elapsed Simulation Time (s): 13.189
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 28
+Elapsed Simulation Time (s): 14.064
+Final CPU Temp (°C): 45
+
+Threads: 2 Iteration: 29
+Elapsed Simulation Time (s): 14.9174
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 30
+Elapsed Simulation Time (s): 14.9499
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 31
+Elapsed Simulation Time (s): 13.7552
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 32
+Elapsed Simulation Time (s): 13.951
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 33
+Elapsed Simulation Time (s): 14.1865
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 34
+Elapsed Simulation Time (s): 13.5532
+Final CPU Temp (°C): 38
+
+Threads: 2 Iteration: 35
+Elapsed Simulation Time (s): 13.1277
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 36
+Elapsed Simulation Time (s): 14.3916
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 37
+Elapsed Simulation Time (s): 14.9519
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 38
+Elapsed Simulation Time (s): 13.7576
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 39
+Elapsed Simulation Time (s): 13.4859
+Final CPU Temp (°C): 46
+
+Threads: 2 Iteration: 40
+Elapsed Simulation Time (s): 13.9257
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 41
+Elapsed Simulation Time (s): 13.2699
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 42
+Elapsed Simulation Time (s): 13.5486
+Final CPU Temp (°C): 36
+
+Threads: 2 Iteration: 43
+Elapsed Simulation Time (s): 14.2584
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 44
+Elapsed Simulation Time (s): 14.124
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 45
+Elapsed Simulation Time (s): 13.8648
+Final CPU Temp (°C): 37
+
+Threads: 2 Iteration: 46
+Elapsed Simulation Time (s): 14.1918
+Final CPU Temp (°C): 38
+
+Threads: 2 Iteration: 47
+Elapsed Simulation Time (s): 14.6188
+Final CPU Temp (°C): 39
+
+Threads: 2 Iteration: 48
+Elapsed Simulation Time (s): 14.1886
+Final CPU Temp (°C): 38
+
+Threads: 2 Iteration: 49
+Elapsed Simulation Time (s): 14.9569
+Final CPU Temp (°C): 38
+
+Threads: 2 Iteration: 50
+Elapsed Simulation Time (s): 14.3519
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 1
+Elapsed Simulation Time (s): 7.34031
+Final CPU Temp (°C): 37
+
+Threads: 4 Iteration: 2
+Elapsed Simulation Time (s): 7.9515
+Final CPU Temp (°C): 37
+
+Threads: 4 Iteration: 3
+Elapsed Simulation Time (s): 8.28564
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 4
+Elapsed Simulation Time (s): 7.51224
+Final CPU Temp (°C): 36
+
+Threads: 4 Iteration: 5
+Elapsed Simulation Time (s): 7.97009
+Final CPU Temp (°C): 37
+
+Threads: 4 Iteration: 6
+Elapsed Simulation Time (s): 7.77906
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 7
+Elapsed Simulation Time (s): 7.76601
+Final CPU Temp (°C): 37
+
+Threads: 4 Iteration: 8
+Elapsed Simulation Time (s): 7.55767
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 9
+Elapsed Simulation Time (s): 8.33897
+Final CPU Temp (°C): 36
+
+Threads: 4 Iteration: 10
+Elapsed Simulation Time (s): 8.30887
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 11
+Elapsed Simulation Time (s): 7.88345
+Final CPU Temp (°C): 36
+
+Threads: 4 Iteration: 12
+Elapsed Simulation Time (s): 8.40371
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 13
+Elapsed Simulation Time (s): 8.10251
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 14
+Elapsed Simulation Time (s): 7.86823
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 15
+Elapsed Simulation Time (s): 7.62072
+Final CPU Temp (°C): 37
+
+Threads: 4 Iteration: 16
+Elapsed Simulation Time (s): 7.96154
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 17
+Elapsed Simulation Time (s): 7.8044
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 18
+Elapsed Simulation Time (s): 7.83223
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 19
+Elapsed Simulation Time (s): 7.3305
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 20
+Elapsed Simulation Time (s): 8.13527
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 21
+Elapsed Simulation Time (s): 8.27841
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 22
+Elapsed Simulation Time (s): 7.48869
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 23
+Elapsed Simulation Time (s): 8.26584
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 24
+Elapsed Simulation Time (s): 7.38631
+Final CPU Temp (°C): 39
+
+Threads: 4 Iteration: 25
+Elapsed Simulation Time (s): 7.96301
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 26
+Elapsed Simulation Time (s): 7.30739
+Final CPU Temp (°C): 37
+
+Threads: 4 Iteration: 27
+Elapsed Simulation Time (s): 7.40187
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 28
+Elapsed Simulation Time (s): 7.83497
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 29
+Elapsed Simulation Time (s): 8.10179
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 30
+Elapsed Simulation Time (s): 7.47434
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 31
+Elapsed Simulation Time (s): 8.47675
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 32
+Elapsed Simulation Time (s): 7.67736
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 33
+Elapsed Simulation Time (s): 7.93717
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 34
+Elapsed Simulation Time (s): 8.08564
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 35
+Elapsed Simulation Time (s): 7.43266
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 36
+Elapsed Simulation Time (s): 7.93647
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 37
+Elapsed Simulation Time (s): 7.3651
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 38
+Elapsed Simulation Time (s): 8.27801
+Final CPU Temp (°C): 39
+
+Threads: 4 Iteration: 39
+Elapsed Simulation Time (s): 8.44566
+Final CPU Temp (°C): 39
+
+Threads: 4 Iteration: 40
+Elapsed Simulation Time (s): 7.46716
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 41
+Elapsed Simulation Time (s): 7.95339
+Final CPU Temp (°C): 39
+
+Threads: 4 Iteration: 42
+Elapsed Simulation Time (s): 8.31408
+Final CPU Temp (°C): 39
+
+Threads: 4 Iteration: 43
+Elapsed Simulation Time (s): 7.50174
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 44
+Elapsed Simulation Time (s): 7.9253
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 45
+Elapsed Simulation Time (s): 8.05662
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 46
+Elapsed Simulation Time (s): 8.15046
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 47
+Elapsed Simulation Time (s): 7.76472
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 48
+Elapsed Simulation Time (s): 7.64189
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 49
+Elapsed Simulation Time (s): 8.03757
+Final CPU Temp (°C): 38
+
+Threads: 4 Iteration: 50
+Elapsed Simulation Time (s): 7.68851
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 1
+Elapsed Simulation Time (s): 6.17593
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 2
+Elapsed Simulation Time (s): 5.55146
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 3
+Elapsed Simulation Time (s): 5.5253
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 4
+Elapsed Simulation Time (s): 5.41836
+Final CPU Temp (°C): 37
+
+Threads: 6 Iteration: 5
+Elapsed Simulation Time (s): 5.7765
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 6
+Elapsed Simulation Time (s): 6.17166
+Final CPU Temp (°C): 40
+
+Threads: 6 Iteration: 7
+Elapsed Simulation Time (s): 5.87707
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 8
+Elapsed Simulation Time (s): 5.62156
+Final CPU Temp (°C): 40
+
+Threads: 6 Iteration: 9
+Elapsed Simulation Time (s): 5.76271
+Final CPU Temp (°C): 40
+
+Threads: 6 Iteration: 10
+Elapsed Simulation Time (s): 5.51615
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 11
+Elapsed Simulation Time (s): 6.05406
+Final CPU Temp (°C): 40
+
+Threads: 6 Iteration: 12
+Elapsed Simulation Time (s): 5.45341
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 13
+Elapsed Simulation Time (s): 6.1003
+Final CPU Temp (°C): 40
+
+Threads: 6 Iteration: 14
+Elapsed Simulation Time (s): 5.55699
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 15
+Elapsed Simulation Time (s): 5.76331
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 16
+Elapsed Simulation Time (s): 5.87118
+Final CPU Temp (°C): 38
+
+Threads: 6 Iteration: 17
+Elapsed Simulation Time (s): 5.41278
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 18
+Elapsed Simulation Time (s): 5.84555
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 19
+Elapsed Simulation Time (s): 5.583
+Final CPU Temp (°C): 37
+
+Threads: 6 Iteration: 20
+Elapsed Simulation Time (s): 6.14635
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 21
+Elapsed Simulation Time (s): 5.45585
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 22
+Elapsed Simulation Time (s): 5.95987
+Final CPU Temp (°C): 38
+
+Threads: 6 Iteration: 23
+Elapsed Simulation Time (s): 5.82971
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 24
+Elapsed Simulation Time (s): 5.75137
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 25
+Elapsed Simulation Time (s): 5.75246
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 26
+Elapsed Simulation Time (s): 6.00352
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 27
+Elapsed Simulation Time (s): 5.86109
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 28
+Elapsed Simulation Time (s): 5.56454
+Final CPU Temp (°C): 37
+
+Threads: 6 Iteration: 29
+Elapsed Simulation Time (s): 5.59773
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 30
+Elapsed Simulation Time (s): 6.14853
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 31
+Elapsed Simulation Time (s): 5.49302
+Final CPU Temp (°C): 38
+
+Threads: 6 Iteration: 32
+Elapsed Simulation Time (s): 5.91685
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 33
+Elapsed Simulation Time (s): 5.872
+Final CPU Temp (°C): 40
+
+Threads: 6 Iteration: 34
+Elapsed Simulation Time (s): 6.10116
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 35
+Elapsed Simulation Time (s): 5.521
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 36
+Elapsed Simulation Time (s): 5.71304
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 37
+Elapsed Simulation Time (s): 5.53469
+Final CPU Temp (°C): 38
+
+Threads: 6 Iteration: 38
+Elapsed Simulation Time (s): 6.05212
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 39
+Elapsed Simulation Time (s): 5.95509
+Final CPU Temp (°C): 40
+
+Threads: 6 Iteration: 40
+Elapsed Simulation Time (s): 5.70514
+Final CPU Temp (°C): 37
+
+Threads: 6 Iteration: 41
+Elapsed Simulation Time (s): 6.123
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 42
+Elapsed Simulation Time (s): 5.42986
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 43
+Elapsed Simulation Time (s): 6.1399
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 44
+Elapsed Simulation Time (s): 5.86607
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 45
+Elapsed Simulation Time (s): 6.05421
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 46
+Elapsed Simulation Time (s): 6.02067
+Final CPU Temp (°C): 40
+
+Threads: 6 Iteration: 47
+Elapsed Simulation Time (s): 5.85672
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 48
+Elapsed Simulation Time (s): 5.85578
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 49
+Elapsed Simulation Time (s): 5.64111
+Final CPU Temp (°C): 39
+
+Threads: 6 Iteration: 50
+Elapsed Simulation Time (s): 6.0744
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 1
+Elapsed Simulation Time (s): 4.99784
+Final CPU Temp (°C): 42
+
+Threads: 8 Iteration: 2
+Elapsed Simulation Time (s): 4.60535
+Final CPU Temp (°C): 38
+
+Threads: 8 Iteration: 3
+Elapsed Simulation Time (s): 4.46648
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 4
+Elapsed Simulation Time (s): 4.64256
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 5
+Elapsed Simulation Time (s): 4.68088
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 6
+Elapsed Simulation Time (s): 4.59049
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 7
+Elapsed Simulation Time (s): 4.46142
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 8
+Elapsed Simulation Time (s): 4.6556
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 9
+Elapsed Simulation Time (s): 4.63166
+Final CPU Temp (°C): 41
+
+Threads: 8 Iteration: 10
+Elapsed Simulation Time (s): 4.74512
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 11
+Elapsed Simulation Time (s): 4.87092
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 12
+Elapsed Simulation Time (s): 4.73344
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 13
+Elapsed Simulation Time (s): 4.65042
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 14
+Elapsed Simulation Time (s): 4.48929
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 15
+Elapsed Simulation Time (s): 4.58989
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 16
+Elapsed Simulation Time (s): 4.63938
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 17
+Elapsed Simulation Time (s): 4.61559
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 18
+Elapsed Simulation Time (s): 4.56588
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 19
+Elapsed Simulation Time (s): 4.9712
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 20
+Elapsed Simulation Time (s): 4.62457
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 21
+Elapsed Simulation Time (s): 4.50103
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 22
+Elapsed Simulation Time (s): 4.97676
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 23
+Elapsed Simulation Time (s): 4.86884
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 24
+Elapsed Simulation Time (s): 4.75209
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 25
+Elapsed Simulation Time (s): 4.58985
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 26
+Elapsed Simulation Time (s): 4.81565
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 27
+Elapsed Simulation Time (s): 4.75109
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 28
+Elapsed Simulation Time (s): 4.70713
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 29
+Elapsed Simulation Time (s): 4.73354
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 30
+Elapsed Simulation Time (s): 4.98705
+Final CPU Temp (°C): 42
+
+Threads: 8 Iteration: 31
+Elapsed Simulation Time (s): 4.90141
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 32
+Elapsed Simulation Time (s): 4.78585
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 33
+Elapsed Simulation Time (s): 4.49826
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 34
+Elapsed Simulation Time (s): 4.65517
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 35
+Elapsed Simulation Time (s): 4.72121
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 36
+Elapsed Simulation Time (s): 4.67558
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 37
+Elapsed Simulation Time (s): 4.95688
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 38
+Elapsed Simulation Time (s): 4.84664
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 39
+Elapsed Simulation Time (s): 5.03112
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 40
+Elapsed Simulation Time (s): 4.83595
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 41
+Elapsed Simulation Time (s): 4.46733
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 42
+Elapsed Simulation Time (s): 4.59218
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 43
+Elapsed Simulation Time (s): 4.56922
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 44
+Elapsed Simulation Time (s): 4.99196
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 45
+Elapsed Simulation Time (s): 4.89452
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 46
+Elapsed Simulation Time (s): 4.64603
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 47
+Elapsed Simulation Time (s): 4.6461
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 48
+Elapsed Simulation Time (s): 4.94284
+Final CPU Temp (°C): 40
+
+Threads: 8 Iteration: 49
+Elapsed Simulation Time (s): 4.63636
+Final CPU Temp (°C): 39
+
+Threads: 8 Iteration: 50
+Elapsed Simulation Time (s): 4.608
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 1
+Elapsed Simulation Time (s): 4.19168
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 2
+Elapsed Simulation Time (s): 3.9958
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 3
+Elapsed Simulation Time (s): 3.9493
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 4
+Elapsed Simulation Time (s): 4.16699
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 5
+Elapsed Simulation Time (s): 3.92041
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 6
+Elapsed Simulation Time (s): 3.92271
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 7
+Elapsed Simulation Time (s): 3.97381
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 8
+Elapsed Simulation Time (s): 4.35049
+Final CPU Temp (°C): 39
+
+Threads: 10 Iteration: 9
+Elapsed Simulation Time (s): 4.16723
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 10
+Elapsed Simulation Time (s): 3.99318
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 11
+Elapsed Simulation Time (s): 4.32148
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 12
+Elapsed Simulation Time (s): 4.04968
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 13
+Elapsed Simulation Time (s): 4.16023
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 14
+Elapsed Simulation Time (s): 4.2219
+Final CPU Temp (°C): 38
+
+Threads: 10 Iteration: 15
+Elapsed Simulation Time (s): 4.13414
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 16
+Elapsed Simulation Time (s): 3.90246
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 17
+Elapsed Simulation Time (s): 4.15116
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 18
+Elapsed Simulation Time (s): 4.0307
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 19
+Elapsed Simulation Time (s): 4.09411
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 20
+Elapsed Simulation Time (s): 3.97483
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 21
+Elapsed Simulation Time (s): 4.03689
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 22
+Elapsed Simulation Time (s): 3.99798
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 23
+Elapsed Simulation Time (s): 4.18076
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 24
+Elapsed Simulation Time (s): 4.22053
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 25
+Elapsed Simulation Time (s): 4.15164
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 26
+Elapsed Simulation Time (s): 4.24846
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 27
+Elapsed Simulation Time (s): 4.21403
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 28
+Elapsed Simulation Time (s): 4.00185
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 29
+Elapsed Simulation Time (s): 3.911
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 30
+Elapsed Simulation Time (s): 4.31343
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 31
+Elapsed Simulation Time (s): 3.98547
+Final CPU Temp (°C): 39
+
+Threads: 10 Iteration: 32
+Elapsed Simulation Time (s): 4.32859
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 33
+Elapsed Simulation Time (s): 4.17155
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 34
+Elapsed Simulation Time (s): 4.34238
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 35
+Elapsed Simulation Time (s): 4.13344
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 36
+Elapsed Simulation Time (s): 3.95728
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 37
+Elapsed Simulation Time (s): 4.19724
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 38
+Elapsed Simulation Time (s): 4.20313
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 39
+Elapsed Simulation Time (s): 4.36019
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 40
+Elapsed Simulation Time (s): 4.10169
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 41
+Elapsed Simulation Time (s): 4.02171
+Final CPU Temp (°C): 40
+
+Threads: 10 Iteration: 42
+Elapsed Simulation Time (s): 4.36976
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 43
+Elapsed Simulation Time (s): 4.30035
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 44
+Elapsed Simulation Time (s): 4.19198
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 45
+Elapsed Simulation Time (s): 3.93698
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 46
+Elapsed Simulation Time (s): 4.07459
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 47
+Elapsed Simulation Time (s): 4.21192
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 48
+Elapsed Simulation Time (s): 3.94856
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 49
+Elapsed Simulation Time (s): 4.12872
+Final CPU Temp (°C): 41
+
+Threads: 10 Iteration: 50
+Elapsed Simulation Time (s): 4.1632
+Final CPU Temp (°C): 39
+
+Threads: 12 Iteration: 1
+Elapsed Simulation Time (s): 3.57671
+Final CPU Temp (°C): 37
+
+Threads: 12 Iteration: 2
+Elapsed Simulation Time (s): 3.57517
+Final CPU Temp (°C): 38
+
+Threads: 12 Iteration: 3
+Elapsed Simulation Time (s): 4.0135
+Final CPU Temp (°C): 40
+
+Threads: 12 Iteration: 4
+Elapsed Simulation Time (s): 3.82106
+Final CPU Temp (°C): 39
+
+Threads: 12 Iteration: 5
+Elapsed Simulation Time (s): 3.87158
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 6
+Elapsed Simulation Time (s): 3.83204
+Final CPU Temp (°C): 38
+
+Threads: 12 Iteration: 7
+Elapsed Simulation Time (s): 3.89032
+Final CPU Temp (°C): 38
+
+Threads: 12 Iteration: 8
+Elapsed Simulation Time (s): 3.56033
+Final CPU Temp (°C): 40
+
+Threads: 12 Iteration: 9
+Elapsed Simulation Time (s): 3.82804
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 10
+Elapsed Simulation Time (s): 3.70752
+Final CPU Temp (°C): 38
+
+Threads: 12 Iteration: 11
+Elapsed Simulation Time (s): 3.86928
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 12
+Elapsed Simulation Time (s): 3.63039
+Final CPU Temp (°C): 40
+
+Threads: 12 Iteration: 13
+Elapsed Simulation Time (s): 3.74765
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 14
+Elapsed Simulation Time (s): 3.59466
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 15
+Elapsed Simulation Time (s): 3.80399
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 16
+Elapsed Simulation Time (s): 3.91708
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 17
+Elapsed Simulation Time (s): 3.62473
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 18
+Elapsed Simulation Time (s): 3.71906
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 19
+Elapsed Simulation Time (s): 3.56173
+Final CPU Temp (°C): 40
+
+Threads: 12 Iteration: 20
+Elapsed Simulation Time (s): 3.74622
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 21
+Elapsed Simulation Time (s): 3.75086
+Final CPU Temp (°C): 40
+
+Threads: 12 Iteration: 22
+Elapsed Simulation Time (s): 3.897
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 23
+Elapsed Simulation Time (s): 3.90137
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 24
+Elapsed Simulation Time (s): 3.90725
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 25
+Elapsed Simulation Time (s): 3.61235
+Final CPU Temp (°C): 40
+
+Threads: 12 Iteration: 26
+Elapsed Simulation Time (s): 3.87341
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 27
+Elapsed Simulation Time (s): 3.58227
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 28
+Elapsed Simulation Time (s): 3.94709
+Final CPU Temp (°C): 42
+
+Threads: 12 Iteration: 29
+Elapsed Simulation Time (s): 3.82996
+Final CPU Temp (°C): 42
+
+Threads: 12 Iteration: 30
+Elapsed Simulation Time (s): 3.83302
+Final CPU Temp (°C): 38
+
+Threads: 12 Iteration: 31
+Elapsed Simulation Time (s): 3.65286
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 32
+Elapsed Simulation Time (s): 3.87899
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 33
+Elapsed Simulation Time (s): 3.78636
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 34
+Elapsed Simulation Time (s): 3.88221
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 35
+Elapsed Simulation Time (s): 3.94121
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 36
+Elapsed Simulation Time (s): 3.74112
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 37
+Elapsed Simulation Time (s): 3.77813
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 38
+Elapsed Simulation Time (s): 3.59016
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 39
+Elapsed Simulation Time (s): 3.86422
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 40
+Elapsed Simulation Time (s): 3.76061
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 41
+Elapsed Simulation Time (s): 3.90167
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 42
+Elapsed Simulation Time (s): 3.66852
+Final CPU Temp (°C): 42
+
+Threads: 12 Iteration: 43
+Elapsed Simulation Time (s): 3.88122
+Final CPU Temp (°C): 42
+
+Threads: 12 Iteration: 44
+Elapsed Simulation Time (s): 3.59013
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 45
+Elapsed Simulation Time (s): 3.71476
+Final CPU Temp (°C): 40
+
+Threads: 12 Iteration: 46
+Elapsed Simulation Time (s): 3.81022
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 47
+Elapsed Simulation Time (s): 3.82243
+Final CPU Temp (°C): 40
+
+Threads: 12 Iteration: 48
+Elapsed Simulation Time (s): 3.66033
+Final CPU Temp (°C): 41
+
+Threads: 12 Iteration: 49
+Elapsed Simulation Time (s): 3.63515
+Final CPU Temp (°C): 42
+
+Threads: 12 Iteration: 50
+Elapsed Simulation Time (s): 3.89485
+Final CPU Temp (°C): 41
+
+Threads: 14 Iteration: 1
+Elapsed Simulation Time (s): 3.67573
+Final CPU Temp (°C): 40
+
+Threads: 14 Iteration: 2
+Elapsed Simulation Time (s): 3.39379
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 3
+Elapsed Simulation Time (s): 3.49103
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 4
+Elapsed Simulation Time (s): 3.67168
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 5
+Elapsed Simulation Time (s): 3.50158
+Final CPU Temp (°C): 41
+
+Threads: 14 Iteration: 6
+Elapsed Simulation Time (s): 3.69028
+Final CPU Temp (°C): 41
+
+Threads: 14 Iteration: 7
+Elapsed Simulation Time (s): 3.67818
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 8
+Elapsed Simulation Time (s): 3.50245
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 9
+Elapsed Simulation Time (s): 3.54621
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 10
+Elapsed Simulation Time (s): 3.60764
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 11
+Elapsed Simulation Time (s): 3.69365
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 12
+Elapsed Simulation Time (s): 3.69979
+Final CPU Temp (°C): 44
+
+Threads: 14 Iteration: 13
+Elapsed Simulation Time (s): 3.35023
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 14
+Elapsed Simulation Time (s): 3.77341
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 15
+Elapsed Simulation Time (s): 3.57427
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 16
+Elapsed Simulation Time (s): 3.56525
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 17
+Elapsed Simulation Time (s): 3.42466
+Final CPU Temp (°C): 39
+
+Threads: 14 Iteration: 18
+Elapsed Simulation Time (s): 3.66259
+Final CPU Temp (°C): 44
+
+Threads: 14 Iteration: 19
+Elapsed Simulation Time (s): 3.59135
+Final CPU Temp (°C): 44
+
+Threads: 14 Iteration: 20
+Elapsed Simulation Time (s): 3.42528
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 21
+Elapsed Simulation Time (s): 3.46785
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 22
+Elapsed Simulation Time (s): 3.53467
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 23
+Elapsed Simulation Time (s): 3.43177
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 24
+Elapsed Simulation Time (s): 3.65833
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 25
+Elapsed Simulation Time (s): 3.68459
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 26
+Elapsed Simulation Time (s): 3.43465
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 27
+Elapsed Simulation Time (s): 3.63132
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 28
+Elapsed Simulation Time (s): 3.38669
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 29
+Elapsed Simulation Time (s): 3.5869
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 30
+Elapsed Simulation Time (s): 3.48493
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 31
+Elapsed Simulation Time (s): 3.57437
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 32
+Elapsed Simulation Time (s): 3.62038
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 33
+Elapsed Simulation Time (s): 3.35155
+Final CPU Temp (°C): 40
+
+Threads: 14 Iteration: 34
+Elapsed Simulation Time (s): 3.41368
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 35
+Elapsed Simulation Time (s): 3.59305
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 36
+Elapsed Simulation Time (s): 3.57088
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 37
+Elapsed Simulation Time (s): 3.48506
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 38
+Elapsed Simulation Time (s): 3.57974
+Final CPU Temp (°C): 41
+
+Threads: 14 Iteration: 39
+Elapsed Simulation Time (s): 3.35457
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 40
+Elapsed Simulation Time (s): 3.58651
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 41
+Elapsed Simulation Time (s): 3.394
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 42
+Elapsed Simulation Time (s): 3.32535
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 43
+Elapsed Simulation Time (s): 3.67516
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 44
+Elapsed Simulation Time (s): 3.61896
+Final CPU Temp (°C): 44
+
+Threads: 14 Iteration: 45
+Elapsed Simulation Time (s): 3.65557
+Final CPU Temp (°C): 44
+
+Threads: 14 Iteration: 46
+Elapsed Simulation Time (s): 3.5477
+Final CPU Temp (°C): 42
+
+Threads: 14 Iteration: 47
+Elapsed Simulation Time (s): 3.46059
+Final CPU Temp (°C): 41
+
+Threads: 14 Iteration: 48
+Elapsed Simulation Time (s): 3.62866
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 49
+Elapsed Simulation Time (s): 3.57572
+Final CPU Temp (°C): 43
+
+Threads: 14 Iteration: 50
+Elapsed Simulation Time (s): 3.52318
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 1
+Elapsed Simulation Time (s): 3.3543
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 2
+Elapsed Simulation Time (s): 3.1844
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 3
+Elapsed Simulation Time (s): 3.44347
+Final CPU Temp (°C): 40
+
+Threads: 16 Iteration: 4
+Elapsed Simulation Time (s): 3.49615
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 5
+Elapsed Simulation Time (s): 3.21489
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 6
+Elapsed Simulation Time (s): 3.50864
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 7
+Elapsed Simulation Time (s): 3.43469
+Final CPU Temp (°C): 38
+
+Threads: 16 Iteration: 8
+Elapsed Simulation Time (s): 3.46063
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 9
+Elapsed Simulation Time (s): 3.36256
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 10
+Elapsed Simulation Time (s): 3.49422
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 11
+Elapsed Simulation Time (s): 3.3427
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 12
+Elapsed Simulation Time (s): 3.22373
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 13
+Elapsed Simulation Time (s): 3.63353
+Final CPU Temp (°C): 38
+
+Threads: 16 Iteration: 14
+Elapsed Simulation Time (s): 3.37724
+Final CPU Temp (°C): 41
+
+Threads: 16 Iteration: 15
+Elapsed Simulation Time (s): 3.52398
+Final CPU Temp (°C): 41
+
+Threads: 16 Iteration: 16
+Elapsed Simulation Time (s): 3.26138
+Final CPU Temp (°C): 40
+
+Threads: 16 Iteration: 17
+Elapsed Simulation Time (s): 3.37736
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 18
+Elapsed Simulation Time (s): 3.24034
+Final CPU Temp (°C): 41
+
+Threads: 16 Iteration: 19
+Elapsed Simulation Time (s): 3.32663
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 20
+Elapsed Simulation Time (s): 3.27786
+Final CPU Temp (°C): 39
+
+Threads: 16 Iteration: 21
+Elapsed Simulation Time (s): 3.38236
+Final CPU Temp (°C): 40
+
+Threads: 16 Iteration: 22
+Elapsed Simulation Time (s): 3.2134
+Final CPU Temp (°C): 39
+
+Threads: 16 Iteration: 23
+Elapsed Simulation Time (s): 3.19606
+Final CPU Temp (°C): 39
+
+Threads: 16 Iteration: 24
+Elapsed Simulation Time (s): 3.28873
+Final CPU Temp (°C): 41
+
+Threads: 16 Iteration: 25
+Elapsed Simulation Time (s): 3.5006
+Final CPU Temp (°C): 41
+
+Threads: 16 Iteration: 26
+Elapsed Simulation Time (s): 3.31421
+Final CPU Temp (°C): 39
+
+Threads: 16 Iteration: 27
+Elapsed Simulation Time (s): 3.45967
+Final CPU Temp (°C): 40
+
+Threads: 16 Iteration: 28
+Elapsed Simulation Time (s): 3.22981
+Final CPU Temp (°C): 40
+
+Threads: 16 Iteration: 29
+Elapsed Simulation Time (s): 3.41821
+Final CPU Temp (°C): 40
+
+Threads: 16 Iteration: 30
+Elapsed Simulation Time (s): 3.39281
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 31
+Elapsed Simulation Time (s): 3.36095
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 32
+Elapsed Simulation Time (s): 3.31313
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 33
+Elapsed Simulation Time (s): 3.19751
+Final CPU Temp (°C): 41
+
+Threads: 16 Iteration: 34
+Elapsed Simulation Time (s): 3.49701
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 35
+Elapsed Simulation Time (s): 3.22019
+Final CPU Temp (°C): 41
+
+Threads: 16 Iteration: 36
+Elapsed Simulation Time (s): 3.28327
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 37
+Elapsed Simulation Time (s): 3.35053
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 38
+Elapsed Simulation Time (s): 3.51
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 39
+Elapsed Simulation Time (s): 3.40976
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 40
+Elapsed Simulation Time (s): 3.50048
+Final CPU Temp (°C): 41
+
+Threads: 16 Iteration: 41
+Elapsed Simulation Time (s): 3.21039
+Final CPU Temp (°C): 39
+
+Threads: 16 Iteration: 42
+Elapsed Simulation Time (s): 3.45977
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 43
+Elapsed Simulation Time (s): 3.41613
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 44
+Elapsed Simulation Time (s): 3.31299
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 45
+Elapsed Simulation Time (s): 3.46205
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 46
+Elapsed Simulation Time (s): 3.53325
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 47
+Elapsed Simulation Time (s): 3.27676
+Final CPU Temp (°C): 43
+
+Threads: 16 Iteration: 48
+Elapsed Simulation Time (s): 3.51975
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 49
+Elapsed Simulation Time (s): 3.35938
+Final CPU Temp (°C): 42
+
+Threads: 16 Iteration: 50
+Elapsed Simulation Time (s): 3.39373
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 1
+Elapsed Simulation Time (s): 3.30076
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 2
+Elapsed Simulation Time (s): 3.14138
+Final CPU Temp (°C): 39
+
+Threads: 18 Iteration: 3
+Elapsed Simulation Time (s): 3.08738
+Final CPU Temp (°C): 37
+
+Threads: 18 Iteration: 4
+Elapsed Simulation Time (s): 3.3079
+Final CPU Temp (°C): 40
+
+Threads: 18 Iteration: 5
+Elapsed Simulation Time (s): 3.28247
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 6
+Elapsed Simulation Time (s): 3.35532
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 7
+Elapsed Simulation Time (s): 3.14549
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 8
+Elapsed Simulation Time (s): 3.14372
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 9
+Elapsed Simulation Time (s): 3.36481
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 10
+Elapsed Simulation Time (s): 3.27605
+Final CPU Temp (°C): 40
+
+Threads: 18 Iteration: 11
+Elapsed Simulation Time (s): 3.06473
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 12
+Elapsed Simulation Time (s): 3.20953
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 13
+Elapsed Simulation Time (s): 3.13513
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 14
+Elapsed Simulation Time (s): 3.38063
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 15
+Elapsed Simulation Time (s): 3.34703
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 16
+Elapsed Simulation Time (s): 3.20796
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 17
+Elapsed Simulation Time (s): 3.33378
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 18
+Elapsed Simulation Time (s): 3.38782
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 19
+Elapsed Simulation Time (s): 3.38887
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 20
+Elapsed Simulation Time (s): 3.12568
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 21
+Elapsed Simulation Time (s): 3.07057
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 22
+Elapsed Simulation Time (s): 3.12555
+Final CPU Temp (°C): 40
+
+Threads: 18 Iteration: 23
+Elapsed Simulation Time (s): 3.17927
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 24
+Elapsed Simulation Time (s): 3.35315
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 25
+Elapsed Simulation Time (s): 3.35535
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 26
+Elapsed Simulation Time (s): 3.1773
+Final CPU Temp (°C): 40
+
+Threads: 18 Iteration: 27
+Elapsed Simulation Time (s): 3.37127
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 28
+Elapsed Simulation Time (s): 3.38828
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 29
+Elapsed Simulation Time (s): 3.14835
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 30
+Elapsed Simulation Time (s): 3.2775
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 31
+Elapsed Simulation Time (s): 3.38381
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 32
+Elapsed Simulation Time (s): 3.12587
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 33
+Elapsed Simulation Time (s): 3.10419
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 34
+Elapsed Simulation Time (s): 3.29258
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 35
+Elapsed Simulation Time (s): 3.15717
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 36
+Elapsed Simulation Time (s): 3.26881
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 37
+Elapsed Simulation Time (s): 3.31664
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 38
+Elapsed Simulation Time (s): 3.3269
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 39
+Elapsed Simulation Time (s): 3.11073
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 40
+Elapsed Simulation Time (s): 3.38611
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 41
+Elapsed Simulation Time (s): 3.22424
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 42
+Elapsed Simulation Time (s): 3.13684
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 43
+Elapsed Simulation Time (s): 3.41088
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 44
+Elapsed Simulation Time (s): 3.25732
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 45
+Elapsed Simulation Time (s): 3.12529
+Final CPU Temp (°C): 42
+
+Threads: 18 Iteration: 46
+Elapsed Simulation Time (s): 3.22095
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 47
+Elapsed Simulation Time (s): 3.16496
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 48
+Elapsed Simulation Time (s): 3.27584
+Final CPU Temp (°C): 41
+
+Threads: 18 Iteration: 49
+Elapsed Simulation Time (s): 3.26565
+Final CPU Temp (°C): 40
+
+Threads: 18 Iteration: 50
+Elapsed Simulation Time (s): 3.13687
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 1
+Elapsed Simulation Time (s): 3.21606
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 2
+Elapsed Simulation Time (s): 3.24403
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 3
+Elapsed Simulation Time (s): 3.28425
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 4
+Elapsed Simulation Time (s): 3.00421
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 5
+Elapsed Simulation Time (s): 3.41493
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 6
+Elapsed Simulation Time (s): 3.10486
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 7
+Elapsed Simulation Time (s): 3.14396
+Final CPU Temp (°C): 42
+
+Threads: 20 Iteration: 8
+Elapsed Simulation Time (s): 3.11286
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 9
+Elapsed Simulation Time (s): 3.14657
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 10
+Elapsed Simulation Time (s): 3.19319
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 11
+Elapsed Simulation Time (s): 3.05537
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 12
+Elapsed Simulation Time (s): 3.18584
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 13
+Elapsed Simulation Time (s): 3.25618
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 14
+Elapsed Simulation Time (s): 3.09082
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 15
+Elapsed Simulation Time (s): 3.06572
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 16
+Elapsed Simulation Time (s): 3.00142
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 17
+Elapsed Simulation Time (s): 3.19387
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 18
+Elapsed Simulation Time (s): 3.31237
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 19
+Elapsed Simulation Time (s): 3.03532
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 20
+Elapsed Simulation Time (s): 3.26701
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 21
+Elapsed Simulation Time (s): 3.23316
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 22
+Elapsed Simulation Time (s): 2.98568
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 23
+Elapsed Simulation Time (s): 3.12812
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 24
+Elapsed Simulation Time (s): 3.23718
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 25
+Elapsed Simulation Time (s): 2.99173
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 26
+Elapsed Simulation Time (s): 3.12622
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 27
+Elapsed Simulation Time (s): 3.05687
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 28
+Elapsed Simulation Time (s): 3.09108
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 29
+Elapsed Simulation Time (s): 3.28316
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 30
+Elapsed Simulation Time (s): 3.08211
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 31
+Elapsed Simulation Time (s): 3.26008
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 32
+Elapsed Simulation Time (s): 3.07007
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 33
+Elapsed Simulation Time (s): 3.06785
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 34
+Elapsed Simulation Time (s): 3.21274
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 35
+Elapsed Simulation Time (s): 3.23222
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 36
+Elapsed Simulation Time (s): 3.12334
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 37
+Elapsed Simulation Time (s): 3.02612
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 38
+Elapsed Simulation Time (s): 3.11264
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 39
+Elapsed Simulation Time (s): 3.32554
+Final CPU Temp (°C): 46
+
+Threads: 20 Iteration: 40
+Elapsed Simulation Time (s): 3.06331
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 41
+Elapsed Simulation Time (s): 3.22575
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 42
+Elapsed Simulation Time (s): 3.27051
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 43
+Elapsed Simulation Time (s): 3.30082
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 44
+Elapsed Simulation Time (s): 2.99696
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 45
+Elapsed Simulation Time (s): 3.24695
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 46
+Elapsed Simulation Time (s): 3.07462
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 47
+Elapsed Simulation Time (s): 3.12118
+Final CPU Temp (°C): 38
+
+Threads: 20 Iteration: 48
+Elapsed Simulation Time (s): 3.00031
+Final CPU Temp (°C): 41
+
+Threads: 20 Iteration: 49
+Elapsed Simulation Time (s): 3.13053
+Final CPU Temp (°C): 40
+
+Threads: 20 Iteration: 50
+Elapsed Simulation Time (s): 3.03554
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 1
+Elapsed Simulation Time (s): 2.89629
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 2
+Elapsed Simulation Time (s): 3.19514
+Final CPU Temp (°C): 39
+
+Threads: 22 Iteration: 3
+Elapsed Simulation Time (s): 2.9749
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 4
+Elapsed Simulation Time (s): 2.92971
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 5
+Elapsed Simulation Time (s): 3.00795
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 6
+Elapsed Simulation Time (s): 3.08282
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 7
+Elapsed Simulation Time (s): 2.93352
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 8
+Elapsed Simulation Time (s): 3.11171
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 9
+Elapsed Simulation Time (s): 2.99933
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 10
+Elapsed Simulation Time (s): 2.9228
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 11
+Elapsed Simulation Time (s): 2.86386
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 12
+Elapsed Simulation Time (s): 3.02365
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 13
+Elapsed Simulation Time (s): 3.09152
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 14
+Elapsed Simulation Time (s): 2.9687
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 15
+Elapsed Simulation Time (s): 3.02462
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 16
+Elapsed Simulation Time (s): 2.87588
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 17
+Elapsed Simulation Time (s): 3.0434
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 18
+Elapsed Simulation Time (s): 3.19447
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 19
+Elapsed Simulation Time (s): 2.95016
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 20
+Elapsed Simulation Time (s): 3.00747
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 21
+Elapsed Simulation Time (s): 3.11497
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 22
+Elapsed Simulation Time (s): 2.95931
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 23
+Elapsed Simulation Time (s): 2.85658
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 24
+Elapsed Simulation Time (s): 2.9119
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 25
+Elapsed Simulation Time (s): 3.0801
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 26
+Elapsed Simulation Time (s): 3.10756
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 27
+Elapsed Simulation Time (s): 3.27964
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 28
+Elapsed Simulation Time (s): 3.10722
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 29
+Elapsed Simulation Time (s): 2.91101
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 30
+Elapsed Simulation Time (s): 3.05901
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 31
+Elapsed Simulation Time (s): 2.91073
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 32
+Elapsed Simulation Time (s): 3.08089
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 33
+Elapsed Simulation Time (s): 2.90805
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 34
+Elapsed Simulation Time (s): 3.10417
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 35
+Elapsed Simulation Time (s): 2.93802
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 36
+Elapsed Simulation Time (s): 3.01177
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 37
+Elapsed Simulation Time (s): 2.8575
+Final CPU Temp (°C): 38
+
+Threads: 22 Iteration: 38
+Elapsed Simulation Time (s): 2.8688
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 39
+Elapsed Simulation Time (s): 3.04072
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 40
+Elapsed Simulation Time (s): 3.12523
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 41
+Elapsed Simulation Time (s): 2.94506
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 42
+Elapsed Simulation Time (s): 2.85446
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 43
+Elapsed Simulation Time (s): 3.14524
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 44
+Elapsed Simulation Time (s): 3.05811
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 45
+Elapsed Simulation Time (s): 2.87266
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 46
+Elapsed Simulation Time (s): 2.9544
+Final CPU Temp (°C): 41
+
+Threads: 22 Iteration: 47
+Elapsed Simulation Time (s): 3.13188
+Final CPU Temp (°C): 43
+
+Threads: 22 Iteration: 48
+Elapsed Simulation Time (s): 3.09498
+Final CPU Temp (°C): 40
+
+Threads: 22 Iteration: 49
+Elapsed Simulation Time (s): 3.0363
+Final CPU Temp (°C): 38
+
+Threads: 22 Iteration: 50
+Elapsed Simulation Time (s): 2.97924
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 1
+Elapsed Simulation Time (s): 2.82037
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 2
+Elapsed Simulation Time (s): 2.78442
+Final CPU Temp (°C): 39
+
+Threads: 24 Iteration: 3
+Elapsed Simulation Time (s): 2.78844
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 4
+Elapsed Simulation Time (s): 2.74712
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 5
+Elapsed Simulation Time (s): 2.90063
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 6
+Elapsed Simulation Time (s): 2.86249
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 7
+Elapsed Simulation Time (s): 2.82836
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 8
+Elapsed Simulation Time (s): 2.95673
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 9
+Elapsed Simulation Time (s): 2.77115
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 10
+Elapsed Simulation Time (s): 2.8524
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 11
+Elapsed Simulation Time (s): 3.00699
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 12
+Elapsed Simulation Time (s): 2.83929
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 13
+Elapsed Simulation Time (s): 2.94478
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 14
+Elapsed Simulation Time (s): 2.74447
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 15
+Elapsed Simulation Time (s): 3.06413
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 16
+Elapsed Simulation Time (s): 2.79671
+Final CPU Temp (°C): 38
+
+Threads: 24 Iteration: 17
+Elapsed Simulation Time (s): 2.793
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 18
+Elapsed Simulation Time (s): 2.94751
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 19
+Elapsed Simulation Time (s): 2.85926
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 20
+Elapsed Simulation Time (s): 2.90894
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 21
+Elapsed Simulation Time (s): 2.80638
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 22
+Elapsed Simulation Time (s): 2.99002
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 23
+Elapsed Simulation Time (s): 2.89657
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 24
+Elapsed Simulation Time (s): 2.96158
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 25
+Elapsed Simulation Time (s): 2.97611
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 26
+Elapsed Simulation Time (s): 3.01959
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 27
+Elapsed Simulation Time (s): 2.86795
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 28
+Elapsed Simulation Time (s): 2.77513
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 29
+Elapsed Simulation Time (s): 2.84172
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 30
+Elapsed Simulation Time (s): 2.88827
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 31
+Elapsed Simulation Time (s): 2.91605
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 32
+Elapsed Simulation Time (s): 2.82196
+Final CPU Temp (°C): 38
+
+Threads: 24 Iteration: 33
+Elapsed Simulation Time (s): 2.75321
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 34
+Elapsed Simulation Time (s): 2.73246
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 35
+Elapsed Simulation Time (s): 2.94108
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 36
+Elapsed Simulation Time (s): 2.84844
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 37
+Elapsed Simulation Time (s): 2.94359
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 38
+Elapsed Simulation Time (s): 2.94979
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 39
+Elapsed Simulation Time (s): 2.92424
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 40
+Elapsed Simulation Time (s): 2.84076
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 41
+Elapsed Simulation Time (s): 2.96456
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 42
+Elapsed Simulation Time (s): 2.90086
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 43
+Elapsed Simulation Time (s): 2.81159
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 44
+Elapsed Simulation Time (s): 2.79389
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 45
+Elapsed Simulation Time (s): 2.90256
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 46
+Elapsed Simulation Time (s): 2.91922
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 47
+Elapsed Simulation Time (s): 2.98953
+Final CPU Temp (°C): 40
+
+Threads: 24 Iteration: 48
+Elapsed Simulation Time (s): 2.98228
+Final CPU Temp (°C): 37
+
+Threads: 24 Iteration: 49
+Elapsed Simulation Time (s): 3.09416
+Final CPU Temp (°C): 41
+
+Threads: 24 Iteration: 50
+Elapsed Simulation Time (s): 2.90178
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 1
+Elapsed Simulation Time (s): 2.79791
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 2
+Elapsed Simulation Time (s): 2.78728
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 3
+Elapsed Simulation Time (s): 2.83142
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 4
+Elapsed Simulation Time (s): 2.705
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 5
+Elapsed Simulation Time (s): 2.76354
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 6
+Elapsed Simulation Time (s): 2.81067
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 7
+Elapsed Simulation Time (s): 2.83102
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 8
+Elapsed Simulation Time (s): 2.7412
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 9
+Elapsed Simulation Time (s): 2.75312
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 10
+Elapsed Simulation Time (s): 2.65159
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 11
+Elapsed Simulation Time (s): 2.8881
+Final CPU Temp (°C): 41
+
+Threads: 26 Iteration: 12
+Elapsed Simulation Time (s): 2.77244
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 13
+Elapsed Simulation Time (s): 2.974
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 14
+Elapsed Simulation Time (s): 2.72677
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 15
+Elapsed Simulation Time (s): 2.75132
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 16
+Elapsed Simulation Time (s): 2.90098
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 17
+Elapsed Simulation Time (s): 2.82101
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 18
+Elapsed Simulation Time (s): 2.64699
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 19
+Elapsed Simulation Time (s): 2.78671
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 20
+Elapsed Simulation Time (s): 2.81984
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 21
+Elapsed Simulation Time (s): 2.82368
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 22
+Elapsed Simulation Time (s): 2.72311
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 23
+Elapsed Simulation Time (s): 2.639
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 24
+Elapsed Simulation Time (s): 2.82144
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 25
+Elapsed Simulation Time (s): 2.80838
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 26
+Elapsed Simulation Time (s): 2.67366
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 27
+Elapsed Simulation Time (s): 2.72794
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 28
+Elapsed Simulation Time (s): 2.8182
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 29
+Elapsed Simulation Time (s): 2.65918
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 30
+Elapsed Simulation Time (s): 2.69081
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 31
+Elapsed Simulation Time (s): 2.83405
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 32
+Elapsed Simulation Time (s): 3.08531
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 33
+Elapsed Simulation Time (s): 2.84352
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 34
+Elapsed Simulation Time (s): 2.70652
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 35
+Elapsed Simulation Time (s): 2.78791
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 36
+Elapsed Simulation Time (s): 2.74066
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 37
+Elapsed Simulation Time (s): 2.67506
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 38
+Elapsed Simulation Time (s): 2.71091
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 39
+Elapsed Simulation Time (s): 2.67514
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 40
+Elapsed Simulation Time (s): 2.7571
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 41
+Elapsed Simulation Time (s): 2.87882
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 42
+Elapsed Simulation Time (s): 2.88757
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 43
+Elapsed Simulation Time (s): 2.77744
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 44
+Elapsed Simulation Time (s): 2.88591
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 45
+Elapsed Simulation Time (s): 2.62474
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 46
+Elapsed Simulation Time (s): 2.90852
+Final CPU Temp (°C): 41
+
+Threads: 26 Iteration: 47
+Elapsed Simulation Time (s): 2.93798
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 48
+Elapsed Simulation Time (s): 2.64576
+Final CPU Temp (°C): 40
+
+Threads: 26 Iteration: 49
+Elapsed Simulation Time (s): 2.75689
+Final CPU Temp (°C): 39
+
+Threads: 26 Iteration: 50
+Elapsed Simulation Time (s): 2.86737
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 1
+Elapsed Simulation Time (s): 2.97283
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 2
+Elapsed Simulation Time (s): 2.81328
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 3
+Elapsed Simulation Time (s): 2.76548
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 4
+Elapsed Simulation Time (s): 2.65735
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 5
+Elapsed Simulation Time (s): 2.6172
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 6
+Elapsed Simulation Time (s): 2.67768
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 7
+Elapsed Simulation Time (s): 2.62526
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 8
+Elapsed Simulation Time (s): 2.71289
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 9
+Elapsed Simulation Time (s): 2.65794
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 10
+Elapsed Simulation Time (s): 2.75937
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 11
+Elapsed Simulation Time (s): 2.80869
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 12
+Elapsed Simulation Time (s): 2.70388
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 13
+Elapsed Simulation Time (s): 2.78308
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 14
+Elapsed Simulation Time (s): 2.76186
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 15
+Elapsed Simulation Time (s): 2.9339
+Final CPU Temp (°C): 37
+
+Threads: 28 Iteration: 16
+Elapsed Simulation Time (s): 2.79389
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 17
+Elapsed Simulation Time (s): 2.5494
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 18
+Elapsed Simulation Time (s): 2.81697
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 19
+Elapsed Simulation Time (s): 2.6422
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 20
+Elapsed Simulation Time (s): 2.68086
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 21
+Elapsed Simulation Time (s): 2.60772
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 22
+Elapsed Simulation Time (s): 2.74726
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 23
+Elapsed Simulation Time (s): 2.57441
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 24
+Elapsed Simulation Time (s): 2.64823
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 25
+Elapsed Simulation Time (s): 2.58903
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 26
+Elapsed Simulation Time (s): 2.68562
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 27
+Elapsed Simulation Time (s): 2.65111
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 28
+Elapsed Simulation Time (s): 2.69167
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 29
+Elapsed Simulation Time (s): 2.60442
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 30
+Elapsed Simulation Time (s): 2.72762
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 31
+Elapsed Simulation Time (s): 2.7061
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 32
+Elapsed Simulation Time (s): 2.81783
+Final CPU Temp (°C): 43
+
+Threads: 28 Iteration: 33
+Elapsed Simulation Time (s): 2.74503
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 34
+Elapsed Simulation Time (s): 2.53992
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 35
+Elapsed Simulation Time (s): 2.76088
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 36
+Elapsed Simulation Time (s): 2.61966
+Final CPU Temp (°C): 41
+
+Threads: 28 Iteration: 37
+Elapsed Simulation Time (s): 2.74651
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 38
+Elapsed Simulation Time (s): 2.7321
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 39
+Elapsed Simulation Time (s): 2.60962
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 40
+Elapsed Simulation Time (s): 2.6091
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 41
+Elapsed Simulation Time (s): 2.70044
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 42
+Elapsed Simulation Time (s): 2.64304
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 43
+Elapsed Simulation Time (s): 2.57464
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 44
+Elapsed Simulation Time (s): 2.69734
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 45
+Elapsed Simulation Time (s): 2.55306
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 46
+Elapsed Simulation Time (s): 2.74301
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 47
+Elapsed Simulation Time (s): 2.57462
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 48
+Elapsed Simulation Time (s): 2.58439
+Final CPU Temp (°C): 40
+
+Threads: 28 Iteration: 49
+Elapsed Simulation Time (s): 2.59994
+Final CPU Temp (°C): 39
+
+Threads: 28 Iteration: 50
+Elapsed Simulation Time (s): 2.91981
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 1
+Elapsed Simulation Time (s): 2.67622
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 2
+Elapsed Simulation Time (s): 2.4989
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 3
+Elapsed Simulation Time (s): 2.62443
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 4
+Elapsed Simulation Time (s): 2.66033
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 5
+Elapsed Simulation Time (s): 2.57984
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 6
+Elapsed Simulation Time (s): 2.58473
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 7
+Elapsed Simulation Time (s): 2.60165
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 8
+Elapsed Simulation Time (s): 2.59016
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 9
+Elapsed Simulation Time (s): 2.54739
+Final CPU Temp (°C): 38
+
+Threads: 30 Iteration: 10
+Elapsed Simulation Time (s): 2.53043
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 11
+Elapsed Simulation Time (s): 2.64063
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 12
+Elapsed Simulation Time (s): 2.66448
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 13
+Elapsed Simulation Time (s): 2.58338
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 14
+Elapsed Simulation Time (s): 2.59432
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 15
+Elapsed Simulation Time (s): 2.71821
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 16
+Elapsed Simulation Time (s): 2.65602
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 17
+Elapsed Simulation Time (s): 2.77002
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 18
+Elapsed Simulation Time (s): 2.57442
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 19
+Elapsed Simulation Time (s): 2.68165
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 20
+Elapsed Simulation Time (s): 2.55683
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 21
+Elapsed Simulation Time (s): 2.56404
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 22
+Elapsed Simulation Time (s): 2.67268
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 23
+Elapsed Simulation Time (s): 2.69503
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 24
+Elapsed Simulation Time (s): 2.66702
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 25
+Elapsed Simulation Time (s): 2.67557
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 26
+Elapsed Simulation Time (s): 2.70336
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 27
+Elapsed Simulation Time (s): 2.58849
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 28
+Elapsed Simulation Time (s): 2.62335
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 29
+Elapsed Simulation Time (s): 2.64705
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 30
+Elapsed Simulation Time (s): 2.55468
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 31
+Elapsed Simulation Time (s): 2.51166
+Final CPU Temp (°C): 38
+
+Threads: 30 Iteration: 32
+Elapsed Simulation Time (s): 2.55444
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 33
+Elapsed Simulation Time (s): 2.69265
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 34
+Elapsed Simulation Time (s): 2.7006
+Final CPU Temp (°C): 38
+
+Threads: 30 Iteration: 35
+Elapsed Simulation Time (s): 2.60686
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 36
+Elapsed Simulation Time (s): 2.52715
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 37
+Elapsed Simulation Time (s): 2.49999
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 38
+Elapsed Simulation Time (s): 2.60393
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 39
+Elapsed Simulation Time (s): 2.58889
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 40
+Elapsed Simulation Time (s): 2.62653
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 41
+Elapsed Simulation Time (s): 2.6679
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 42
+Elapsed Simulation Time (s): 2.82645
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 43
+Elapsed Simulation Time (s): 2.62261
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 44
+Elapsed Simulation Time (s): 2.80009
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 45
+Elapsed Simulation Time (s): 2.56271
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 46
+Elapsed Simulation Time (s): 2.60476
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 47
+Elapsed Simulation Time (s): 2.73611
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 48
+Elapsed Simulation Time (s): 2.6603
+Final CPU Temp (°C): 40
+
+Threads: 30 Iteration: 49
+Elapsed Simulation Time (s): 2.66955
+Final CPU Temp (°C): 39
+
+Threads: 30 Iteration: 50
+Elapsed Simulation Time (s): 2.80001
+Final CPU Temp (°C): 37
+
+Threads: 32 Iteration: 1
+Elapsed Simulation Time (s): 2.61605
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 2
+Elapsed Simulation Time (s): 2.46003
+Final CPU Temp (°C): 40
+
+Threads: 32 Iteration: 3
+Elapsed Simulation Time (s): 2.45502
+Final CPU Temp (°C): 40
+
+Threads: 32 Iteration: 4
+Elapsed Simulation Time (s): 2.43612
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 5
+Elapsed Simulation Time (s): 2.54009
+Final CPU Temp (°C): 40
+
+Threads: 32 Iteration: 6
+Elapsed Simulation Time (s): 2.5307
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 7
+Elapsed Simulation Time (s): 2.64769
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 8
+Elapsed Simulation Time (s): 2.59631
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 9
+Elapsed Simulation Time (s): 2.5417
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 10
+Elapsed Simulation Time (s): 2.5497
+Final CPU Temp (°C): 38
+
+Threads: 32 Iteration: 11
+Elapsed Simulation Time (s): 2.66198
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 12
+Elapsed Simulation Time (s): 2.49739
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 13
+Elapsed Simulation Time (s): 2.66165
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 14
+Elapsed Simulation Time (s): 2.47025
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 15
+Elapsed Simulation Time (s): 2.47494
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 16
+Elapsed Simulation Time (s): 2.65029
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 17
+Elapsed Simulation Time (s): 2.61301
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 18
+Elapsed Simulation Time (s): 2.53598
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 19
+Elapsed Simulation Time (s): 2.57528
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 20
+Elapsed Simulation Time (s): 2.59856
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 21
+Elapsed Simulation Time (s): 2.67868
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 22
+Elapsed Simulation Time (s): 2.51936
+Final CPU Temp (°C): 40
+
+Threads: 32 Iteration: 23
+Elapsed Simulation Time (s): 2.50231
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 24
+Elapsed Simulation Time (s): 2.59604
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 25
+Elapsed Simulation Time (s): 2.61138
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 26
+Elapsed Simulation Time (s): 2.55823
+Final CPU Temp (°C): 40
+
+Threads: 32 Iteration: 27
+Elapsed Simulation Time (s): 2.51116
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 28
+Elapsed Simulation Time (s): 2.49962
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 29
+Elapsed Simulation Time (s): 2.58552
+Final CPU Temp (°C): 38
+
+Threads: 32 Iteration: 30
+Elapsed Simulation Time (s): 2.55731
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 31
+Elapsed Simulation Time (s): 2.6187
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 32
+Elapsed Simulation Time (s): 2.70203
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 33
+Elapsed Simulation Time (s): 2.48158
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 34
+Elapsed Simulation Time (s): 2.51703
+Final CPU Temp (°C): 38
+
+Threads: 32 Iteration: 35
+Elapsed Simulation Time (s): 2.44428
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 36
+Elapsed Simulation Time (s): 2.58842
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 37
+Elapsed Simulation Time (s): 2.51413
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 38
+Elapsed Simulation Time (s): 2.57714
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 39
+Elapsed Simulation Time (s): 2.52553
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 40
+Elapsed Simulation Time (s): 2.57052
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 41
+Elapsed Simulation Time (s): 2.52377
+Final CPU Temp (°C): 40
+
+Threads: 32 Iteration: 42
+Elapsed Simulation Time (s): 2.56786
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 43
+Elapsed Simulation Time (s): 2.51277
+Final CPU Temp (°C): 38
+
+Threads: 32 Iteration: 44
+Elapsed Simulation Time (s): 2.50489
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 45
+Elapsed Simulation Time (s): 2.53339
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 46
+Elapsed Simulation Time (s): 2.50279
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 47
+Elapsed Simulation Time (s): 2.69999
+Final CPU Temp (°C): 38
+
+Threads: 32 Iteration: 48
+Elapsed Simulation Time (s): 2.52682
+Final CPU Temp (°C): 39
+
+Threads: 32 Iteration: 49
+Elapsed Simulation Time (s): 2.57112
+Final CPU Temp (°C): 40
+
+Threads: 32 Iteration: 50
+Elapsed Simulation Time (s): 2.4431
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 1
+Elapsed Simulation Time (s): 2.78902
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 2
+Elapsed Simulation Time (s): 2.64923
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 3
+Elapsed Simulation Time (s): 2.54808
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 4
+Elapsed Simulation Time (s): 2.48344
+Final CPU Temp (°C): 38
+
+Threads: 34 Iteration: 5
+Elapsed Simulation Time (s): 2.57477
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 6
+Elapsed Simulation Time (s): 2.41821
+Final CPU Temp (°C): 38
+
+Threads: 34 Iteration: 7
+Elapsed Simulation Time (s): 2.45909
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 8
+Elapsed Simulation Time (s): 2.56656
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 9
+Elapsed Simulation Time (s): 2.60322
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 10
+Elapsed Simulation Time (s): 2.58679
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 11
+Elapsed Simulation Time (s): 2.57824
+Final CPU Temp (°C): 40
+
+Threads: 34 Iteration: 12
+Elapsed Simulation Time (s): 2.53597
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 13
+Elapsed Simulation Time (s): 2.66585
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 14
+Elapsed Simulation Time (s): 2.56214
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 15
+Elapsed Simulation Time (s): 2.56266
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 16
+Elapsed Simulation Time (s): 2.53246
+Final CPU Temp (°C): 40
+
+Threads: 34 Iteration: 17
+Elapsed Simulation Time (s): 2.62232
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 18
+Elapsed Simulation Time (s): 2.64823
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 19
+Elapsed Simulation Time (s): 2.49742
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 20
+Elapsed Simulation Time (s): 2.52857
+Final CPU Temp (°C): 38
+
+Threads: 34 Iteration: 21
+Elapsed Simulation Time (s): 2.64843
+Final CPU Temp (°C): 40
+
+Threads: 34 Iteration: 22
+Elapsed Simulation Time (s): 2.40464
+Final CPU Temp (°C): 37
+
+Threads: 34 Iteration: 23
+Elapsed Simulation Time (s): 2.45521
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 24
+Elapsed Simulation Time (s): 2.63286
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 25
+Elapsed Simulation Time (s): 2.5696
+Final CPU Temp (°C): 38
+
+Threads: 34 Iteration: 26
+Elapsed Simulation Time (s): 2.54568
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 27
+Elapsed Simulation Time (s): 2.50887
+Final CPU Temp (°C): 38
+
+Threads: 34 Iteration: 28
+Elapsed Simulation Time (s): 2.46225
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 29
+Elapsed Simulation Time (s): 2.5416
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 30
+Elapsed Simulation Time (s): 2.46469
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 31
+Elapsed Simulation Time (s): 2.63615
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 32
+Elapsed Simulation Time (s): 2.5756
+Final CPU Temp (°C): 38
+
+Threads: 34 Iteration: 33
+Elapsed Simulation Time (s): 2.4142
+Final CPU Temp (°C): 38
+
+Threads: 34 Iteration: 34
+Elapsed Simulation Time (s): 2.48402
+Final CPU Temp (°C): 38
+
+Threads: 34 Iteration: 35
+Elapsed Simulation Time (s): 2.48864
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 36
+Elapsed Simulation Time (s): 2.48204
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 37
+Elapsed Simulation Time (s): 2.48098
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 38
+Elapsed Simulation Time (s): 2.47001
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 39
+Elapsed Simulation Time (s): 2.44937
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 40
+Elapsed Simulation Time (s): 2.57788
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 41
+Elapsed Simulation Time (s): 2.52894
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 42
+Elapsed Simulation Time (s): 2.46903
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 43
+Elapsed Simulation Time (s): 2.50405
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 44
+Elapsed Simulation Time (s): 2.63702
+Final CPU Temp (°C): 40
+
+Threads: 34 Iteration: 45
+Elapsed Simulation Time (s): 2.64944
+Final CPU Temp (°C): 40
+
+Threads: 34 Iteration: 46
+Elapsed Simulation Time (s): 2.55369
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 47
+Elapsed Simulation Time (s): 2.53301
+Final CPU Temp (°C): 40
+
+Threads: 34 Iteration: 48
+Elapsed Simulation Time (s): 2.36283
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 49
+Elapsed Simulation Time (s): 2.41663
+Final CPU Temp (°C): 39
+
+Threads: 34 Iteration: 50
+Elapsed Simulation Time (s): 2.67312
+Final CPU Temp (°C): 40
+
+Threads: 36 Iteration: 1
+Elapsed Simulation Time (s): 2.51899
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 2
+Elapsed Simulation Time (s): 2.56961
+Final CPU Temp (°C): 38
+
+Threads: 36 Iteration: 3
+Elapsed Simulation Time (s): 2.42401
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 4
+Elapsed Simulation Time (s): 2.49934
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 5
+Elapsed Simulation Time (s): 2.39437
+Final CPU Temp (°C): 38
+
+Threads: 36 Iteration: 6
+Elapsed Simulation Time (s): 2.44115
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 7
+Elapsed Simulation Time (s): 2.37225
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 8
+Elapsed Simulation Time (s): 2.53257
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 9
+Elapsed Simulation Time (s): 2.54359
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 10
+Elapsed Simulation Time (s): 2.68435
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 11
+Elapsed Simulation Time (s): 2.68469
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 12
+Elapsed Simulation Time (s): 2.57029
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 13
+Elapsed Simulation Time (s): 2.55273
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 14
+Elapsed Simulation Time (s): 2.4585
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 15
+Elapsed Simulation Time (s): 2.55766
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 16
+Elapsed Simulation Time (s): 2.55757
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 17
+Elapsed Simulation Time (s): 2.35048
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 18
+Elapsed Simulation Time (s): 2.5911
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 19
+Elapsed Simulation Time (s): 2.57352
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 20
+Elapsed Simulation Time (s): 2.57755
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 21
+Elapsed Simulation Time (s): 2.5318
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 22
+Elapsed Simulation Time (s): 2.58811
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 23
+Elapsed Simulation Time (s): 2.58358
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 24
+Elapsed Simulation Time (s): 2.37504
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 25
+Elapsed Simulation Time (s): 2.42934
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 26
+Elapsed Simulation Time (s): 2.42786
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 27
+Elapsed Simulation Time (s): 2.38558
+Final CPU Temp (°C): 38
+
+Threads: 36 Iteration: 28
+Elapsed Simulation Time (s): 2.59945
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 29
+Elapsed Simulation Time (s): 2.52811
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 30
+Elapsed Simulation Time (s): 2.41497
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 31
+Elapsed Simulation Time (s): 2.44956
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 32
+Elapsed Simulation Time (s): 2.46708
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 33
+Elapsed Simulation Time (s): 2.47651
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 34
+Elapsed Simulation Time (s): 2.4841
+Final CPU Temp (°C): 40
+
+Threads: 36 Iteration: 35
+Elapsed Simulation Time (s): 2.45351
+Final CPU Temp (°C): 38
+
+Threads: 36 Iteration: 36
+Elapsed Simulation Time (s): 2.52355
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 37
+Elapsed Simulation Time (s): 2.54479
+Final CPU Temp (°C): 40
+
+Threads: 36 Iteration: 38
+Elapsed Simulation Time (s): 2.48318
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 39
+Elapsed Simulation Time (s): 2.46488
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 40
+Elapsed Simulation Time (s): 2.51844
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 41
+Elapsed Simulation Time (s): 2.47196
+Final CPU Temp (°C): 40
+
+Threads: 36 Iteration: 42
+Elapsed Simulation Time (s): 2.48859
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 43
+Elapsed Simulation Time (s): 2.61241
+Final CPU Temp (°C): 40
+
+Threads: 36 Iteration: 44
+Elapsed Simulation Time (s): 2.4959
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 45
+Elapsed Simulation Time (s): 2.54454
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 46
+Elapsed Simulation Time (s): 2.61573
+Final CPU Temp (°C): 37
+
+Threads: 36 Iteration: 47
+Elapsed Simulation Time (s): 2.58849
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 48
+Elapsed Simulation Time (s): 2.56371
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 49
+Elapsed Simulation Time (s): 2.48615
+Final CPU Temp (°C): 39
+
+Threads: 36 Iteration: 50
+Elapsed Simulation Time (s): 2.58203
+Final CPU Temp (°C): 38
+
+Threads: 38 Iteration: 1
+Elapsed Simulation Time (s): 2.44488
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 2
+Elapsed Simulation Time (s): 2.60959
+Final CPU Temp (°C): 40
+
+Threads: 38 Iteration: 3
+Elapsed Simulation Time (s): 2.53196
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 4
+Elapsed Simulation Time (s): 2.39627
+Final CPU Temp (°C): 38
+
+Threads: 38 Iteration: 5
+Elapsed Simulation Time (s): 2.43994
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 6
+Elapsed Simulation Time (s): 2.51995
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 7
+Elapsed Simulation Time (s): 2.57013
+Final CPU Temp (°C): 38
+
+Threads: 38 Iteration: 8
+Elapsed Simulation Time (s): 2.45254
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 9
+Elapsed Simulation Time (s): 2.43491
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 10
+Elapsed Simulation Time (s): 2.70788
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 11
+Elapsed Simulation Time (s): 2.50286
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 12
+Elapsed Simulation Time (s): 2.46664
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 13
+Elapsed Simulation Time (s): 2.49125
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 14
+Elapsed Simulation Time (s): 2.43428
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 15
+Elapsed Simulation Time (s): 2.36399
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 16
+Elapsed Simulation Time (s): 2.64249
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 17
+Elapsed Simulation Time (s): 2.55791
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 18
+Elapsed Simulation Time (s): 2.48433
+Final CPU Temp (°C): 38
+
+Threads: 38 Iteration: 19
+Elapsed Simulation Time (s): 2.4215
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 20
+Elapsed Simulation Time (s): 2.6034
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 21
+Elapsed Simulation Time (s): 2.60224
+Final CPU Temp (°C): 40
+
+Threads: 38 Iteration: 22
+Elapsed Simulation Time (s): 2.5239
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 23
+Elapsed Simulation Time (s): 2.41532
+Final CPU Temp (°C): 38
+
+Threads: 38 Iteration: 24
+Elapsed Simulation Time (s): 2.40896
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 25
+Elapsed Simulation Time (s): 2.45543
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 26
+Elapsed Simulation Time (s): 2.4728
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 27
+Elapsed Simulation Time (s): 2.35722
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 28
+Elapsed Simulation Time (s): 2.34564
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 29
+Elapsed Simulation Time (s): 2.43429
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 30
+Elapsed Simulation Time (s): 2.65514
+Final CPU Temp (°C): 49
+
+Threads: 38 Iteration: 31
+Elapsed Simulation Time (s): 2.52417
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 32
+Elapsed Simulation Time (s): 2.66405
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 33
+Elapsed Simulation Time (s): 2.66345
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 34
+Elapsed Simulation Time (s): 2.5123
+Final CPU Temp (°C): 41
+
+Threads: 38 Iteration: 35
+Elapsed Simulation Time (s): 2.62246
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 36
+Elapsed Simulation Time (s): 2.41049
+Final CPU Temp (°C): 38
+
+Threads: 38 Iteration: 37
+Elapsed Simulation Time (s): 2.55396
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 38
+Elapsed Simulation Time (s): 2.56314
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 39
+Elapsed Simulation Time (s): 2.5607
+Final CPU Temp (°C): 38
+
+Threads: 38 Iteration: 40
+Elapsed Simulation Time (s): 2.43548
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 41
+Elapsed Simulation Time (s): 2.4576
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 42
+Elapsed Simulation Time (s): 2.55175
+Final CPU Temp (°C): 40
+
+Threads: 38 Iteration: 43
+Elapsed Simulation Time (s): 2.54063
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 44
+Elapsed Simulation Time (s): 2.62686
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 45
+Elapsed Simulation Time (s): 2.55307
+Final CPU Temp (°C): 40
+
+Threads: 38 Iteration: 46
+Elapsed Simulation Time (s): 2.51524
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 47
+Elapsed Simulation Time (s): 2.55769
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 48
+Elapsed Simulation Time (s): 2.40974
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 49
+Elapsed Simulation Time (s): 2.53709
+Final CPU Temp (°C): 39
+
+Threads: 38 Iteration: 50
+Elapsed Simulation Time (s): 2.55349
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 1
+Elapsed Simulation Time (s): 2.66191
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 2
+Elapsed Simulation Time (s): 2.59534
+Final CPU Temp (°C): 38
+
+Threads: 40 Iteration: 3
+Elapsed Simulation Time (s): 2.59582
+Final CPU Temp (°C): 41
+
+Threads: 40 Iteration: 4
+Elapsed Simulation Time (s): 2.76176
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 5
+Elapsed Simulation Time (s): 2.47963
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 6
+Elapsed Simulation Time (s): 2.56006
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 7
+Elapsed Simulation Time (s): 2.53013
+Final CPU Temp (°C): 38
+
+Threads: 40 Iteration: 8
+Elapsed Simulation Time (s): 2.55446
+Final CPU Temp (°C): 38
+
+Threads: 40 Iteration: 9
+Elapsed Simulation Time (s): 2.56664
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 10
+Elapsed Simulation Time (s): 2.71369
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 11
+Elapsed Simulation Time (s): 2.61254
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 12
+Elapsed Simulation Time (s): 2.60762
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 13
+Elapsed Simulation Time (s): 2.52102
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 14
+Elapsed Simulation Time (s): 2.47876
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 15
+Elapsed Simulation Time (s): 2.66939
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 16
+Elapsed Simulation Time (s): 2.7655
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 17
+Elapsed Simulation Time (s): 2.67072
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 18
+Elapsed Simulation Time (s): 2.54232
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 19
+Elapsed Simulation Time (s): 2.44672
+Final CPU Temp (°C): 40
+
+Threads: 40 Iteration: 20
+Elapsed Simulation Time (s): 2.602
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 21
+Elapsed Simulation Time (s): 2.71256
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 22
+Elapsed Simulation Time (s): 2.5781
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 23
+Elapsed Simulation Time (s): 2.46505
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 24
+Elapsed Simulation Time (s): 2.51001
+Final CPU Temp (°C): 38
+
+Threads: 40 Iteration: 25
+Elapsed Simulation Time (s): 2.46539
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 26
+Elapsed Simulation Time (s): 2.63377
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 27
+Elapsed Simulation Time (s): 2.61133
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 28
+Elapsed Simulation Time (s): 2.58509
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 29
+Elapsed Simulation Time (s): 2.56104
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 30
+Elapsed Simulation Time (s): 2.71565
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 31
+Elapsed Simulation Time (s): 2.55163
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 32
+Elapsed Simulation Time (s): 2.72032
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 33
+Elapsed Simulation Time (s): 2.68224
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 34
+Elapsed Simulation Time (s): 2.55417
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 35
+Elapsed Simulation Time (s): 2.7035
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 36
+Elapsed Simulation Time (s): 2.69276
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 37
+Elapsed Simulation Time (s): 2.61334
+Final CPU Temp (°C): 38
+
+Threads: 40 Iteration: 38
+Elapsed Simulation Time (s): 2.55212
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 39
+Elapsed Simulation Time (s): 2.54496
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 40
+Elapsed Simulation Time (s): 2.66471
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 41
+Elapsed Simulation Time (s): 2.62543
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 42
+Elapsed Simulation Time (s): 2.4963
+Final CPU Temp (°C): 38
+
+Threads: 40 Iteration: 43
+Elapsed Simulation Time (s): 2.53816
+Final CPU Temp (°C): 38
+
+Threads: 40 Iteration: 44
+Elapsed Simulation Time (s): 2.48825
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 45
+Elapsed Simulation Time (s): 2.57862
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 46
+Elapsed Simulation Time (s): 2.71455
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 47
+Elapsed Simulation Time (s): 2.46873
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 48
+Elapsed Simulation Time (s): 2.50042
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 49
+Elapsed Simulation Time (s): 2.49009
+Final CPU Temp (°C): 39
+
+Threads: 40 Iteration: 50
+Elapsed Simulation Time (s): 2.76348
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 1
+Elapsed Simulation Time (s): 2.7621
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 2
+Elapsed Simulation Time (s): 2.759
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 3
+Elapsed Simulation Time (s): 2.80342
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 4
+Elapsed Simulation Time (s): 2.77028
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 5
+Elapsed Simulation Time (s): 2.61459
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 6
+Elapsed Simulation Time (s): 2.71858
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 7
+Elapsed Simulation Time (s): 2.73269
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 8
+Elapsed Simulation Time (s): 2.72494
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 9
+Elapsed Simulation Time (s): 2.73401
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 10
+Elapsed Simulation Time (s): 2.62593
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 11
+Elapsed Simulation Time (s): 2.70231
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 12
+Elapsed Simulation Time (s): 2.86961
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 13
+Elapsed Simulation Time (s): 2.87164
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 14
+Elapsed Simulation Time (s): 2.73657
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 15
+Elapsed Simulation Time (s): 2.65623
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 16
+Elapsed Simulation Time (s): 2.87929
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 17
+Elapsed Simulation Time (s): 2.74475
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 18
+Elapsed Simulation Time (s): 2.75779
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 19
+Elapsed Simulation Time (s): 2.80941
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 20
+Elapsed Simulation Time (s): 2.71886
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 21
+Elapsed Simulation Time (s): 2.7652
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 22
+Elapsed Simulation Time (s): 2.80049
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 23
+Elapsed Simulation Time (s): 2.72442
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 24
+Elapsed Simulation Time (s): 2.76773
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 25
+Elapsed Simulation Time (s): 2.78541
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 26
+Elapsed Simulation Time (s): 2.73782
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 27
+Elapsed Simulation Time (s): 2.69879
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 28
+Elapsed Simulation Time (s): 2.96859
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 29
+Elapsed Simulation Time (s): 2.71464
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 30
+Elapsed Simulation Time (s): 2.82824
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 31
+Elapsed Simulation Time (s): 2.63201
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 32
+Elapsed Simulation Time (s): 2.81676
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 33
+Elapsed Simulation Time (s): 2.73544
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 34
+Elapsed Simulation Time (s): 2.73563
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 35
+Elapsed Simulation Time (s): 2.8141
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 36
+Elapsed Simulation Time (s): 2.93108
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 37
+Elapsed Simulation Time (s): 2.66735
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 38
+Elapsed Simulation Time (s): 2.60334
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 39
+Elapsed Simulation Time (s): 2.79833
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 40
+Elapsed Simulation Time (s): 2.66063
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 41
+Elapsed Simulation Time (s): 2.68651
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 42
+Elapsed Simulation Time (s): 2.58737
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 43
+Elapsed Simulation Time (s): 2.89286
+Final CPU Temp (°C): 40
+
+Threads: 42 Iteration: 44
+Elapsed Simulation Time (s): 2.85637
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 45
+Elapsed Simulation Time (s): 2.57587
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 46
+Elapsed Simulation Time (s): 2.6537
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 47
+Elapsed Simulation Time (s): 2.76367
+Final CPU Temp (°C): 39
+
+Threads: 42 Iteration: 48
+Elapsed Simulation Time (s): 2.60363
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 49
+Elapsed Simulation Time (s): 2.763
+Final CPU Temp (°C): 38
+
+Threads: 42 Iteration: 50
+Elapsed Simulation Time (s): 2.65611
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 1
+Elapsed Simulation Time (s): 2.67349
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 2
+Elapsed Simulation Time (s): 2.81039
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 3
+Elapsed Simulation Time (s): 2.79183
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 4
+Elapsed Simulation Time (s): 2.68578
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 5
+Elapsed Simulation Time (s): 2.57882
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 6
+Elapsed Simulation Time (s): 2.71397
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 7
+Elapsed Simulation Time (s): 2.82234
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 8
+Elapsed Simulation Time (s): 2.69909
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 9
+Elapsed Simulation Time (s): 2.69096
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 10
+Elapsed Simulation Time (s): 2.66845
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 11
+Elapsed Simulation Time (s): 2.74604
+Final CPU Temp (°C): 40
+
+Threads: 44 Iteration: 12
+Elapsed Simulation Time (s): 2.97005
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 13
+Elapsed Simulation Time (s): 2.62885
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 14
+Elapsed Simulation Time (s): 2.66543
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 15
+Elapsed Simulation Time (s): 2.58664
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 16
+Elapsed Simulation Time (s): 2.7109
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 17
+Elapsed Simulation Time (s): 2.73964
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 18
+Elapsed Simulation Time (s): 2.80313
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 19
+Elapsed Simulation Time (s): 2.76766
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 20
+Elapsed Simulation Time (s): 2.79788
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 21
+Elapsed Simulation Time (s): 2.74652
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 22
+Elapsed Simulation Time (s): 2.65247
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 23
+Elapsed Simulation Time (s): 2.74881
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 24
+Elapsed Simulation Time (s): 2.76596
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 25
+Elapsed Simulation Time (s): 2.66242
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 26
+Elapsed Simulation Time (s): 2.73266
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 27
+Elapsed Simulation Time (s): 2.65875
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 28
+Elapsed Simulation Time (s): 2.64822
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 29
+Elapsed Simulation Time (s): 2.57925
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 30
+Elapsed Simulation Time (s): 2.80618
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 31
+Elapsed Simulation Time (s): 2.77579
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 32
+Elapsed Simulation Time (s): 2.68348
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 33
+Elapsed Simulation Time (s): 2.61751
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 34
+Elapsed Simulation Time (s): 2.76029
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 35
+Elapsed Simulation Time (s): 2.91769
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 36
+Elapsed Simulation Time (s): 2.7608
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 37
+Elapsed Simulation Time (s): 2.60223
+Final CPU Temp (°C): 37
+
+Threads: 44 Iteration: 38
+Elapsed Simulation Time (s): 2.58159
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 39
+Elapsed Simulation Time (s): 2.70486
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 40
+Elapsed Simulation Time (s): 2.67887
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 41
+Elapsed Simulation Time (s): 2.7874
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 42
+Elapsed Simulation Time (s): 2.76838
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 43
+Elapsed Simulation Time (s): 2.78787
+Final CPU Temp (°C): 38
+
+Threads: 44 Iteration: 44
+Elapsed Simulation Time (s): 2.67752
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 45
+Elapsed Simulation Time (s): 2.9925
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 46
+Elapsed Simulation Time (s): 2.57757
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 47
+Elapsed Simulation Time (s): 2.80321
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 48
+Elapsed Simulation Time (s): 2.76811
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 49
+Elapsed Simulation Time (s): 2.61503
+Final CPU Temp (°C): 39
+
+Threads: 44 Iteration: 50
+Elapsed Simulation Time (s): 2.73993
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 1
+Elapsed Simulation Time (s): 2.58472
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 2
+Elapsed Simulation Time (s): 2.64672
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 3
+Elapsed Simulation Time (s): 2.52448
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 4
+Elapsed Simulation Time (s): 2.85909
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 5
+Elapsed Simulation Time (s): 2.55929
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 6
+Elapsed Simulation Time (s): 2.54267
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 7
+Elapsed Simulation Time (s): 2.64314
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 8
+Elapsed Simulation Time (s): 2.63069
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 9
+Elapsed Simulation Time (s): 2.73085
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 10
+Elapsed Simulation Time (s): 2.5577
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 11
+Elapsed Simulation Time (s): 2.52915
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 12
+Elapsed Simulation Time (s): 2.64119
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 13
+Elapsed Simulation Time (s): 2.70191
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 14
+Elapsed Simulation Time (s): 2.75875
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 15
+Elapsed Simulation Time (s): 2.73148
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 16
+Elapsed Simulation Time (s): 2.75284
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 17
+Elapsed Simulation Time (s): 2.67086
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 18
+Elapsed Simulation Time (s): 2.63026
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 19
+Elapsed Simulation Time (s): 2.66707
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 20
+Elapsed Simulation Time (s): 2.74778
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 21
+Elapsed Simulation Time (s): 2.62801
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 22
+Elapsed Simulation Time (s): 2.57901
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 23
+Elapsed Simulation Time (s): 2.61647
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 24
+Elapsed Simulation Time (s): 2.5278
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 25
+Elapsed Simulation Time (s): 2.69097
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 26
+Elapsed Simulation Time (s): 2.58525
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 27
+Elapsed Simulation Time (s): 2.66831
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 28
+Elapsed Simulation Time (s): 2.71454
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 29
+Elapsed Simulation Time (s): 2.60091
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 30
+Elapsed Simulation Time (s): 2.80922
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 31
+Elapsed Simulation Time (s): 2.61263
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 32
+Elapsed Simulation Time (s): 2.57787
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 33
+Elapsed Simulation Time (s): 2.64736
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 34
+Elapsed Simulation Time (s): 2.63989
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 35
+Elapsed Simulation Time (s): 2.61084
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 36
+Elapsed Simulation Time (s): 2.53302
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 37
+Elapsed Simulation Time (s): 2.59844
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 38
+Elapsed Simulation Time (s): 2.72811
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 39
+Elapsed Simulation Time (s): 2.5581
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 40
+Elapsed Simulation Time (s): 2.67551
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 41
+Elapsed Simulation Time (s): 2.51069
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 42
+Elapsed Simulation Time (s): 2.65379
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 43
+Elapsed Simulation Time (s): 2.59811
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 44
+Elapsed Simulation Time (s): 2.64373
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 45
+Elapsed Simulation Time (s): 2.70845
+Final CPU Temp (°C): 38
+
+Threads: 46 Iteration: 46
+Elapsed Simulation Time (s): 2.69904
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 47
+Elapsed Simulation Time (s): 2.73527
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 48
+Elapsed Simulation Time (s): 2.64662
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 49
+Elapsed Simulation Time (s): 2.75312
+Final CPU Temp (°C): 39
+
+Threads: 46 Iteration: 50
+Elapsed Simulation Time (s): 2.62631
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 1
+Elapsed Simulation Time (s): 2.59793
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 2
+Elapsed Simulation Time (s): 2.53761
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 3
+Elapsed Simulation Time (s): 2.49596
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 4
+Elapsed Simulation Time (s): 2.71853
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 5
+Elapsed Simulation Time (s): 2.6995
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 6
+Elapsed Simulation Time (s): 2.68494
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 7
+Elapsed Simulation Time (s): 2.48695
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 8
+Elapsed Simulation Time (s): 2.65768
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 9
+Elapsed Simulation Time (s): 2.6489
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 10
+Elapsed Simulation Time (s): 2.521
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 11
+Elapsed Simulation Time (s): 2.71598
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 12
+Elapsed Simulation Time (s): 2.65024
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 13
+Elapsed Simulation Time (s): 2.72668
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 14
+Elapsed Simulation Time (s): 2.55329
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 15
+Elapsed Simulation Time (s): 2.54117
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 16
+Elapsed Simulation Time (s): 2.47527
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 17
+Elapsed Simulation Time (s): 2.71742
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 18
+Elapsed Simulation Time (s): 2.8058
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 19
+Elapsed Simulation Time (s): 2.67662
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 20
+Elapsed Simulation Time (s): 2.53956
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 21
+Elapsed Simulation Time (s): 2.71769
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 22
+Elapsed Simulation Time (s): 2.544
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 23
+Elapsed Simulation Time (s): 2.5086
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 24
+Elapsed Simulation Time (s): 2.57912
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 25
+Elapsed Simulation Time (s): 2.54998
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 26
+Elapsed Simulation Time (s): 2.54195
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 27
+Elapsed Simulation Time (s): 2.7403
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 28
+Elapsed Simulation Time (s): 2.62859
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 29
+Elapsed Simulation Time (s): 2.46513
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 30
+Elapsed Simulation Time (s): 2.71909
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 31
+Elapsed Simulation Time (s): 2.68256
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 32
+Elapsed Simulation Time (s): 2.55342
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 33
+Elapsed Simulation Time (s): 2.66992
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 34
+Elapsed Simulation Time (s): 2.56885
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 35
+Elapsed Simulation Time (s): 2.62224
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 36
+Elapsed Simulation Time (s): 2.60533
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 37
+Elapsed Simulation Time (s): 2.64373
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 38
+Elapsed Simulation Time (s): 2.71506
+Final CPU Temp (°C): 40
+
+Threads: 48 Iteration: 39
+Elapsed Simulation Time (s): 2.78024
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 40
+Elapsed Simulation Time (s): 2.65547
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 41
+Elapsed Simulation Time (s): 2.69861
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 42
+Elapsed Simulation Time (s): 2.69393
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 43
+Elapsed Simulation Time (s): 2.51716
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 44
+Elapsed Simulation Time (s): 2.54268
+Final CPU Temp (°C): 38
+
+Threads: 48 Iteration: 45
+Elapsed Simulation Time (s): 2.60145
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 46
+Elapsed Simulation Time (s): 2.57347
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 47
+Elapsed Simulation Time (s): 2.76026
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 48
+Elapsed Simulation Time (s): 2.79531
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 49
+Elapsed Simulation Time (s): 2.73537
+Final CPU Temp (°C): 39
+
+Threads: 48 Iteration: 50
+Elapsed Simulation Time (s): 2.69724
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 1
+Elapsed Simulation Time (s): 2.61457
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 2
+Elapsed Simulation Time (s): 2.52611
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 3
+Elapsed Simulation Time (s): 2.49716
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 4
+Elapsed Simulation Time (s): 2.59705
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 5
+Elapsed Simulation Time (s): 2.60711
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 6
+Elapsed Simulation Time (s): 2.58606
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 7
+Elapsed Simulation Time (s): 2.58789
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 8
+Elapsed Simulation Time (s): 2.57066
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 9
+Elapsed Simulation Time (s): 2.66523
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 10
+Elapsed Simulation Time (s): 2.61055
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 11
+Elapsed Simulation Time (s): 2.6158
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 12
+Elapsed Simulation Time (s): 2.68579
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 13
+Elapsed Simulation Time (s): 2.57493
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 14
+Elapsed Simulation Time (s): 2.50089
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 15
+Elapsed Simulation Time (s): 2.50699
+Final CPU Temp (°C): 38
+
+Threads: 50 Iteration: 16
+Elapsed Simulation Time (s): 2.6649
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 17
+Elapsed Simulation Time (s): 2.45262
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 18
+Elapsed Simulation Time (s): 2.7176
+Final CPU Temp (°C): 38
+
+Threads: 50 Iteration: 19
+Elapsed Simulation Time (s): 2.46705
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 20
+Elapsed Simulation Time (s): 2.49743
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 21
+Elapsed Simulation Time (s): 2.56543
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 22
+Elapsed Simulation Time (s): 2.67502
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 23
+Elapsed Simulation Time (s): 2.67964
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 24
+Elapsed Simulation Time (s): 2.72372
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 25
+Elapsed Simulation Time (s): 2.55636
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 26
+Elapsed Simulation Time (s): 2.75435
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 27
+Elapsed Simulation Time (s): 2.64156
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 28
+Elapsed Simulation Time (s): 2.55418
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 29
+Elapsed Simulation Time (s): 2.49365
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 30
+Elapsed Simulation Time (s): 2.60089
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 31
+Elapsed Simulation Time (s): 2.54925
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 32
+Elapsed Simulation Time (s): 2.52041
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 33
+Elapsed Simulation Time (s): 2.70278
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 34
+Elapsed Simulation Time (s): 2.65318
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 35
+Elapsed Simulation Time (s): 2.59282
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 36
+Elapsed Simulation Time (s): 2.51762
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 37
+Elapsed Simulation Time (s): 2.60558
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 38
+Elapsed Simulation Time (s): 2.50102
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 39
+Elapsed Simulation Time (s): 2.47646
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 40
+Elapsed Simulation Time (s): 2.66027
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 41
+Elapsed Simulation Time (s): 2.53726
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 42
+Elapsed Simulation Time (s): 2.66091
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 43
+Elapsed Simulation Time (s): 2.61778
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 44
+Elapsed Simulation Time (s): 2.62778
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 45
+Elapsed Simulation Time (s): 2.63683
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 46
+Elapsed Simulation Time (s): 2.55184
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 47
+Elapsed Simulation Time (s): 2.63276
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 48
+Elapsed Simulation Time (s): 2.69719
+Final CPU Temp (°C): 40
+
+Threads: 50 Iteration: 49
+Elapsed Simulation Time (s): 2.48778
+Final CPU Temp (°C): 39
+
+Threads: 50 Iteration: 50
+Elapsed Simulation Time (s): 2.64954
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 1
+Elapsed Simulation Time (s): 2.4795
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 2
+Elapsed Simulation Time (s): 2.57158
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 3
+Elapsed Simulation Time (s): 2.68944
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 4
+Elapsed Simulation Time (s): 2.57537
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 5
+Elapsed Simulation Time (s): 2.41924
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 6
+Elapsed Simulation Time (s): 2.47852
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 7
+Elapsed Simulation Time (s): 2.59819
+Final CPU Temp (°C): 40
+
+Threads: 52 Iteration: 8
+Elapsed Simulation Time (s): 2.65439
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 9
+Elapsed Simulation Time (s): 2.48074
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 10
+Elapsed Simulation Time (s): 2.67155
+Final CPU Temp (°C): 40
+
+Threads: 52 Iteration: 11
+Elapsed Simulation Time (s): 2.70801
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 12
+Elapsed Simulation Time (s): 2.46377
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 13
+Elapsed Simulation Time (s): 2.50453
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 14
+Elapsed Simulation Time (s): 2.67143
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 15
+Elapsed Simulation Time (s): 2.57354
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 16
+Elapsed Simulation Time (s): 2.50423
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 17
+Elapsed Simulation Time (s): 2.73784
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 18
+Elapsed Simulation Time (s): 2.54135
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 19
+Elapsed Simulation Time (s): 2.65028
+Final CPU Temp (°C): 38
+
+Threads: 52 Iteration: 20
+Elapsed Simulation Time (s): 2.52376
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 21
+Elapsed Simulation Time (s): 2.59367
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 22
+Elapsed Simulation Time (s): 2.58627
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 23
+Elapsed Simulation Time (s): 2.58213
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 24
+Elapsed Simulation Time (s): 2.60851
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 25
+Elapsed Simulation Time (s): 2.46482
+Final CPU Temp (°C): 38
+
+Threads: 52 Iteration: 26
+Elapsed Simulation Time (s): 2.71915
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 27
+Elapsed Simulation Time (s): 2.63674
+Final CPU Temp (°C): 38
+
+Threads: 52 Iteration: 28
+Elapsed Simulation Time (s): 2.63039
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 29
+Elapsed Simulation Time (s): 2.45155
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 30
+Elapsed Simulation Time (s): 2.50593
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 31
+Elapsed Simulation Time (s): 2.48506
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 32
+Elapsed Simulation Time (s): 2.41471
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 33
+Elapsed Simulation Time (s): 2.62305
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 34
+Elapsed Simulation Time (s): 2.52505
+Final CPU Temp (°C): 40
+
+Threads: 52 Iteration: 35
+Elapsed Simulation Time (s): 2.60079
+Final CPU Temp (°C): 40
+
+Threads: 52 Iteration: 36
+Elapsed Simulation Time (s): 2.45199
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 37
+Elapsed Simulation Time (s): 2.58737
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 38
+Elapsed Simulation Time (s): 2.5465
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 39
+Elapsed Simulation Time (s): 2.45477
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 40
+Elapsed Simulation Time (s): 2.54428
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 41
+Elapsed Simulation Time (s): 2.56463
+Final CPU Temp (°C): 38
+
+Threads: 52 Iteration: 42
+Elapsed Simulation Time (s): 2.56455
+Final CPU Temp (°C): 38
+
+Threads: 52 Iteration: 43
+Elapsed Simulation Time (s): 2.56665
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 44
+Elapsed Simulation Time (s): 2.53777
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 45
+Elapsed Simulation Time (s): 2.47096
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 46
+Elapsed Simulation Time (s): 2.59348
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 47
+Elapsed Simulation Time (s): 2.61255
+Final CPU Temp (°C): 40
+
+Threads: 52 Iteration: 48
+Elapsed Simulation Time (s): 2.68656
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 49
+Elapsed Simulation Time (s): 2.53984
+Final CPU Temp (°C): 39
+
+Threads: 52 Iteration: 50
+Elapsed Simulation Time (s): 2.55664
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 1
+Elapsed Simulation Time (s): 2.46234
+Final CPU Temp (°C): 38
+
+Threads: 54 Iteration: 2
+Elapsed Simulation Time (s): 2.56627
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 3
+Elapsed Simulation Time (s): 2.59123
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 4
+Elapsed Simulation Time (s): 2.44831
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 5
+Elapsed Simulation Time (s): 2.62224
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 6
+Elapsed Simulation Time (s): 2.60108
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 7
+Elapsed Simulation Time (s): 2.60719
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 8
+Elapsed Simulation Time (s): 2.39808
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 9
+Elapsed Simulation Time (s): 2.43489
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 10
+Elapsed Simulation Time (s): 2.43789
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 11
+Elapsed Simulation Time (s): 2.63872
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 12
+Elapsed Simulation Time (s): 2.4653
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 13
+Elapsed Simulation Time (s): 2.47948
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 14
+Elapsed Simulation Time (s): 2.49337
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 15
+Elapsed Simulation Time (s): 2.43788
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 16
+Elapsed Simulation Time (s): 2.50691
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 17
+Elapsed Simulation Time (s): 2.4635
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 18
+Elapsed Simulation Time (s): 2.47365
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 19
+Elapsed Simulation Time (s): 2.4422
+Final CPU Temp (°C): 37
+
+Threads: 54 Iteration: 20
+Elapsed Simulation Time (s): 2.7463
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 21
+Elapsed Simulation Time (s): 2.51426
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 22
+Elapsed Simulation Time (s): 2.42393
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 23
+Elapsed Simulation Time (s): 2.44568
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 24
+Elapsed Simulation Time (s): 2.54553
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 25
+Elapsed Simulation Time (s): 2.54755
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 26
+Elapsed Simulation Time (s): 2.60348
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 27
+Elapsed Simulation Time (s): 2.62184
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 28
+Elapsed Simulation Time (s): 2.65901
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 29
+Elapsed Simulation Time (s): 2.44418
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 30
+Elapsed Simulation Time (s): 2.60301
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 31
+Elapsed Simulation Time (s): 2.67011
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 32
+Elapsed Simulation Time (s): 2.43137
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 33
+Elapsed Simulation Time (s): 2.46109
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 34
+Elapsed Simulation Time (s): 2.59615
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 35
+Elapsed Simulation Time (s): 2.50377
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 36
+Elapsed Simulation Time (s): 2.55521
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 37
+Elapsed Simulation Time (s): 2.4466
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 38
+Elapsed Simulation Time (s): 2.44061
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 39
+Elapsed Simulation Time (s): 2.51707
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 40
+Elapsed Simulation Time (s): 2.48548
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 41
+Elapsed Simulation Time (s): 2.52096
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 42
+Elapsed Simulation Time (s): 2.51629
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 43
+Elapsed Simulation Time (s): 2.57748
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 44
+Elapsed Simulation Time (s): 2.50277
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 45
+Elapsed Simulation Time (s): 2.44806
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 46
+Elapsed Simulation Time (s): 2.51324
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 47
+Elapsed Simulation Time (s): 2.52113
+Final CPU Temp (°C): 39
+
+Threads: 54 Iteration: 48
+Elapsed Simulation Time (s): 2.52684
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 49
+Elapsed Simulation Time (s): 2.68334
+Final CPU Temp (°C): 40
+
+Threads: 54 Iteration: 50
+Elapsed Simulation Time (s): 2.50318
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 1
+Elapsed Simulation Time (s): 2.64038
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 2
+Elapsed Simulation Time (s): 2.44868
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 3
+Elapsed Simulation Time (s): 2.47596
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 4
+Elapsed Simulation Time (s): 2.53854
+Final CPU Temp (°C): 40
+
+Threads: 56 Iteration: 5
+Elapsed Simulation Time (s): 2.44372
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 6
+Elapsed Simulation Time (s): 2.57701
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 7
+Elapsed Simulation Time (s): 2.48368
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 8
+Elapsed Simulation Time (s): 2.45216
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 9
+Elapsed Simulation Time (s): 2.45089
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 10
+Elapsed Simulation Time (s): 2.49155
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 11
+Elapsed Simulation Time (s): 2.39998
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 12
+Elapsed Simulation Time (s): 2.47735
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 13
+Elapsed Simulation Time (s): 2.49507
+Final CPU Temp (°C): 40
+
+Threads: 56 Iteration: 14
+Elapsed Simulation Time (s): 2.55268
+Final CPU Temp (°C): 40
+
+Threads: 56 Iteration: 15
+Elapsed Simulation Time (s): 2.52639
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 16
+Elapsed Simulation Time (s): 2.37366
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 17
+Elapsed Simulation Time (s): 2.41133
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 18
+Elapsed Simulation Time (s): 2.53162
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 19
+Elapsed Simulation Time (s): 2.48536
+Final CPU Temp (°C): 37
+
+Threads: 56 Iteration: 20
+Elapsed Simulation Time (s): 2.35383
+Final CPU Temp (°C): 38
+
+Threads: 56 Iteration: 21
+Elapsed Simulation Time (s): 2.51236
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 22
+Elapsed Simulation Time (s): 2.5315
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 23
+Elapsed Simulation Time (s): 2.56555
+Final CPU Temp (°C): 40
+
+Threads: 56 Iteration: 24
+Elapsed Simulation Time (s): 2.38267
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 25
+Elapsed Simulation Time (s): 2.54761
+Final CPU Temp (°C): 40
+
+Threads: 56 Iteration: 26
+Elapsed Simulation Time (s): 2.38803
+Final CPU Temp (°C): 38
+
+Threads: 56 Iteration: 27
+Elapsed Simulation Time (s): 2.51731
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 28
+Elapsed Simulation Time (s): 2.57504
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 29
+Elapsed Simulation Time (s): 2.53806
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 30
+Elapsed Simulation Time (s): 2.3872
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 31
+Elapsed Simulation Time (s): 2.54107
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 32
+Elapsed Simulation Time (s): 2.47924
+Final CPU Temp (°C): 38
+
+Threads: 56 Iteration: 33
+Elapsed Simulation Time (s): 2.53046
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 34
+Elapsed Simulation Time (s): 2.39408
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 35
+Elapsed Simulation Time (s): 2.54283
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 36
+Elapsed Simulation Time (s): 2.5061
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 37
+Elapsed Simulation Time (s): 2.47906
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 38
+Elapsed Simulation Time (s): 2.47817
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 39
+Elapsed Simulation Time (s): 2.57374
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 40
+Elapsed Simulation Time (s): 2.44606
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 41
+Elapsed Simulation Time (s): 2.36127
+Final CPU Temp (°C): 38
+
+Threads: 56 Iteration: 42
+Elapsed Simulation Time (s): 2.42558
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 43
+Elapsed Simulation Time (s): 2.39625
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 44
+Elapsed Simulation Time (s): 2.50165
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 45
+Elapsed Simulation Time (s): 2.50923
+Final CPU Temp (°C): 38
+
+Threads: 56 Iteration: 46
+Elapsed Simulation Time (s): 2.51377
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 47
+Elapsed Simulation Time (s): 2.47861
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 48
+Elapsed Simulation Time (s): 2.57599
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 49
+Elapsed Simulation Time (s): 2.52766
+Final CPU Temp (°C): 39
+
+Threads: 56 Iteration: 50
+Elapsed Simulation Time (s): 2.54947
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 1
+Elapsed Simulation Time (s): 2.4365
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 2
+Elapsed Simulation Time (s): 2.54276
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 3
+Elapsed Simulation Time (s): 2.40614
+Final CPU Temp (°C): 38
+
+Threads: 58 Iteration: 4
+Elapsed Simulation Time (s): 2.51645
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 5
+Elapsed Simulation Time (s): 2.45524
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 6
+Elapsed Simulation Time (s): 2.52913
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 7
+Elapsed Simulation Time (s): 2.51901
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 8
+Elapsed Simulation Time (s): 2.45392
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 9
+Elapsed Simulation Time (s): 2.38999
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 10
+Elapsed Simulation Time (s): 2.46571
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 11
+Elapsed Simulation Time (s): 2.46252
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 12
+Elapsed Simulation Time (s): 2.44934
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 13
+Elapsed Simulation Time (s): 2.43138
+Final CPU Temp (°C): 40
+
+Threads: 58 Iteration: 14
+Elapsed Simulation Time (s): 2.48969
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 15
+Elapsed Simulation Time (s): 2.39552
+Final CPU Temp (°C): 38
+
+Threads: 58 Iteration: 16
+Elapsed Simulation Time (s): 2.53528
+Final CPU Temp (°C): 40
+
+Threads: 58 Iteration: 17
+Elapsed Simulation Time (s): 2.51001
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 18
+Elapsed Simulation Time (s): 2.49153
+Final CPU Temp (°C): 40
+
+Threads: 58 Iteration: 19
+Elapsed Simulation Time (s): 2.43477
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 20
+Elapsed Simulation Time (s): 2.46654
+Final CPU Temp (°C): 40
+
+Threads: 58 Iteration: 21
+Elapsed Simulation Time (s): 2.51739
+Final CPU Temp (°C): 40
+
+Threads: 58 Iteration: 22
+Elapsed Simulation Time (s): 2.35683
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 23
+Elapsed Simulation Time (s): 2.40299
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 24
+Elapsed Simulation Time (s): 2.43295
+Final CPU Temp (°C): 38
+
+Threads: 58 Iteration: 25
+Elapsed Simulation Time (s): 2.41152
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 26
+Elapsed Simulation Time (s): 2.50851
+Final CPU Temp (°C): 40
+
+Threads: 58 Iteration: 27
+Elapsed Simulation Time (s): 2.4236
+Final CPU Temp (°C): 37
+
+Threads: 58 Iteration: 28
+Elapsed Simulation Time (s): 2.35608
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 29
+Elapsed Simulation Time (s): 2.49887
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 30
+Elapsed Simulation Time (s): 2.43107
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 31
+Elapsed Simulation Time (s): 2.49962
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 32
+Elapsed Simulation Time (s): 2.45769
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 33
+Elapsed Simulation Time (s): 2.4952
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 34
+Elapsed Simulation Time (s): 2.41475
+Final CPU Temp (°C): 38
+
+Threads: 58 Iteration: 35
+Elapsed Simulation Time (s): 2.5143
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 36
+Elapsed Simulation Time (s): 2.41641
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 37
+Elapsed Simulation Time (s): 2.53403
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 38
+Elapsed Simulation Time (s): 2.44178
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 39
+Elapsed Simulation Time (s): 2.47797
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 40
+Elapsed Simulation Time (s): 2.57818
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 41
+Elapsed Simulation Time (s): 2.43992
+Final CPU Temp (°C): 38
+
+Threads: 58 Iteration: 42
+Elapsed Simulation Time (s): 2.41474
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 43
+Elapsed Simulation Time (s): 2.48058
+Final CPU Temp (°C): 40
+
+Threads: 58 Iteration: 44
+Elapsed Simulation Time (s): 2.50014
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 45
+Elapsed Simulation Time (s): 2.48127
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 46
+Elapsed Simulation Time (s): 2.57629
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 47
+Elapsed Simulation Time (s): 2.50119
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 48
+Elapsed Simulation Time (s): 2.4878
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 49
+Elapsed Simulation Time (s): 2.38578
+Final CPU Temp (°C): 39
+
+Threads: 58 Iteration: 50
+Elapsed Simulation Time (s): 2.47688
+Final CPU Temp (°C): 37
+
+Threads: 60 Iteration: 1
+Elapsed Simulation Time (s): 2.55202
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 2
+Elapsed Simulation Time (s): 2.38359
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 3
+Elapsed Simulation Time (s): 2.45596
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 4
+Elapsed Simulation Time (s): 2.47562
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 5
+Elapsed Simulation Time (s): 2.54364
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 6
+Elapsed Simulation Time (s): 2.53614
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 7
+Elapsed Simulation Time (s): 2.45843
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 8
+Elapsed Simulation Time (s): 2.47727
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 9
+Elapsed Simulation Time (s): 2.45727
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 10
+Elapsed Simulation Time (s): 2.46897
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 11
+Elapsed Simulation Time (s): 2.42916
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 12
+Elapsed Simulation Time (s): 2.44311
+Final CPU Temp (°C): 38
+
+Threads: 60 Iteration: 13
+Elapsed Simulation Time (s): 2.40107
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 14
+Elapsed Simulation Time (s): 2.5037
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 15
+Elapsed Simulation Time (s): 2.40683
+Final CPU Temp (°C): 38
+
+Threads: 60 Iteration: 16
+Elapsed Simulation Time (s): 2.55087
+Final CPU Temp (°C): 38
+
+Threads: 60 Iteration: 17
+Elapsed Simulation Time (s): 2.50235
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 18
+Elapsed Simulation Time (s): 2.46336
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 19
+Elapsed Simulation Time (s): 2.42106
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 20
+Elapsed Simulation Time (s): 2.48927
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 21
+Elapsed Simulation Time (s): 2.54583
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 22
+Elapsed Simulation Time (s): 2.4525
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 23
+Elapsed Simulation Time (s): 2.38998
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 24
+Elapsed Simulation Time (s): 2.52618
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 25
+Elapsed Simulation Time (s): 2.36722
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 26
+Elapsed Simulation Time (s): 2.39177
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 27
+Elapsed Simulation Time (s): 2.52088
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 28
+Elapsed Simulation Time (s): 2.38441
+Final CPU Temp (°C): 38
+
+Threads: 60 Iteration: 29
+Elapsed Simulation Time (s): 2.54871
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 30
+Elapsed Simulation Time (s): 2.39744
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 31
+Elapsed Simulation Time (s): 2.41368
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 32
+Elapsed Simulation Time (s): 2.41696
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 33
+Elapsed Simulation Time (s): 2.50523
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 34
+Elapsed Simulation Time (s): 2.35021
+Final CPU Temp (°C): 38
+
+Threads: 60 Iteration: 35
+Elapsed Simulation Time (s): 2.34181
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 36
+Elapsed Simulation Time (s): 2.57544
+Final CPU Temp (°C): 38
+
+Threads: 60 Iteration: 37
+Elapsed Simulation Time (s): 2.54554
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 38
+Elapsed Simulation Time (s): 2.4853
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 39
+Elapsed Simulation Time (s): 2.37411
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 40
+Elapsed Simulation Time (s): 2.46088
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 41
+Elapsed Simulation Time (s): 2.49346
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 42
+Elapsed Simulation Time (s): 2.37763
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 43
+Elapsed Simulation Time (s): 2.797
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 44
+Elapsed Simulation Time (s): 2.54198
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 45
+Elapsed Simulation Time (s): 2.57726
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 46
+Elapsed Simulation Time (s): 2.48819
+Final CPU Temp (°C): 40
+
+Threads: 60 Iteration: 47
+Elapsed Simulation Time (s): 2.58524
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 48
+Elapsed Simulation Time (s): 2.36828
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 49
+Elapsed Simulation Time (s): 2.47319
+Final CPU Temp (°C): 39
+
+Threads: 60 Iteration: 50
+Elapsed Simulation Time (s): 2.58997
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 1
+Elapsed Simulation Time (s): 2.54659
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 2
+Elapsed Simulation Time (s): 2.358
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 3
+Elapsed Simulation Time (s): 2.42482
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 4
+Elapsed Simulation Time (s): 2.38593
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 5
+Elapsed Simulation Time (s): 2.57363
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 6
+Elapsed Simulation Time (s): 2.46377
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 7
+Elapsed Simulation Time (s): 2.46581
+Final CPU Temp (°C): 40
+
+Threads: 62 Iteration: 8
+Elapsed Simulation Time (s): 2.40001
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 9
+Elapsed Simulation Time (s): 2.40582
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 10
+Elapsed Simulation Time (s): 2.51173
+Final CPU Temp (°C): 40
+
+Threads: 62 Iteration: 11
+Elapsed Simulation Time (s): 2.37958
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 12
+Elapsed Simulation Time (s): 2.38086
+Final CPU Temp (°C): 40
+
+Threads: 62 Iteration: 13
+Elapsed Simulation Time (s): 2.37388
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 14
+Elapsed Simulation Time (s): 2.4722
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 15
+Elapsed Simulation Time (s): 2.47047
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 16
+Elapsed Simulation Time (s): 2.38083
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 17
+Elapsed Simulation Time (s): 2.48011
+Final CPU Temp (°C): 40
+
+Threads: 62 Iteration: 18
+Elapsed Simulation Time (s): 2.52691
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 19
+Elapsed Simulation Time (s): 2.54201
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 20
+Elapsed Simulation Time (s): 2.48442
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 21
+Elapsed Simulation Time (s): 2.44058
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 22
+Elapsed Simulation Time (s): 2.61012
+Final CPU Temp (°C): 40
+
+Threads: 62 Iteration: 23
+Elapsed Simulation Time (s): 2.37605
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 24
+Elapsed Simulation Time (s): 2.55045
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 25
+Elapsed Simulation Time (s): 2.47515
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 26
+Elapsed Simulation Time (s): 2.49948
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 27
+Elapsed Simulation Time (s): 2.58134
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 28
+Elapsed Simulation Time (s): 2.4732
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 29
+Elapsed Simulation Time (s): 2.33138
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 30
+Elapsed Simulation Time (s): 2.49646
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 31
+Elapsed Simulation Time (s): 2.55609
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 32
+Elapsed Simulation Time (s): 2.49141
+Final CPU Temp (°C): 40
+
+Threads: 62 Iteration: 33
+Elapsed Simulation Time (s): 2.4394
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 34
+Elapsed Simulation Time (s): 2.39298
+Final CPU Temp (°C): 38
+
+Threads: 62 Iteration: 35
+Elapsed Simulation Time (s): 2.46463
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 36
+Elapsed Simulation Time (s): 2.53228
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 37
+Elapsed Simulation Time (s): 2.36177
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 38
+Elapsed Simulation Time (s): 2.48447
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 39
+Elapsed Simulation Time (s): 2.42325
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 40
+Elapsed Simulation Time (s): 2.48158
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 41
+Elapsed Simulation Time (s): 2.38614
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 42
+Elapsed Simulation Time (s): 2.43232
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 43
+Elapsed Simulation Time (s): 2.42215
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 44
+Elapsed Simulation Time (s): 2.42844
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 45
+Elapsed Simulation Time (s): 2.43238
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 46
+Elapsed Simulation Time (s): 2.43673
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 47
+Elapsed Simulation Time (s): 2.38819
+Final CPU Temp (°C): 38
+
+Threads: 62 Iteration: 48
+Elapsed Simulation Time (s): 2.68169
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 49
+Elapsed Simulation Time (s): 2.43014
+Final CPU Temp (°C): 39
+
+Threads: 62 Iteration: 50
+Elapsed Simulation Time (s): 2.51229
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 1
+Elapsed Simulation Time (s): 2.54489
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 2
+Elapsed Simulation Time (s): 2.45664
+Final CPU Temp (°C): 37
+
+Threads: 64 Iteration: 3
+Elapsed Simulation Time (s): 2.37624
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 4
+Elapsed Simulation Time (s): 2.45999
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 5
+Elapsed Simulation Time (s): 2.49607
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 6
+Elapsed Simulation Time (s): 2.56563
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 7
+Elapsed Simulation Time (s): 2.51244
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 8
+Elapsed Simulation Time (s): 2.5614
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 9
+Elapsed Simulation Time (s): 2.513
+Final CPU Temp (°C): 40
+
+Threads: 64 Iteration: 10
+Elapsed Simulation Time (s): 2.44453
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 11
+Elapsed Simulation Time (s): 2.56504
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 12
+Elapsed Simulation Time (s): 2.4166
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 13
+Elapsed Simulation Time (s): 2.39971
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 14
+Elapsed Simulation Time (s): 2.57476
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 15
+Elapsed Simulation Time (s): 2.48506
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 16
+Elapsed Simulation Time (s): 2.41336
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 17
+Elapsed Simulation Time (s): 2.43108
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 18
+Elapsed Simulation Time (s): 2.31764
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 19
+Elapsed Simulation Time (s): 2.45952
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 20
+Elapsed Simulation Time (s): 2.36456
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 21
+Elapsed Simulation Time (s): 2.51926
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 22
+Elapsed Simulation Time (s): 2.46743
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 23
+Elapsed Simulation Time (s): 2.54647
+Final CPU Temp (°C): 40
+
+Threads: 64 Iteration: 24
+Elapsed Simulation Time (s): 2.51595
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 25
+Elapsed Simulation Time (s): 2.33804
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 26
+Elapsed Simulation Time (s): 2.4838
+Final CPU Temp (°C): 40
+
+Threads: 64 Iteration: 27
+Elapsed Simulation Time (s): 2.38968
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 28
+Elapsed Simulation Time (s): 2.41763
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 29
+Elapsed Simulation Time (s): 2.63539
+Final CPU Temp (°C): 37
+
+Threads: 64 Iteration: 30
+Elapsed Simulation Time (s): 2.44743
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 31
+Elapsed Simulation Time (s): 2.41099
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 32
+Elapsed Simulation Time (s): 2.44346
+Final CPU Temp (°C): 37
+
+Threads: 64 Iteration: 33
+Elapsed Simulation Time (s): 2.39388
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 34
+Elapsed Simulation Time (s): 2.58287
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 35
+Elapsed Simulation Time (s): 2.44572
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 36
+Elapsed Simulation Time (s): 2.35756
+Final CPU Temp (°C): 36
+
+Threads: 64 Iteration: 37
+Elapsed Simulation Time (s): 2.46997
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 38
+Elapsed Simulation Time (s): 2.51567
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 39
+Elapsed Simulation Time (s): 2.50197
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 40
+Elapsed Simulation Time (s): 2.48534
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 41
+Elapsed Simulation Time (s): 2.51645
+Final CPU Temp (°C): 36
+
+Threads: 64 Iteration: 42
+Elapsed Simulation Time (s): 2.45567
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 43
+Elapsed Simulation Time (s): 2.5543
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 44
+Elapsed Simulation Time (s): 2.50241
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 45
+Elapsed Simulation Time (s): 2.38639
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 46
+Elapsed Simulation Time (s): 2.53655
+Final CPU Temp (°C): 38
+
+Threads: 64 Iteration: 47
+Elapsed Simulation Time (s): 2.54962
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 48
+Elapsed Simulation Time (s): 2.35613
+Final CPU Temp (°C): 36
+
+Threads: 64 Iteration: 49
+Elapsed Simulation Time (s): 2.41447
+Final CPU Temp (°C): 39
+
+Threads: 64 Iteration: 50
+Elapsed Simulation Time (s): 2.41365
+Final CPU Temp (°C): 36
+
+Threads: 66 Iteration: 1
+Elapsed Simulation Time (s): 2.31925
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 2
+Elapsed Simulation Time (s): 2.47337
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 3
+Elapsed Simulation Time (s): 2.35897
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 4
+Elapsed Simulation Time (s): 2.31174
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 5
+Elapsed Simulation Time (s): 2.54024
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 6
+Elapsed Simulation Time (s): 2.49237
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 7
+Elapsed Simulation Time (s): 2.45697
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 8
+Elapsed Simulation Time (s): 2.4573
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 9
+Elapsed Simulation Time (s): 2.45023
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 10
+Elapsed Simulation Time (s): 2.47732
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 11
+Elapsed Simulation Time (s): 2.56205
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 12
+Elapsed Simulation Time (s): 2.39329
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 13
+Elapsed Simulation Time (s): 2.4653
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 14
+Elapsed Simulation Time (s): 2.51299
+Final CPU Temp (°C): 37
+
+Threads: 66 Iteration: 15
+Elapsed Simulation Time (s): 2.44222
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 16
+Elapsed Simulation Time (s): 2.40028
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 17
+Elapsed Simulation Time (s): 2.51717
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 18
+Elapsed Simulation Time (s): 2.48689
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 19
+Elapsed Simulation Time (s): 2.40652
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 20
+Elapsed Simulation Time (s): 2.36485
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 21
+Elapsed Simulation Time (s): 2.52522
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 22
+Elapsed Simulation Time (s): 2.49316
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 23
+Elapsed Simulation Time (s): 2.42057
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 24
+Elapsed Simulation Time (s): 2.3953
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 25
+Elapsed Simulation Time (s): 2.39186
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 26
+Elapsed Simulation Time (s): 2.39183
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 27
+Elapsed Simulation Time (s): 2.52442
+Final CPU Temp (°C): 37
+
+Threads: 66 Iteration: 28
+Elapsed Simulation Time (s): 2.40177
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 29
+Elapsed Simulation Time (s): 2.37554
+Final CPU Temp (°C): 37
+
+Threads: 66 Iteration: 30
+Elapsed Simulation Time (s): 2.43789
+Final CPU Temp (°C): 37
+
+Threads: 66 Iteration: 31
+Elapsed Simulation Time (s): 2.48397
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 32
+Elapsed Simulation Time (s): 2.42805
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 33
+Elapsed Simulation Time (s): 2.53095
+Final CPU Temp (°C): 36
+
+Threads: 66 Iteration: 34
+Elapsed Simulation Time (s): 2.49996
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 35
+Elapsed Simulation Time (s): 2.47115
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 36
+Elapsed Simulation Time (s): 2.481
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 37
+Elapsed Simulation Time (s): 2.41761
+Final CPU Temp (°C): 39
+
+Threads: 66 Iteration: 38
+Elapsed Simulation Time (s): 2.46307
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 39
+Elapsed Simulation Time (s): 2.43494
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 40
+Elapsed Simulation Time (s): 2.28406
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 41
+Elapsed Simulation Time (s): 2.47872
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 42
+Elapsed Simulation Time (s): 2.51387
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 43
+Elapsed Simulation Time (s): 2.5344
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 44
+Elapsed Simulation Time (s): 2.51779
+Final CPU Temp (°C): 37
+
+Threads: 66 Iteration: 45
+Elapsed Simulation Time (s): 2.46091
+Final CPU Temp (°C): 37
+
+Threads: 66 Iteration: 46
+Elapsed Simulation Time (s): 2.51009
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 47
+Elapsed Simulation Time (s): 2.37821
+Final CPU Temp (°C): 38
+
+Threads: 66 Iteration: 48
+Elapsed Simulation Time (s): 2.42453
+Final CPU Temp (°C): 37
+
+Threads: 66 Iteration: 49
+Elapsed Simulation Time (s): 2.51269
+Final CPU Temp (°C): 36
+
+Threads: 66 Iteration: 50
+Elapsed Simulation Time (s): 2.48753
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 1
+Elapsed Simulation Time (s): 2.56111
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 2
+Elapsed Simulation Time (s): 2.52109
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 3
+Elapsed Simulation Time (s): 2.39686
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 4
+Elapsed Simulation Time (s): 2.47464
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 5
+Elapsed Simulation Time (s): 2.49123
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 6
+Elapsed Simulation Time (s): 2.44968
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 7
+Elapsed Simulation Time (s): 2.53379
+Final CPU Temp (°C): 40
+
+Threads: 68 Iteration: 8
+Elapsed Simulation Time (s): 2.48744
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 9
+Elapsed Simulation Time (s): 2.50703
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 10
+Elapsed Simulation Time (s): 2.45944
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 11
+Elapsed Simulation Time (s): 2.50959
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 12
+Elapsed Simulation Time (s): 2.31093
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 13
+Elapsed Simulation Time (s): 2.38639
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 14
+Elapsed Simulation Time (s): 2.44422
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 15
+Elapsed Simulation Time (s): 2.49408
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 16
+Elapsed Simulation Time (s): 2.45615
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 17
+Elapsed Simulation Time (s): 2.60393
+Final CPU Temp (°C): 37
+
+Threads: 68 Iteration: 18
+Elapsed Simulation Time (s): 2.50812
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 19
+Elapsed Simulation Time (s): 2.39379
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 20
+Elapsed Simulation Time (s): 2.47927
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 21
+Elapsed Simulation Time (s): 2.40568
+Final CPU Temp (°C): 37
+
+Threads: 68 Iteration: 22
+Elapsed Simulation Time (s): 2.49123
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 23
+Elapsed Simulation Time (s): 2.39798
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 24
+Elapsed Simulation Time (s): 2.41074
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 25
+Elapsed Simulation Time (s): 2.53235
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 26
+Elapsed Simulation Time (s): 2.46132
+Final CPU Temp (°C): 37
+
+Threads: 68 Iteration: 27
+Elapsed Simulation Time (s): 2.37138
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 28
+Elapsed Simulation Time (s): 2.47191
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 29
+Elapsed Simulation Time (s): 2.46006
+Final CPU Temp (°C): 37
+
+Threads: 68 Iteration: 30
+Elapsed Simulation Time (s): 2.30695
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 31
+Elapsed Simulation Time (s): 2.51445
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 32
+Elapsed Simulation Time (s): 2.53792
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 33
+Elapsed Simulation Time (s): 2.44869
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 34
+Elapsed Simulation Time (s): 2.48664
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 35
+Elapsed Simulation Time (s): 2.44279
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 36
+Elapsed Simulation Time (s): 2.52944
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 37
+Elapsed Simulation Time (s): 2.39499
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 38
+Elapsed Simulation Time (s): 2.36625
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 39
+Elapsed Simulation Time (s): 2.37282
+Final CPU Temp (°C): 37
+
+Threads: 68 Iteration: 40
+Elapsed Simulation Time (s): 2.44382
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 41
+Elapsed Simulation Time (s): 2.43339
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 42
+Elapsed Simulation Time (s): 2.40189
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 43
+Elapsed Simulation Time (s): 2.39877
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 44
+Elapsed Simulation Time (s): 2.54796
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 45
+Elapsed Simulation Time (s): 2.35988
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 46
+Elapsed Simulation Time (s): 2.46689
+Final CPU Temp (°C): 39
+
+Threads: 68 Iteration: 47
+Elapsed Simulation Time (s): 2.38091
+Final CPU Temp (°C): 37
+
+Threads: 68 Iteration: 48
+Elapsed Simulation Time (s): 2.42116
+Final CPU Temp (°C): 36
+
+Threads: 68 Iteration: 49
+Elapsed Simulation Time (s): 2.38788
+Final CPU Temp (°C): 38
+
+Threads: 68 Iteration: 50
+Elapsed Simulation Time (s): 2.40115
+Final CPU Temp (°C): 37
+
+Threads: 70 Iteration: 1
+Elapsed Simulation Time (s): 2.2867
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 2
+Elapsed Simulation Time (s): 2.37727
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 3
+Elapsed Simulation Time (s): 2.39914
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 4
+Elapsed Simulation Time (s): 2.45533
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 5
+Elapsed Simulation Time (s): 2.37662
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 6
+Elapsed Simulation Time (s): 2.36001
+Final CPU Temp (°C): 37
+
+Threads: 70 Iteration: 7
+Elapsed Simulation Time (s): 2.42976
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 8
+Elapsed Simulation Time (s): 2.4902
+Final CPU Temp (°C): 37
+
+Threads: 70 Iteration: 9
+Elapsed Simulation Time (s): 2.37538
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 10
+Elapsed Simulation Time (s): 2.4585
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 11
+Elapsed Simulation Time (s): 2.421
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 12
+Elapsed Simulation Time (s): 2.40367
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 13
+Elapsed Simulation Time (s): 2.44366
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 14
+Elapsed Simulation Time (s): 2.5009
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 15
+Elapsed Simulation Time (s): 2.50989
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 16
+Elapsed Simulation Time (s): 2.48668
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 17
+Elapsed Simulation Time (s): 2.50017
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 18
+Elapsed Simulation Time (s): 2.38774
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 19
+Elapsed Simulation Time (s): 2.53525
+Final CPU Temp (°C): 40
+
+Threads: 70 Iteration: 20
+Elapsed Simulation Time (s): 2.41608
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 21
+Elapsed Simulation Time (s): 2.37365
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 22
+Elapsed Simulation Time (s): 2.45242
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 23
+Elapsed Simulation Time (s): 2.44079
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 24
+Elapsed Simulation Time (s): 2.36005
+Final CPU Temp (°C): 37
+
+Threads: 70 Iteration: 25
+Elapsed Simulation Time (s): 2.4614
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 26
+Elapsed Simulation Time (s): 2.41005
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 27
+Elapsed Simulation Time (s): 2.48868
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 28
+Elapsed Simulation Time (s): 2.36184
+Final CPU Temp (°C): 37
+
+Threads: 70 Iteration: 29
+Elapsed Simulation Time (s): 2.37186
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 30
+Elapsed Simulation Time (s): 2.40105
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 31
+Elapsed Simulation Time (s): 2.47371
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 32
+Elapsed Simulation Time (s): 2.44202
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 33
+Elapsed Simulation Time (s): 2.47456
+Final CPU Temp (°C): 37
+
+Threads: 70 Iteration: 34
+Elapsed Simulation Time (s): 2.48381
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 35
+Elapsed Simulation Time (s): 2.42637
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 36
+Elapsed Simulation Time (s): 2.50837
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 37
+Elapsed Simulation Time (s): 2.37891
+Final CPU Temp (°C): 37
+
+Threads: 70 Iteration: 38
+Elapsed Simulation Time (s): 2.50802
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 39
+Elapsed Simulation Time (s): 2.45236
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 40
+Elapsed Simulation Time (s): 2.49298
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 41
+Elapsed Simulation Time (s): 2.52174
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 42
+Elapsed Simulation Time (s): 2.45117
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 43
+Elapsed Simulation Time (s): 2.51826
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 44
+Elapsed Simulation Time (s): 2.52227
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 45
+Elapsed Simulation Time (s): 2.4308
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 46
+Elapsed Simulation Time (s): 2.48689
+Final CPU Temp (°C): 38
+
+Threads: 70 Iteration: 47
+Elapsed Simulation Time (s): 2.4257
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 48
+Elapsed Simulation Time (s): 2.49422
+Final CPU Temp (°C): 39
+
+Threads: 70 Iteration: 49
+Elapsed Simulation Time (s): 2.36055
+Final CPU Temp (°C): 37
+
+Threads: 70 Iteration: 50
+Elapsed Simulation Time (s): 2.39782
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 1
+Elapsed Simulation Time (s): 2.38013
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 2
+Elapsed Simulation Time (s): 2.39542
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 3
+Elapsed Simulation Time (s): 2.4002
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 4
+Elapsed Simulation Time (s): 2.41541
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 5
+Elapsed Simulation Time (s): 2.44006
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 6
+Elapsed Simulation Time (s): 2.49095
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 7
+Elapsed Simulation Time (s): 2.51184
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 8
+Elapsed Simulation Time (s): 2.42213
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 9
+Elapsed Simulation Time (s): 2.40459
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 10
+Elapsed Simulation Time (s): 2.47746
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 11
+Elapsed Simulation Time (s): 2.41896
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 12
+Elapsed Simulation Time (s): 2.44884
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 13
+Elapsed Simulation Time (s): 2.36986
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 14
+Elapsed Simulation Time (s): 2.51736
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 15
+Elapsed Simulation Time (s): 2.364
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 16
+Elapsed Simulation Time (s): 2.46158
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 17
+Elapsed Simulation Time (s): 2.42865
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 18
+Elapsed Simulation Time (s): 2.43551
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 19
+Elapsed Simulation Time (s): 2.49413
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 20
+Elapsed Simulation Time (s): 2.36594
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 21
+Elapsed Simulation Time (s): 2.36347
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 22
+Elapsed Simulation Time (s): 2.50563
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 23
+Elapsed Simulation Time (s): 2.31946
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 24
+Elapsed Simulation Time (s): 2.34582
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 25
+Elapsed Simulation Time (s): 2.3898
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 26
+Elapsed Simulation Time (s): 2.36789
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 27
+Elapsed Simulation Time (s): 2.43772
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 28
+Elapsed Simulation Time (s): 2.49341
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 29
+Elapsed Simulation Time (s): 2.39376
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 30
+Elapsed Simulation Time (s): 2.45515
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 31
+Elapsed Simulation Time (s): 2.51206
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 32
+Elapsed Simulation Time (s): 2.35526
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 33
+Elapsed Simulation Time (s): 2.4183
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 34
+Elapsed Simulation Time (s): 2.39639
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 35
+Elapsed Simulation Time (s): 2.36554
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 36
+Elapsed Simulation Time (s): 2.45538
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 37
+Elapsed Simulation Time (s): 2.46204
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 38
+Elapsed Simulation Time (s): 2.51192
+Final CPU Temp (°C): 40
+
+Threads: 72 Iteration: 39
+Elapsed Simulation Time (s): 2.38083
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 40
+Elapsed Simulation Time (s): 2.38777
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 41
+Elapsed Simulation Time (s): 2.49847
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 42
+Elapsed Simulation Time (s): 2.42046
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 43
+Elapsed Simulation Time (s): 2.46127
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 44
+Elapsed Simulation Time (s): 2.40984
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 45
+Elapsed Simulation Time (s): 2.32007
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 46
+Elapsed Simulation Time (s): 2.45381
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 47
+Elapsed Simulation Time (s): 2.49992
+Final CPU Temp (°C): 39
+
+Threads: 72 Iteration: 48
+Elapsed Simulation Time (s): 2.38099
+Final CPU Temp (°C): 38
+
+Threads: 72 Iteration: 49
+Elapsed Simulation Time (s): 2.3704
+Final CPU Temp (°C): 37
+
+Threads: 72 Iteration: 50
+Elapsed Simulation Time (s): 2.45507
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 1
+Elapsed Simulation Time (s): 2.4262
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 2
+Elapsed Simulation Time (s): 2.39704
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 3
+Elapsed Simulation Time (s): 2.39077
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 4
+Elapsed Simulation Time (s): 2.48998
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 5
+Elapsed Simulation Time (s): 2.38246
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 6
+Elapsed Simulation Time (s): 2.38864
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 7
+Elapsed Simulation Time (s): 2.3494
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 8
+Elapsed Simulation Time (s): 2.38874
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 9
+Elapsed Simulation Time (s): 2.45926
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 10
+Elapsed Simulation Time (s): 2.54386
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 11
+Elapsed Simulation Time (s): 2.52368
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 12
+Elapsed Simulation Time (s): 2.35396
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 13
+Elapsed Simulation Time (s): 2.39135
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 14
+Elapsed Simulation Time (s): 2.42419
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 15
+Elapsed Simulation Time (s): 2.44424
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 16
+Elapsed Simulation Time (s): 2.42877
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 17
+Elapsed Simulation Time (s): 2.3845
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 18
+Elapsed Simulation Time (s): 2.49607
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 19
+Elapsed Simulation Time (s): 2.47551
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 20
+Elapsed Simulation Time (s): 2.45892
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 21
+Elapsed Simulation Time (s): 2.4272
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 22
+Elapsed Simulation Time (s): 2.4675
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 23
+Elapsed Simulation Time (s): 2.50098
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 24
+Elapsed Simulation Time (s): 2.51355
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 25
+Elapsed Simulation Time (s): 2.48761
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 26
+Elapsed Simulation Time (s): 2.47288
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 27
+Elapsed Simulation Time (s): 2.18844
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 28
+Elapsed Simulation Time (s): 2.50015
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 29
+Elapsed Simulation Time (s): 2.48641
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 30
+Elapsed Simulation Time (s): 2.35837
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 31
+Elapsed Simulation Time (s): 2.43317
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 32
+Elapsed Simulation Time (s): 2.36154
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 33
+Elapsed Simulation Time (s): 2.47675
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 34
+Elapsed Simulation Time (s): 2.44933
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 35
+Elapsed Simulation Time (s): 2.44733
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 36
+Elapsed Simulation Time (s): 2.49412
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 37
+Elapsed Simulation Time (s): 2.47728
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 38
+Elapsed Simulation Time (s): 2.36494
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 39
+Elapsed Simulation Time (s): 2.37896
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 40
+Elapsed Simulation Time (s): 2.48322
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 41
+Elapsed Simulation Time (s): 2.39742
+Final CPU Temp (°C): 39
+
+Threads: 74 Iteration: 42
+Elapsed Simulation Time (s): 2.41869
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 43
+Elapsed Simulation Time (s): 2.47007
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 44
+Elapsed Simulation Time (s): 2.41278
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 45
+Elapsed Simulation Time (s): 2.4561
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 46
+Elapsed Simulation Time (s): 2.39877
+Final CPU Temp (°C): 38
+
+Threads: 74 Iteration: 47
+Elapsed Simulation Time (s): 2.40571
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 48
+Elapsed Simulation Time (s): 2.4183
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 49
+Elapsed Simulation Time (s): 2.28605
+Final CPU Temp (°C): 37
+
+Threads: 74 Iteration: 50
+Elapsed Simulation Time (s): 2.49954
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 1
+Elapsed Simulation Time (s): 2.4644
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 2
+Elapsed Simulation Time (s): 2.37698
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 3
+Elapsed Simulation Time (s): 2.41815
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 4
+Elapsed Simulation Time (s): 2.50101
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 5
+Elapsed Simulation Time (s): 2.38974
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 6
+Elapsed Simulation Time (s): 2.44736
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 7
+Elapsed Simulation Time (s): 2.37992
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 8
+Elapsed Simulation Time (s): 2.37206
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 9
+Elapsed Simulation Time (s): 2.47728
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 10
+Elapsed Simulation Time (s): 2.42818
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 11
+Elapsed Simulation Time (s): 2.46098
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 12
+Elapsed Simulation Time (s): 2.45917
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 13
+Elapsed Simulation Time (s): 2.57873
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 14
+Elapsed Simulation Time (s): 2.28452
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 15
+Elapsed Simulation Time (s): 2.5073
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 16
+Elapsed Simulation Time (s): 2.4403
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 17
+Elapsed Simulation Time (s): 2.5658
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 18
+Elapsed Simulation Time (s): 2.40191
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 19
+Elapsed Simulation Time (s): 2.45461
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 20
+Elapsed Simulation Time (s): 2.46622
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 21
+Elapsed Simulation Time (s): 2.4618
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 22
+Elapsed Simulation Time (s): 2.37043
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 23
+Elapsed Simulation Time (s): 2.51807
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 24
+Elapsed Simulation Time (s): 2.50127
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 25
+Elapsed Simulation Time (s): 2.39963
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 26
+Elapsed Simulation Time (s): 2.40293
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 27
+Elapsed Simulation Time (s): 2.35439
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 28
+Elapsed Simulation Time (s): 2.41209
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 29
+Elapsed Simulation Time (s): 2.43119
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 30
+Elapsed Simulation Time (s): 2.33974
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 31
+Elapsed Simulation Time (s): 2.38344
+Final CPU Temp (°C): 36
+
+Threads: 76 Iteration: 32
+Elapsed Simulation Time (s): 2.42433
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 33
+Elapsed Simulation Time (s): 2.19147
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 34
+Elapsed Simulation Time (s): 2.42303
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 35
+Elapsed Simulation Time (s): 2.41214
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 36
+Elapsed Simulation Time (s): 2.50538
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 37
+Elapsed Simulation Time (s): 2.52438
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 38
+Elapsed Simulation Time (s): 2.38325
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 39
+Elapsed Simulation Time (s): 2.49165
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 40
+Elapsed Simulation Time (s): 2.45971
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 41
+Elapsed Simulation Time (s): 2.44471
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 42
+Elapsed Simulation Time (s): 2.48532
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 43
+Elapsed Simulation Time (s): 2.47413
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 44
+Elapsed Simulation Time (s): 2.42817
+Final CPU Temp (°C): 37
+
+Threads: 76 Iteration: 45
+Elapsed Simulation Time (s): 2.41129
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 46
+Elapsed Simulation Time (s): 2.46569
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 47
+Elapsed Simulation Time (s): 2.46626
+Final CPU Temp (°C): 39
+
+Threads: 76 Iteration: 48
+Elapsed Simulation Time (s): 2.44116
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 49
+Elapsed Simulation Time (s): 2.38772
+Final CPU Temp (°C): 38
+
+Threads: 76 Iteration: 50
+Elapsed Simulation Time (s): 2.49279
+Final CPU Temp (°C): 40
+
+Threads: 78 Iteration: 1
+Elapsed Simulation Time (s): 2.53018
+Final CPU Temp (°C): 37
+
+Threads: 78 Iteration: 2
+Elapsed Simulation Time (s): 2.49728
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 3
+Elapsed Simulation Time (s): 2.44743
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 4
+Elapsed Simulation Time (s): 2.4923
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 5
+Elapsed Simulation Time (s): 2.38066
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 6
+Elapsed Simulation Time (s): 2.41739
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 7
+Elapsed Simulation Time (s): 2.43584
+Final CPU Temp (°C): 37
+
+Threads: 78 Iteration: 8
+Elapsed Simulation Time (s): 2.46125
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 9
+Elapsed Simulation Time (s): 2.38212
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 10
+Elapsed Simulation Time (s): 2.49935
+Final CPU Temp (°C): 40
+
+Threads: 78 Iteration: 11
+Elapsed Simulation Time (s): 2.49887
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 12
+Elapsed Simulation Time (s): 2.36255
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 13
+Elapsed Simulation Time (s): 2.48176
+Final CPU Temp (°C): 37
+
+Threads: 78 Iteration: 14
+Elapsed Simulation Time (s): 2.39124
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 15
+Elapsed Simulation Time (s): 2.34466
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 16
+Elapsed Simulation Time (s): 2.50346
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 17
+Elapsed Simulation Time (s): 2.55047
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 18
+Elapsed Simulation Time (s): 2.41445
+Final CPU Temp (°C): 36
+
+Threads: 78 Iteration: 19
+Elapsed Simulation Time (s): 2.38953
+Final CPU Temp (°C): 37
+
+Threads: 78 Iteration: 20
+Elapsed Simulation Time (s): 2.53777
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 21
+Elapsed Simulation Time (s): 2.41413
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 22
+Elapsed Simulation Time (s): 2.36819
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 23
+Elapsed Simulation Time (s): 2.45002
+Final CPU Temp (°C): 37
+
+Threads: 78 Iteration: 24
+Elapsed Simulation Time (s): 2.53326
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 25
+Elapsed Simulation Time (s): 2.45445
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 26
+Elapsed Simulation Time (s): 2.43347
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 27
+Elapsed Simulation Time (s): 2.49061
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 28
+Elapsed Simulation Time (s): 2.48058
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 29
+Elapsed Simulation Time (s): 2.34441
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 30
+Elapsed Simulation Time (s): 2.54943
+Final CPU Temp (°C): 40
+
+Threads: 78 Iteration: 31
+Elapsed Simulation Time (s): 2.55534
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 32
+Elapsed Simulation Time (s): 2.39603
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 33
+Elapsed Simulation Time (s): 2.45119
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 34
+Elapsed Simulation Time (s): 2.67511
+Final CPU Temp (°C): 48
+
+Threads: 78 Iteration: 35
+Elapsed Simulation Time (s): 2.42918
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 36
+Elapsed Simulation Time (s): 2.3498
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 37
+Elapsed Simulation Time (s): 2.52615
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 38
+Elapsed Simulation Time (s): 2.37234
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 39
+Elapsed Simulation Time (s): 2.41079
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 40
+Elapsed Simulation Time (s): 2.39824
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 41
+Elapsed Simulation Time (s): 2.46629
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 42
+Elapsed Simulation Time (s): 2.39708
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 43
+Elapsed Simulation Time (s): 2.4776
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 44
+Elapsed Simulation Time (s): 2.46281
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 45
+Elapsed Simulation Time (s): 2.36668
+Final CPU Temp (°C): 39
+
+Threads: 78 Iteration: 46
+Elapsed Simulation Time (s): 2.48776
+Final CPU Temp (°C): 36
+
+Threads: 78 Iteration: 47
+Elapsed Simulation Time (s): 2.41679
+Final CPU Temp (°C): 38
+
+Threads: 78 Iteration: 48
+Elapsed Simulation Time (s): 2.50136
+Final CPU Temp (°C): 36
+
+Threads: 78 Iteration: 49
+Elapsed Simulation Time (s): 2.33554
+Final CPU Temp (°C): 36
+
+Threads: 78 Iteration: 50
+Elapsed Simulation Time (s): 2.62281
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 1
+Elapsed Simulation Time (s): 2.61139
+Final CPU Temp (°C): 39
+
+Threads: 80 Iteration: 2
+Elapsed Simulation Time (s): 2.63563
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 3
+Elapsed Simulation Time (s): 2.68291
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 4
+Elapsed Simulation Time (s): 2.47565
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 5
+Elapsed Simulation Time (s): 2.47221
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 6
+Elapsed Simulation Time (s): 2.49542
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 7
+Elapsed Simulation Time (s): 2.4956
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 8
+Elapsed Simulation Time (s): 2.44458
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 9
+Elapsed Simulation Time (s): 2.61611
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 10
+Elapsed Simulation Time (s): 2.41765
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 11
+Elapsed Simulation Time (s): 2.47186
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 12
+Elapsed Simulation Time (s): 2.50568
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 13
+Elapsed Simulation Time (s): 2.54074
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 14
+Elapsed Simulation Time (s): 2.39191
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 15
+Elapsed Simulation Time (s): 2.54823
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 16
+Elapsed Simulation Time (s): 2.51278
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 17
+Elapsed Simulation Time (s): 2.44856
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 18
+Elapsed Simulation Time (s): 2.82933
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 19
+Elapsed Simulation Time (s): 2.36032
+Final CPU Temp (°C): 36
+
+Threads: 80 Iteration: 20
+Elapsed Simulation Time (s): 2.73931
+Final CPU Temp (°C): 36
+
+Threads: 80 Iteration: 21
+Elapsed Simulation Time (s): 2.56095
+Final CPU Temp (°C): 36
+
+Threads: 80 Iteration: 22
+Elapsed Simulation Time (s): 2.48695
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 23
+Elapsed Simulation Time (s): 2.50957
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 24
+Elapsed Simulation Time (s): 2.49222
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 25
+Elapsed Simulation Time (s): 2.49206
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 26
+Elapsed Simulation Time (s): 2.4945
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 27
+Elapsed Simulation Time (s): 2.45026
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 28
+Elapsed Simulation Time (s): 2.39695
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 29
+Elapsed Simulation Time (s): 2.80604
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 30
+Elapsed Simulation Time (s): 2.50161
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 31
+Elapsed Simulation Time (s): 2.51624
+Final CPU Temp (°C): 39
+
+Threads: 80 Iteration: 32
+Elapsed Simulation Time (s): 2.44574
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 33
+Elapsed Simulation Time (s): 2.39912
+Final CPU Temp (°C): 36
+
+Threads: 80 Iteration: 34
+Elapsed Simulation Time (s): 2.66444
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 35
+Elapsed Simulation Time (s): 2.48447
+Final CPU Temp (°C): 39
+
+Threads: 80 Iteration: 36
+Elapsed Simulation Time (s): 2.51299
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 37
+Elapsed Simulation Time (s): 2.68714
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 38
+Elapsed Simulation Time (s): 2.51946
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 39
+Elapsed Simulation Time (s): 2.58996
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 40
+Elapsed Simulation Time (s): 2.54399
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 41
+Elapsed Simulation Time (s): 2.57113
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 42
+Elapsed Simulation Time (s): 2.50943
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 43
+Elapsed Simulation Time (s): 2.55521
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 44
+Elapsed Simulation Time (s): 2.53497
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 45
+Elapsed Simulation Time (s): 2.45275
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 46
+Elapsed Simulation Time (s): 2.71779
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 47
+Elapsed Simulation Time (s): 2.64162
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 48
+Elapsed Simulation Time (s): 2.5931
+Final CPU Temp (°C): 38
+
+Threads: 80 Iteration: 49
+Elapsed Simulation Time (s): 2.53312
+Final CPU Temp (°C): 37
+
+Threads: 80 Iteration: 50
+Elapsed Simulation Time (s): 2.52931
+Final CPU Temp (°C): 36
+
+Experiment Completion: YES

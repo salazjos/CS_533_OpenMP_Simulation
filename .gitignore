@@ -7,3 +7,4 @@ BridgeSimulationOpenMP/mockData.npy
 BridgeSimulationOpenMP/mockData.bin
 BridgeSimulationOpenMP/pressureData.bin
 .venv/
+!Results/*
