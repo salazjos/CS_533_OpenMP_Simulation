@@ -1,6 +1,6 @@
 # Bridge Detonation Visualization via PySimpleGUI & Seaborn
 
-import os, psutil
+import os, psutil, time
 import PySimpleGUI as gui
 import numpy as np
 import seaborn as sns
@@ -129,31 +129,30 @@ MAX_PSI = np.max(DATA[:Q1_index, :, :])
 _, C_y, C_x = np.unravel_index(np.argmax(DATA[:Q1_index, :, :]), DATA.shape)
 
 # --- GUI Functions ---
+# Custom Palette-   Light Grey: bridge background/no damage
+#                   White: minimal damage
+#                   Yellow: light damage
+#                   Orange: moderate damage
+#                   Red: heavy damage
+#                   Dark Red: extreme damage
+CMAP = sns.blend_palette(["#ffffff", "#fdb915", "#ffa500", "#f8481c", "#ff0000", "#840000"], 
+                         n_colors=1000, as_cmap=True)
+CMAP.set_under("#f0f0f0")
+
 def draw_figure(canvas, figure):
     figure_canvas_agg = FigureCanvasTkAgg(figure, canvas)
     figure_canvas_agg.draw()
     figure_canvas_agg.get_tk_widget().pack(side='top', fill='both', expand=1)
     return figure_canvas_agg
 
-def update_heatmap(t, ax, canvas_agg):
+def setup_heatmap(ax, canvas):
     ax.cla()  # Clear current axes (will also clear the heatmap too)
-    # Custom Palette-   Light Grey: bridge background/no damage
-    #                   White: minimal damage
-    #                   Yellow: light damage
-    #                   Orange: moderate damage
-    #                   Red: heavy damage
-    #                   Dark Red: extreme damage
-    cmap = sns.blend_palette(["#ffffff", "#fdb915", "#ffa500", "#f8481c", "#ff0000", "#840000"], 
-                             n_colors=1000, as_cmap=True)
-    cmap.set_under("#f0f0f0")
     
-    # Create the pressure wave animation as a Seaborn heatmap
-    sns.heatmap(DATA[t], ax=ax, cmap=cmap, cbar=False, vmin=0.01, 
-                vmax=MAX_PSI, square=True, rasterized=True)
+    # Create the pressure wave animation as an IMShow heatmap
+    ims = ax.imshow(DATA[0], cmap=CMAP, vmin=0.01, vmax=MAX_PSI, interpolation="nearest")
     
-    # Update current timestep in heatmap title & set custom x & y ticks/labels, then render
-    t_ms = int(t * FRAME_INTERVAL) if FRAME_INTERVAL >= 1 else np.round(t * FRAME_INTERVAL, 1)
-    ax.set_title(f"Pressure Wave Animation - Time Since Detonation: {t_ms}ms\n")
+    # Set the current time title and the custom x & y ticks/labels, then render
+    ax.set_title("Pressure Wave Animation - Time Since Detonation: 0ms\n")
     ax.set_xticks(np.linspace(0, X, 19, dtype=np.int32))
     ax.set_xticklabels(np.linspace(0, X, 19, dtype=np.int32), rotation=0)
     ax.set_yticks(np.linspace(0, Y, 6, dtype=np.int32))
@@ -161,7 +160,21 @@ def update_heatmap(t, ax, canvas_agg):
     ax.set_xlabel("\nBridge Length (ft)")
     ax.set_ylabel("Bridge Width (ft)\n")
     ax.invert_yaxis()
-    canvas_agg.draw()
+    canvas.draw()
+
+    # Return the IMShow heatmap object for future updates
+    return ims
+
+def update_heatmap(t, ax, hmap, canvas):
+    # Load the next timestep by simply swapping the heatmap's data
+    hmap.set_data(DATA[t])
+
+    # Update the current time display in the heatmap axis title
+    t_ms = int(t * FRAME_INTERVAL) if FRAME_INTERVAL >= 1 else np.round(t * FRAME_INTERVAL, 1)
+    ax.set_title(f"Pressure Wave Animation - Time Since Detonation: {t_ms}ms\n")
+
+    # Effeciently render the updates onto the canvas
+    canvas.draw_idle()
 
 def update_peakPSIreadout(window, timestep):
     # Get peak pressure value for current timestep
@@ -182,6 +195,9 @@ def update_peakPSIreadout(window, timestep):
     window["-MAX-"].update(f"Peak Pressure Observed (PSI): {peakPSI:.1f}\t")
     window["-WHERE-"].update(f"Where: {peakLoc}")
 
+def time_ms():
+    return time.time() * 1000
+
 # --- GUI Layout ---
 layout = [
     [gui.Text("Explosion Pressure Wave Simulation - Visualization Tool", font=("Helvetica", 28))],
@@ -197,7 +213,7 @@ layout = [
         gui.Button("Step Fwd", font=("Helvetica", 12)),
         gui.VerticalSeparator(),
         gui.Text("Playback Speed (Steps/s):", font=("Helvetica", 12)),
-        gui.Slider(range=(0.1, 10.0), default_value=1.0, resolution=0.1, 
+        gui.Slider(range=(1.0, 20.0), default_value=1.0, resolution=0.5, 
                   orientation='h', key='-SPEED-', font=("Helvetica", 12))
     ],
     [gui.Canvas(key='-CANVAS-', size=(1000, 300))],
@@ -216,20 +232,24 @@ def run_visualization():
     fig, ax = plt.subplots(figsize=(10, 3))
     canvas_elem = window['-CANVAS-'].TKCanvas
     canvas_agg = draw_figure(canvas_elem, fig)
-    update_heatmap(0, ax, canvas_agg)
+    hmap = setup_heatmap(ax, canvas_agg)
 
     # --- State Variables ---
     current_time = 0
     is_playing = False
+    lastFrame = time_ms()
+    animTimeout = 0
 
     # --- Event Loop ---
     while True:
         # Determine speed from Slider first (default to 1 if values empty on first run)
         speed = values['-SPEED-'] if 'values' in locals() and values['-SPEED-'] else 1.0
 
-        # Adjust window timeout based on the computed speed from Slider value
-        timeout = 1000 // speed if is_playing else None
-        event, values = window.read(timeout=timeout)
+        # Determine timeout value between frames based on speed from Slider value
+        actualTimeout = 1000 / speed
+        
+        # Use non-blocking window read to get fastest possible animation
+        event, values = window.read(timeout=0 if is_playing else None)
 
         # Process primary events for play, pause, step & exit
         if event in (gui.WIN_CLOSED, 'Exit'):
@@ -237,6 +257,9 @@ def run_visualization():
 
         if event == "Play":
             is_playing = True
+            lastFrame = time_ms()
+            timeoutElapsed = time_ms() - lastFrame
+            animTimeout = max(0.0, actualTimeout - timeoutElapsed)
         
         if event == "Pause":
             is_playing = False
@@ -245,7 +268,7 @@ def run_visualization():
             if not is_playing and current_time < TIMESTEPS - 1:
                 current_time += 1
                 window['-TIME_INPUT-'].update(current_time)
-                update_heatmap(current_time, ax, canvas_agg)
+                update_heatmap(current_time, ax, hmap, canvas_agg)
                 update_peakPSIreadout(window, current_time)
 
         # Secondary event: manual override of current time step
@@ -254,21 +277,26 @@ def run_visualization():
                 val = int(values['-TIME_INPUT-'])
                 if 0 <= val < TIMESTEPS:
                     current_time = val
-                    update_heatmap(current_time, ax, canvas_agg)
+                    update_heatmap(current_time, ax, hmap, canvas_agg)
                     update_peakPSIreadout(window, current_time)
             except ValueError:
                 pass
 
-        # Secondary event: animation of heatmap over time
-        if event == "__TIMEOUT__":
-            if is_playing and current_time < TIMESTEPS - 1:
+        # Tertiary "event": render next frame of the animation if enough time has passed
+        if is_playing and (time_ms() - lastFrame) >= animTimeout:
+            if current_time < (TIMESTEPS - 1):
                 current_time += 1
             else:
                 is_playing = False  # auto-pause once end of animation reached
             
+            lastFrame = time_ms()
             window['-TIME_INPUT-'].update(current_time)
-            update_heatmap(current_time, ax, canvas_agg)
+            update_heatmap(current_time, ax, hmap, canvas_agg)
             update_peakPSIreadout(window, current_time)
+
+            # Update timeout value once frame finishes rendering
+            timeoutElapsed = time_ms() - lastFrame
+            animTimeout = max(0.0, actualTimeout - timeoutElapsed)
 
     window.close()
 
