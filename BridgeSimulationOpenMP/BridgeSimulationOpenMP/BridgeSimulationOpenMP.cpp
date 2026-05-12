@@ -1,18 +1,47 @@
-// Bridge Simulation OpenMP
+//UNM CS 533
+// Joseph Salazar
+// Diego Ornelas
+
 #include "BridgeSim.hpp"
 #include <iostream>
 #include <cstdlib>
 
-/*
-Command line arguments required (in order):
-int - bridge legth (feet)
-int - bridge width (feet)
-int - detonation height (feet)
-int - detonation x location (feet)
-int - detonation y location (feet)
-int - thread amount
-int - does produce binary float file (0 - false, 1 - true)
-*/
+/**
+ * @brief Entry point for the Bridge Simulation OpenMP application.
+ *
+ * This program performs a computational blast pressure simulation across
+ * a bridge surface using OpenMP-based parallel processing. The simulation
+ * models the propagation of blast wave pressure from a detonation point
+ * to individual bridge tiles over time.
+ *
+ * User-defined simulation parameters are provided through command line
+ * arguments, including bridge dimensions, detonation location, thread
+ * count, and optional binary file output generation.
+ *
+ * The BridgeSim class is responsible for:
+ * - Allocating and managing simulation memory
+ * - Precomputing blast-related physical values
+ * - Executing time-stepped pressure calculations
+ * - Parallelizing computations using OpenMP
+ * - Optionally exporting pressure data to a binary file
+ *
+ * Expected command line arguments:
+ * 1. Bridge length (feet)
+ * 2. Bridge width (feet)
+ * 3. Detonation height (feet)
+ * 4. Detonation X location (feet)
+ * 5. Detonation Y location (feet)
+ * 6. Number of OpenMP threads
+ * 7. Binary output flag (0 = false, 1 = true)
+ *
+ * Example:
+ * ./BridgeSim 200 40 25 100 20 8 1
+ *
+ * @param argc Number of command line arguments.
+ * @param argv Array of command line argument strings.
+ *
+ * @return int Returns 0 on successful execution and nonzero on failure.
+ */
 
 int main(int argc, char* argv[])
 {
@@ -45,15 +74,3 @@ int main(int argc, char* argv[])
 
     return 0;
 }
-
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
