@@ -10,5 +10,5 @@
 - **Execute Simulation:** `./simulation <bridge_length> <bridge_widtn> <detonation_height> <detonation_x> <detonation_y>`
 - **Start Visualization Tool:** `source .venv/bin/activate && python visualization.py`
     - If .venv directory is missing, create the virtual environment: `python -m venv .venv --prompt <env_tag>`
-    - If ModuleNotFound error, install the necessary Python packages: `python -m pip install PySimpleGUI==4.60.5.1 numpy seaborn --quiet`
+    - If ModuleNotFound error, install the necessary Python packages: `python -m pip install PySimpleGUI==4.60.5.1 numpy seaborn psutil --quiet`
     - Alternatively, start the visualization tool from the experiment script for the first run- the script will create the virtual environment & install all Python packages automatically

@@ -3,12 +3,16 @@
 # Diego Ornelas
 # Joseph Salazar
 
+# --- Python Dependencies ---
+
 import os, psutil, time
 import PySimpleGUI as gui
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+
+# --- Program Constants ---
 
 # Path to file containing binary pressure data created by sim. program
 DATA_FNAME = "BridgeSimulationOpenMP/pressureData.bin"
@@ -19,9 +23,17 @@ Y_IN = 100 * 12
 FRAME_INTERVAL = 1.0
 
 # --- Data Generation ---
+
 # The data is read in from a binary data file, of known size & dimensions
 # NOTE: file is always in row-major order- that is, shape = (time, width, length)
 def load_sim_data():
+    """
+    Loads simulation pressure data from the raw binary file.
+
+    Returns:
+        SimData: Numpy 3D array containing all pressure data across all timesteps.
+    """
+
     if not os.path.exists(DATA_FNAME):
         print("Error: simulation results are missing. Ensure the simulation has completed & saved its data. Exiting...")
         exit(2)
@@ -44,6 +56,16 @@ def load_sim_data():
 # Fallback if file size > RAM: map the filespace w/ Numpy memmap & load in frame by frame
 # Each frame must be downscaled fron sq in to sq ft immediately to avoid overflow
 def load_data_in_frames(numFrames):
+    """
+    Backup if the binary file is too large- loads the binary file timestep by timestep to reduce RAM usage.
+
+    Parameters:
+        numFrames (int): total number of timesteps/frames to load individually from the file.
+
+    Returns:
+        finalData: Numpy 3D array containing all pressure data across all timesteps.
+    """
+
     # Initialize final array (known size: (T, Y / 12, X / 12))
     totalData = np.zeros((numFrames, Y_IN // 12, X_IN // 12), dtype=np.float32)
 
@@ -77,9 +99,23 @@ def load_data_in_frames(numFrames):
     return finalData
 
 # --- Data Transformation ---
+
 # NOTE: visualization tool cannot draw inch tiles without lagging the animation.
 # Solution: loaded data from simulation will be converted from sq-inch to sq-foot tiles.
 def convert_data_tile_size(data_sq_in, numFrames):
+    """
+    Converts a 3D pressure matrix from square-inch resolution to square-foot resolution.
+    Conversion is performed by an average-pool of every 144 tiles into a single tile.
+    After the pooling is completed, all tiles are rescaled to the original pressure range.
+
+    Parameters:
+        data_sq_in: Numpy 3D array of all pressure data in square-inch resolution.
+        numFrames (int): total number of timesteps/frames to load individually from the file.
+
+    Returns:
+        data_sq_ft: Numpy 3D array of all pressure data in square-foot resolution.
+    """
+
     # Determine new data dimensions & max PSI before rescaling
     x_ft = X_IN // 12
     y_ft = Y_IN // 12
@@ -105,6 +141,18 @@ def convert_data_tile_size(data_sq_in, numFrames):
 
 # Fallback if file size > RAM: convert each individual frame to sq ft before saving to data buffer
 def convert_frame_tile_size(frame_sq_in):
+    """
+    Backup if file size too large- each frame must have its resolution converted before storing on the heap.
+    Square-foot frames require less space than square-inch frames, allowing RAM usage to be spared.
+
+    Parameters:
+        frame_sq_in: Numpy 2D array of the current pressure frame in square-inch resolution.
+
+    Returns:
+        frame_sq_ft: Numpy 2D array of the current pressure frame in square-foot resolution.
+        maxPSI (float): maximum PSI value observed in the frame before conversion.
+    """
+
     # Determine new frame dimensions & max PSI before rescaling
     x_ft = X_IN // 12
     y_ft = Y_IN // 12
@@ -132,6 +180,7 @@ MAX_PSI = np.max(DATA[:Q1_index, :, :])
 _, C_y, C_x = np.unravel_index(np.argmax(DATA[:Q1_index, :, :]), DATA.shape)
 
 # --- GUI Functions ---
+
 # Custom Palette-   Light Grey: bridge background/no damage
 #                   White: minimal damage
 #                   Yellow: light damage
@@ -142,13 +191,34 @@ CMAP = sns.blend_palette(["#ffffff", "#fdb915", "#ffa500", "#f8481c", "#ff0000",
                          n_colors=1000, as_cmap=True)
 CMAP.set_under("#f0f0f0")
 
-def draw_figure(canvas, figure):
+def setup_figure(canvas, figure):
+    """
+    Links the Matplotlib figure and canvas elements to the underlying TKinter widget in PySimpleGUI
+
+    Parameters:
+        canvas: the canvas element where the heatmap is drawn
+        figure: the Matplotlib figure elemnt containing the canvas
+    
+    Returns:
+        Figure-canvas aggregate created by TKinter.
+    """
+
     figure_canvas_agg = FigureCanvasTkAgg(figure, canvas)
     figure_canvas_agg.draw()
     figure_canvas_agg.get_tk_widget().pack(side='top', fill='both', expand=1)
     return figure_canvas_agg
 
 def setup_heatmap(ax, canvas):
+    """
+    Initializes the heatmap and sets up the title, axis ticks and labels.
+
+    Parameters:
+        ax: Matplotlib axis object present in the rendered figure.
+        canvas: canvas element rendered via the TKinter widget.
+
+    Returns:
+        ims: IMShow heatmap object which renders the animation.
+    """
     ax.cla()  # Clear current axes (will also clear the heatmap too)
     
     # Create the pressure wave animation as an IMShow heatmap
@@ -169,6 +239,16 @@ def setup_heatmap(ax, canvas):
     return ims
 
 def update_heatmap(t, ax, hmap, canvas):
+    """
+    Updates the heatmap animation and title for the given current timestep.
+
+    Parameters:
+        t (int): current timestep to index the pressure data required for rendering.
+        ax: Matplotlib axis object present in the rendered figure.
+        hmap: heatmap object used to render the animation onto the canvas.
+        canvas: canvas element rendered via the TKinter widget.
+    """
+
     # Load the next timestep by simply swapping the heatmap's data
     hmap.set_data(DATA[t])
 
@@ -180,6 +260,14 @@ def update_heatmap(t, ax, hmap, canvas):
     canvas.draw_idle()
 
 def update_peakPSIreadout(window, timestep):
+    """
+    Updates the peak pressure observed value & location readouts for the curent timestep.
+
+    Parameters:
+        window: PySimpleGUI window element which contains all rendered text elements.
+        timestep (int): current timestep of the displayed animation.
+    """
+
     # Get peak pressure value for current timestep
     frame = DATA[timestep]
     peakPSI = np.max(frame)
@@ -199,6 +287,10 @@ def update_peakPSIreadout(window, timestep):
     window["-WHERE-"].update(f"Where: {peakLoc}")
 
 def time_ms():
+    """
+    Current time since the epochs, in milliseconds. Has decimal precision.
+    """
+
     return time.time() * 1000
 
 # --- GUI Layout ---
@@ -223,31 +315,39 @@ layout = [
     [
         gui.Text("Peak Pressure Observed (PSI): 0.0\t", font=("Helvetica", 12), key="-MAX-"),
         gui.VerticalSeparator(),
-        gui.Text("Where: N/A", font=("Helvetica", 12), key="-WHERE-")
+        gui.Text("Where: N/A\t", font=("Helvetica", 12), key="-WHERE-")
     ]
 ]
 
 # --- Main Function ---
 def run_visualization():
+    """
+    Initializes the GUI window & all its elements, then starts the GUI event loop.
+    The window is rendered as fast as possible- usually matches display FPS.
+    Any events- button press, slider/text input- are processed when window read returns.
+    Delta-time logic is used to render the correct animation and speed when playing.
+    """
+
+    # Initialize main GUI window w/ all layout elements- resizing enabled on window
     window = gui.Window("Pressure Wave Simulation", layout, resizable=True, finalize=True)
 
     # Enable resize events & forward to event flag "Resize" for later handling
     window.bind('<Configure>', "Resize")
 
-    # --- Initialize Matplotlib Figure ---
+    # Initialize Matplotlib figure, canvas & heatmap used to render animation
     fig, ax = plt.subplots(figsize=(10, 3), layout="constrained")
     canvas_elem = window['-CANVAS-'].TKCanvas
-    canvas_agg = draw_figure(canvas_elem, fig)
+    canvas_agg = setup_figure(canvas_elem, fig)
     hmap = setup_heatmap(ax, canvas_agg)
 
-    # --- State Variables ---
+    # State variables to determine current GUI status
     current_time = 0
     is_playing = False
     lastFrame = time_ms()
     animTimeout = 0
     lastWidth, _ = window["-CANVAS-"].get_size()
 
-    # --- Event Loop ---
+    # Event loop
     while True:
         # Determine speed from Slider first (default to 1 if values empty on first run)
         speed = values['-SPEED-'] if 'values' in locals() and values['-SPEED-'] else 1.0
@@ -320,20 +420,9 @@ def run_visualization():
 
     window.close()
 
+
+# --- Program Entrypoint ---
 if __name__ == "__main__":
     run_visualization()
 
-
-
-# NOTE: to get started with Python & run this file, use the following commands:
-#   sudo apt install python3-full python3-venv
-#   cd ~/
-#   python -m venv base
-#   source base/bin/activate
-#   python -m pip install PySimpleGUI==4.60.5.1 numpy seaborn psutil
-#
-# Now, you should have installed Python & created a virtual environment with
-# the necessary modules to run this file (with 'python visualization.py').
-# To automatically load this environment, add it to your ~/.bashrc file:
-#   echo "source ~/base/bin/activate" >> ~/.bashrc
 
