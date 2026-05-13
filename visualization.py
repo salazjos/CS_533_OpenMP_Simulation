@@ -284,7 +284,7 @@ def update_peakPSIreadout(window, timestep):
 
     # Update peak pressure & location readouts in GUI
     window["-MAX-"].update(f"Peak Pressure Observed (PSI): {peakPSI:.1f}\t")
-    window["-WHERE-"].update(f"Where: {peakLoc}")
+    window["-WHERE-"].update(f"Where: {peakLoc}\t")
 
 def time_ms():
     """
