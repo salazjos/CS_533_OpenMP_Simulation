@@ -1,4 +1,7 @@
-# Bridge Detonation Visualization via PySimpleGUI & Seaborn
+# Bridge Detonation Visualization via PySimpleGUI, Matplotlib & Seaborn
+# UNM CS 533
+# Diego Ornelas
+# Joseph Salazar
 
 import os, psutil, time
 import PySimpleGUI as gui
@@ -200,7 +203,7 @@ def time_ms():
 
 # --- GUI Layout ---
 layout = [
-    [gui.Text("Explosion Pressure Wave Simulation - Visualization Tool", font=("Helvetica", 28))],
+    [gui.Text("Explosion Pressure Wave Simulation - Visualization Tool", font=("Helvetica", 24))],
     [gui.HorizontalSeparator()],
     [
         gui.Text("Current Timestep:", font=("Helvetica", 12)), 
@@ -216,7 +219,7 @@ layout = [
         gui.Slider(range=(1.0, 20.0), default_value=1.0, resolution=0.5, 
                   orientation='h', key='-SPEED-', font=("Helvetica", 12))
     ],
-    [gui.Canvas(key='-CANVAS-', size=(1000, 300))],
+    [gui.Canvas(key='-CANVAS-', size=(1000, 300), expand_x=True, expand_y=True)],
     [
         gui.Text("Peak Pressure Observed (PSI): 0.0\t", font=("Helvetica", 12), key="-MAX-"),
         gui.VerticalSeparator(),
@@ -226,10 +229,13 @@ layout = [
 
 # --- Main Function ---
 def run_visualization():
-    window = gui.Window("Pressure Wave Simulation", layout, finalize=True)
+    window = gui.Window("Pressure Wave Simulation", layout, resizable=True, finalize=True)
+
+    # Enable resize events & forward to event flag "Resize" for later handling
+    window.bind('<Configure>', "Resize")
 
     # --- Initialize Matplotlib Figure ---
-    fig, ax = plt.subplots(figsize=(10, 3))
+    fig, ax = plt.subplots(figsize=(10, 3), layout="constrained")
     canvas_elem = window['-CANVAS-'].TKCanvas
     canvas_agg = draw_figure(canvas_elem, fig)
     hmap = setup_heatmap(ax, canvas_agg)
@@ -239,6 +245,7 @@ def run_visualization():
     is_playing = False
     lastFrame = time_ms()
     animTimeout = 0
+    lastWidth, _ = window["-CANVAS-"].get_size()
 
     # --- Event Loop ---
     while True:
@@ -281,6 +288,19 @@ def run_visualization():
                     update_peakPSIreadout(window, current_time)
             except ValueError:
                 pass
+
+        # Secondary event: window resize. Canvas auto resizes, simply must match figure size & redraw.
+        if event == "Resize":
+            c_width, _ = window["-CANVAS-"].get_size()
+
+            # Debounce: only update after threshold exceed to prevent laggy GUI
+            if c_width > 0 and np.abs(c_width - lastWidth) >= 10:
+                c_height = int(c_width * 3) // 10
+                window["-CANVAS-"].set_size((c_width, c_height))
+                fig_width = c_width / 100
+                fig.set_size_inches(fig_width, (fig_width * 3) / 10)
+                update_heatmap(current_time, ax, hmap, canvas_agg)
+                lastWidth = c_width
 
         # Tertiary "event": render next frame of the animation if enough time has passed
         if is_playing and (time_ms() - lastFrame) >= animTimeout:
